@@ -1,0 +1,444 @@
+[
+    {
+        "version": "1.4",
+        "UID": "5e0e3eb8d083a37cd8cad12c",
+        "title": "伊達邵逐鹿市集歌舞展演",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/01/01 11:20:00",
+                "location": "南投縣魚池鄉中山路",
+                "locationName": "日月潭國家風景區",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/31 18:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)南投縣魚池鄉邵族文化發展協會",
+        "discountInfo": "",
+        "descriptionFilterHtml": "節目內容：耆老經典邵族杵音及邵族迎賓舞。\r\n每週三固定舞團公休日。洽詢電話：049-2850036。\r\n展演地點：日月村伊達邵逐鹿市集。",
+        "imageUrl": "",
+        "masterUnit": [
+            "南投縣魚池鄉邵族文化發展協會"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)交通部觀光局日月潭國家風景區管理處"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "http://www.sunmoonlake.gov.tw/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/01/01",
+        "endDate": "2020/12/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e0e3eb8d083a37cd8cad12d",
+        "title": "信義鄉部落歌舞展演（瑪巒文化藝術劇團表演）",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/01/04 10:30:00",
+                "location": "南投縣信義鄉",
+                "locationName": "信義鄉（南投縣）\u003d",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/27 15:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)達瑪巒文化藝術團",
+        "discountInfo": "",
+        "descriptionFilterHtml": "演出舞碼內容：大自然的呼喚、婦女工作生活歌、飲酒之歌、祈禱小米豐收歌（八部合音）、濁水畔的達瑪巒。部落套裝遊程安排與體驗及預約觀賞場次，請洽：049-2741619全先生。",
+        "imageUrl": "",
+        "masterUnit": [
+            "達瑪巒文化藝術團"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)交通部觀光局日月潭國家風景區管理處"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "http://www.sunmoonlake.gov.tw/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/01/04",
+        "endDate": "2020/12/27",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e629f19d083a329401eee5f",
+        "title": "2020上半年假日廣場—溫馨客家週",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/09 15:00:00",
+                "location": "臺中市太平區大興路201號",
+                "locationName": "臺中市立屯區藝文中心",
+                "onSales": "UNKNOWN",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/09 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)小丑Alex Yang;(中華民國)羅思容;(中華民國)劉慧卿",
+        "discountInfo": "",
+        "descriptionFilterHtml": "以不同的民族音樂為各週主題，邀請不同的團隊帶來最原汁原味的民族音樂饗宴，還有不同的周邊活動可以參加唷！\r\n\r\n*註：所有DIY活動報名在2/25(二)9:00統一開放網路報名！\r\n\r\n【5/09(六）溫馨客家週】\r\n\r\n｜演出節目｜\r\n15:10~15:40 小丑—Alan施又仁\r\n16:00~16:30 羅思容\r\n16:30~17:00 劉慧卿\r\n\r\n｜舞臺活動｜\r\n15:40~16:00 大聲說愛你\r\n\r\n｜週邊活動｜\r\n立體花布創作/100元\r\n報名連結：https://ppt.cc/fPNV2x",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺中市屯區藝文中心"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/09",
+        "endDate": "2020/05/09",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e629f19d083a329401eee60",
+        "title": "2020上半年假日廣場—熱情日本週",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/24 15:00:00",
+                "location": "臺中市太平區大興路201號",
+                "locationName": "臺中市立屯區藝文中心",
+                "onSales": "UNKNOWN",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/24 17:00:00"
+            }
+        ],
+        "showUnit": "(日本)曾山尚幸老師",
+        "discountInfo": "",
+        "descriptionFilterHtml": "以不同的民族音樂為各週主題，邀請不同的團隊帶來最原汁原味的民族音樂饗宴，還有不同的周邊活動可以參加唷！\r\n\r\n*註：所有DIY活動報名在2/25(二)9:00統一開放網路報名！\r\n\r\n【5/24(日) 熱情日本週】\r\n\r\n｜演出節目｜\r\n15:10~15:40 日本尺八\r\n16:00~16:30 豐太鼓\r\n\r\n｜舞臺活動｜\r\n15:40~16:00 日本太鼓介紹\r\n16:30~17:00 有獎徵答／迷你按摩機20名\r\n\r\n｜週邊活動｜\r\n緣比書家soyamax曾山尚幸老師／免費",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺中市屯區藝文中心"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "2020/04/23 09:24:16",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/24",
+        "endDate": "2020/05/24",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e98ace6d083a329401efa08",
+        "title": "阿美族民俗中心【部落樂舞音】",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/01/01 11:00:00",
+                "location": "臺東縣成功鎮新村路25號",
+                "locationName": "交通部觀光局東部海岸國家風景區管理處",
+                "onSales": "Y",
+                "price": "預約場次+2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/31 16:30:00"
+            }
+        ],
+        "showUnit": "(中華民國)Amis旮亙樂團",
+        "discountInfo": "",
+        "descriptionFilterHtml": "【Amis旮亙樂團】是由少多宜.篩代於1999年五月組成，是一支想用「敲打」來傳遞阿美族傳統的美麗，並透過歌聲來激盪族人對族群文化的重視與感動的打擊樂團。\r\n【旮亙Kakeng （指竹鐘）】是阿美族傳統婚禮女子招贅時用來報喜傳訊的用具，「Amis旮亙樂團」以此命名具有報喜訊、傳承與發揚的使命。\r\n【旮亙的團員】老老少少有30餘人，擊樂的部份大多為pakalongay(在學青少年)，他們沒有接受過專業的打擊與演唱的訓練，憑的是對傳統樂器的興趣與好玩，表演時也不用樂譜，完全按著他們個人的節奏感和創意豪放盡興的打擊，就如初時傳統樂器的作者毋需樂理不按節奏，隨著心的律動照樣可以釋放美妙的樂章一樣。",
+        "imageUrl": "",
+        "masterUnit": [
+            "交通部觀光局東部海岸國家風景區管理處"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/01/01",
+        "endDate": "2020/12/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ea66804d083a34f40bcc939",
+        "title": "小型藝文-池畔青春舞樂活",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/06/13 14:30:00",
+                "location": "桃園市龍潭區中豐路上林段115巷",
+                "locationName": "桃園市龍潭區龍潭大池景觀公園",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/13 17:30:00"
+            }
+        ],
+        "showUnit": "(中華民國)劉玉芳",
+        "discountInfo": "",
+        "descriptionFilterHtml": "太極拳、棒及劍演出，茶山情濃客家歌舞及合唱，庄頭看戲小調對唱、情歌對唱及手語帶動唱等節目演出。",
+        "imageUrl": "",
+        "masterUnit": [
+            "桃園市龍潭樂齡歌唱協會"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市龍潭區公所"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/06/13",
+        "endDate": "2020/06/13",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ea87ef0d083a33abc1aacb3",
+        "title": "2020札哈木音樂季 ~音樂舞台X市集 5月",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/23 16:00:00",
+                "location": "臺南市安平區安億路472號",
+                "locationName": "臺南市札哈木會館（札哈木原住民公園）",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/23 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)臺南市札哈木會館暨札哈木原住民公園",
+        "discountInfo": "",
+        "descriptionFilterHtml": "原住民工藝品、傳統美食、創意料理及原鄉季節性農特產品",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺南市政府民族事務委員會"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)臺南市政府"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/23",
+        "endDate": "2020/05/23",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ea87ef0d083a33abc1aacb4",
+        "title": "2020札哈木音樂季 ~音樂舞台X市集 6月",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/06/13 16:00:00",
+                "location": "臺南市安平區安億路472號",
+                "locationName": "臺南市札哈木會館（札哈木原住民公園）",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/13 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)臺南市札哈木會館暨札哈木原住民公園",
+        "discountInfo": "",
+        "descriptionFilterHtml": "原住民工藝品、傳統美食、創意料理及原鄉季節性農特產品",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺南市政府民族事務委員會"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)臺南市政府"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/06/13",
+        "endDate": "2020/06/13",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5eab21cbd083a33abc1aad46",
+        "title": "竹山鎮公所菸草站戶外演出（109年5月份）",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/02 19:00:00",
+                "location": "南投縣竹山鎮",
+                "locationName": "竹山鎮（南投縣）\u003d",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/30 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)南投縣竹山鎮公所",
+        "discountInfo": "",
+        "descriptionFilterHtml": "5月02日／蔡師傅演舞團\r\n5月09日／街頭藝人表演-嚴駿憲（母親節特別演出）\r\n5月16日／創作歌手  尤米澤\r\n5月23日／及第吉笛樂團\r\n5月30日／元禎藝術舞蹈團\r\n大家一起來觀賞。\r\n如遇天候不佳等因素，公所得視情況取消。\r\n公所保有更改活動之權利。",
+        "imageUrl": "",
+        "masterUnit": [
+            "南投縣竹山鎮公所"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://www.facebook.com/chichitw1229/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/02",
+        "endDate": "2020/05/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5eac7327d083a33abc1aada6",
+        "title": "日月潭街頭藝人表演-車埕文化廣場（2020年5月）",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/01 09:00:00",
+                "location": "南投縣水里鄉",
+                "locationName": "水里鄉（南投縣）\u003d",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/31 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)交通部觀光局日月潭國家風景區管理處",
+        "discountInfo": "",
+        "descriptionFilterHtml": "演出時間及演出團體\r\n5月01日／安可樂團\r\n5月02日／情有獨鍾\r\n5月03日／披頭 two \r\n5月04日／灣得佛重唱\r\n5月05日／生命的樂章\r\n5月07日／來一首好歌\r\n5月08日／木琴與吉他\r\n5月09日／掌聲響起樂團\r\n5月10日／山谷回音\r\n5月11日／小米酒樂舞\r\n5月12日／七星潭樂團\r\n5月14日／玫瑰愛樂\r\n5月15日／雷英\r\n5月16日／晴空萬里樂團\r\n5月17日／依芙樂團\r\n5月18日／天天愛樂\r\n5月19日／峽谷愛樂\r\n5月21日／情歌王子\r\n5月22日／噶瑪蘭愛樂\r\n5月23日／酷狗樂團\r\n5月24日／金門重唱\r\n5月25日／蕾米索拉\r\n5月26日／蘭陽愛樂\r\n5月28日／幸運草樂團\r\n5月29日／水岸優聲樂團\r\n5月30日／樂曲笙歌樂團\r\n5月31日／晴愛樂\r\n更多資訊請至日月潭觀光旅遊網查詢。",
+        "imageUrl": "",
+        "masterUnit": [
+            "交通部觀光局日月潭國家風景區管理處"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://www.sunmoonlake.gov.tw/zh-tw/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/01",
+        "endDate": "2020/05/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5eac7327d083a33abc1aada7",
+        "title": "日月潭街頭藝人表演-玄光寺碼頭、文武廟、水社碼頭（2020年5月）",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/01 09:00:00",
+                "location": "南投縣魚池鄉中山路",
+                "locationName": "日月潭國家風景區",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/31 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)交通部觀光局日月潭國家風景區管理處",
+        "discountInfo": "",
+        "descriptionFilterHtml": "安排動、靜態街頭藝人展演，詳細演出團體及演出時間請上日月潭觀光旅遊網-最新快訊查詢。\r\n演出地點：文武廟廣場、水社碼頭廣場、伊達邵碼頭廣場。",
+        "imageUrl": "",
+        "masterUnit": [
+            "交通部觀光局日月潭國家風景區管理處"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://www.sunmoonlake.gov.tw/zh-tw/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/01",
+        "endDate": "2020/05/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5eaf1626d083a33abc1aaddc",
+        "title": "成功祈福─寫下滿滿心願 ",
+        "category": "11",
+        "showInfo": [
+            {
+                "time": "2020/05/01 09:00:00",
+                "location": "臺南市中西區開山路152號",
+                "locationName": "鄭成功文物館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/31 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)臺南市政府文化局",
+        "discountInfo": "│每人限領一張，每日數量有限，兌完為止",
+        "descriptionFilterHtml": "挖掘藏在土裡的陶片，體驗文物考古現場，並到服務台兌換一張祈福卡，寫下您的心願吧 !\r\n",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺南市政府文化局"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/01",
+        "endDate": "2020/05/31",
+        "hitRate": 0
+    }
+]

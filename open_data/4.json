@@ -1,0 +1,1558 @@
+[
+    {
+        "version": "1.4",
+        "UID": "5a99fff8c6355e03c8565288",
+        "title": "兒童象棋研習營（台北地區）",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2017/11/01 00:00:00",
+                "location": "新生南路一段161巷35-1號2樓",
+                "locationName": "新生南路一段161巷35-1號2樓",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/31 00:00:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "兒童象棋文化藝術研習營 依棋力分齡分班研習、小班制 參加對象：喜愛象棋藝術之兒童 研習營梯次：請參考本會網站 http://mycac.myweb.hinet.net/ 依程度分班：幼兒、入門、進階、段位、成人 研習地點：中華民國象棋文化協會名揚分會 (台北市大安區新生南路一段161巷35-1號2樓，捷運大安森林公園站6號出口) 歡迎電話報名研習講座02-27061211陳老師 研習內容：依棋力安排專業象棋老師講解象棋研習課程。(人數限定、小班研習) 象棋入門、棋品禮貌、佈局解析、中局攻略、實用殘局、對弈指導、覆盤解討(象棋疑難解惑)。採預約制，請先電話預約報名。",
+        "imageUrl": "http://cloud.culture.twhttp://www.artplus.taipei/images/defaultActing.jpg",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "http://www.taipeiartplus.org/Content/ProgramInfo.aspx?ID\u003d137819",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "臺北好藝術",
+        "startDate": "2017/11/01",
+        "endDate": "2020/12/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5d714023d083a33154982a89",
+        "title": "《公主百分百》舞蹈音樂劇",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/16 13:30:00",
+                "location": "屏東市民生路4-17號",
+                "locationName": "屏東演藝廳-音樂廳",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/16 18:30:00",
+                "location": "屏東市民生路4-17號",
+                "locationName": "屏東演藝廳-音樂廳",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/09/19 14:30:00",
+                "location": "臺中市學士路98號",
+                "locationName": "臺中市中山堂",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/09/19 19:30:00",
+                "location": "臺中市學士路98號",
+                "locationName": "臺中市中山堂",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/10/31 19:30:00",
+                "location": "臺北市仁愛路4段505號",
+                "locationName": "國父紀念館",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/11/01 14:30:00",
+                "location": "臺北市仁愛路4段505號",
+                "locationName": "國父紀念館",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/11/14 13:30:00",
+                "location": "高雄市苓雅區五福一路67號",
+                "locationName": "高雄市文化中心至德堂",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/11/14 18:30:00",
+                "location": "高雄市苓雅區五福一路67號",
+                "locationName": "高雄市文化中心至德堂",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/12 14:30:00",
+                "location": "桃園市中壢區中美路16號",
+                "locationName": "中壢藝術館音樂廳",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/12 19:30:00",
+                "location": "桃園市中壢區中美路16號",
+                "locationName": "中壢藝術館音樂廳",
+                "onSales": "Y",
+                "price": "300,500,700,900,1100,1300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊廳院青每筆訂單打9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "花格子藝術有限公司"
+        ],
+        "subUnit": [
+            "風動室內樂團"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQ8c0R1N57u8Q",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/16",
+        "endDate": "2020/12/12",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5dd6c342d083a382ec004120",
+        "title": "文山劇場 2020年《親子玩藝》活動系列",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/06/06 14:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/06 14:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室.",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/13 14:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/13 14:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室.",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/04 10:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/04 10:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十一樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/18 10:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/18 10:00:00",
+                "location": "台北市文山區景文街32號",
+                "locationName": "文山劇場十一樓教室",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺北市藝文推廣處 02-2933-2199轉505"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQOpjTYDnz5F",
+        "sourceWebPromote": "http://wenshantheater.pixnet.net/blog",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/06",
+        "endDate": "2020/07/18",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5defcfebd083a31bb0c5602a",
+        "title": "張正傑親子音樂會　笙東擊西–不中不西",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/12/26 14:30:00",
+                "location": "臺北市中山南路21-1號",
+                "locationName": "國家兩廳院演奏廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/26 19:30:00",
+                "location": "臺北市中山南路21-1號",
+                "locationName": "國家兩廳院演奏廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/27 10:30:00",
+                "location": "臺北市中山南路21-1號",
+                "locationName": "國家兩廳院演奏廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/27 14:30:00",
+                "location": "臺北市中山南路21-1號",
+                "locationName": "國家兩廳院演奏廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊張正傑樂迷之友-白金卡每筆訂單打85折。 ＊張正傑樂迷之友-金卡每筆訂單打9折。 ＊張正傑樂迷之友每筆訂單打95折。 ＊1/14起刷玉山世界卡/無限卡 85折。 ＊1/14起刷玉山卡 9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "弦外之音團 (02)2781-2306"
+        ],
+        "subUnit": [],
+        "supportUnit": [
+            "崇友基金會",
+            "玉山文教基金會"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQY%2bsPDfOy3Eg",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/12/26",
+        "endDate": "2020/12/27",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5df7bbd8d083a31bb0c56245",
+        "title": "2020豆子劇團世界故事系列3：「會飛的箱子x好鼻師」",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/08 19:30:00",
+                "location": "高雄市苓雅區五福一路67號",
+                "locationName": "高雄市文化中心至善廳",
+                "onSales": "Y",
+                "price": "650、550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/08 21:00:00"
+            },
+            {
+                "time": "2020/05/09 14:30:00",
+                "location": "高雄市苓雅區五福一路67號",
+                "locationName": "高雄市文化中心至善廳",
+                "onSales": "Y",
+                "price": "650、550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/09 23:59:00"
+            },
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "高雄市苓雅區五福一路67號",
+                "locationName": "高雄市文化中心至善廳",
+                "onSales": "Y",
+                "price": "650、550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/09 21:00:00"
+            },
+            {
+                "time": "2020/05/23 14:30:00",
+                "location": "嘉義縣民雄鄉建國路二段265號",
+                "locationName": "嘉義縣表演藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/23 15:00:00"
+            },
+            {
+                "time": "2020/06/06 14:30:00",
+                "location": "台南市安南區安吉路一段207號",
+                "locationName": "台江文化中心台江劇場",
+                "onSales": "Y",
+                "price": "650、550",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/06 15:00:00"
+            },
+            {
+                "time": "2020/06/07 10:30:00",
+                "location": "台南市安南區安吉路一段207號",
+                "locationName": "台江文化中心台江劇場",
+                "onSales": "Y",
+                "price": "650、550",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/07 12:00:00"
+            },
+            {
+                "time": "2020/06/07 14:30:00",
+                "location": "台南市安南區安吉路一段207號",
+                "locationName": "台江文化中心台江劇場",
+                "onSales": "Y",
+                "price": "650、550",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/07 16:00:00"
+            },
+            {
+                "time": "2020/06/13 10:30:00",
+                "location": "高雄市岡山區岡山南路42號",
+                "locationName": "高雄市岡山文化中心演藝廳",
+                "onSales": "Y",
+                "price": "650、550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/13 15:00:00"
+            },
+            {
+                "time": "2020/06/13 14:30:00",
+                "location": "高雄市岡山區岡山南路42號",
+                "locationName": "高雄市岡山文化中心演藝廳",
+                "onSales": "Y",
+                "price": "650、550、450",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/13 16:00:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN085XZ2Q",
+        "sourceWebPromote": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN085XZ2Q",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "年代",
+        "startDate": "2020/05/08",
+        "endDate": "2020/06/13",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e0247e2d083a31bb0c56464",
+        "title": "2020胖叔叔夢想故事屋《愛的專題》猜猜我有多愛你、紅盒子裡的秘密、石頭媽媽",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/29 19:30:00",
+                "location": "台南市安南區海中街300號",
+                "locationName": "夢想田音樂館",
+                "onSales": "Y",
+                "price": "100",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/29 21:00:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08D9WW8",
+        "sourceWebPromote": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08D9WW8",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "年代",
+        "startDate": "2020/05/29",
+        "endDate": "2020/05/29",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e0247e2d083a31bb0c56469",
+        "title": "2020胖叔叔夢想故事屋《聖誕專題》胡桃鉗、古強森的聖誕奇蹟",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/12/11 19:30:00",
+                "location": "台南市安南區海中街300號",
+                "locationName": "夢想田音樂館",
+                "onSales": "Y",
+                "price": "100",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/11 21:00:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08D9WWE",
+        "sourceWebPromote": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08D9WWE",
+        "comment": "",
+        "editModifyDate": "2019/12/25 15:08:42",
+        "sourceWebName": "年代",
+        "startDate": "2020/12/11",
+        "endDate": "2020/12/11",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e136855d083a37cd8cad2de",
+        "title": "小青蛙劇團~七隻小羊",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "基隆市信一路181號",
+                "locationName": "基隆文化中心演藝廳",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 14:30:00",
+                "location": "澎湖馬公市中華路230號",
+                "locationName": "澎湖縣演藝廳",
+                "onSales": "Y",
+                "price": "200,300,400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 19:30:00",
+                "location": "澎湖馬公市中華路230號",
+                "locationName": "澎湖縣演藝廳",
+                "onSales": "Y",
+                "price": "200,300,400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/06 19:30:00",
+                "location": "竹北市縣政九路146號",
+                "locationName": "新竹縣政府文化局演藝廳",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/20 19:30:00",
+                "location": "嘉義市忠孝路275號",
+                "locationName": "嘉義市政府文化局音樂廳",
+                "onSales": "Y",
+                "price": "200,300,400,500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/10/24 14:30:00",
+                "location": "高雄市鳳山區光遠路161號",
+                "locationName": "大東文化藝術中心",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/10/24 19:30:00",
+                "location": "高雄市鳳山區光遠路161號",
+                "locationName": "大東文化藝術中心",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/11/14 19:30:00",
+                "location": "屏東市民生路4-17號",
+                "locationName": "屏東演藝廳-音樂廳",
+                "onSales": "Y",
+                "price": "200,300,400,500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/19 14:30:00",
+                "location": "新北市新莊區中平路133號",
+                "locationName": "新莊文化藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/12/19 19:30:00",
+                "location": "新北市新莊區中平路133號",
+                "locationName": "新莊文化藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,400,500,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊蛙蛙親子卡每筆訂單打85折。 ＊團體票購滿總數量15張以上每筆訂單打95折。 ＊團體票購滿總數量20張以上每筆訂單打9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "小青蛙劇團"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteS%2b3%2bmvt%2fY%2bng",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/09",
+        "endDate": "2020/12/19",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e1df47bd083a37cd8cad5e8",
+        "title": "2020故事屋張爸爸說故事劇場",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/17 14:30:00",
+                "location": "苗栗縣竹南鎮公園路206號",
+                "locationName": "苗北藝文中心演藝廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/25 14:30:00",
+                "location": "臺中市豐原區圓環東路782號",
+                "locationName": "臺中市葫蘆墩文化中心演奏廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/26 14:30:00",
+                "location": "高雄市小港區學府路115號",
+                "locationName": "高雄市立社會教育館演藝廳",
+                "onSales": "Y",
+                "price": "400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/30 14:30:00",
+                "location": "新北市中和區中安街85號B1",
+                "locationName": "四號公園文創演藝廳",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊故事屋大安店會員8折。 ＊團體票10張以上9折。 ＊團體票20張以上85折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "故事屋股份有限公司"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQLDGIn%2bP0VYQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/17",
+        "endDate": "2020/08/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e1f45ebd083a37cd8cad67f",
+        "title": "2020甜蜜無限 音樂冒險歌舞劇《糖果森林歷險記》",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/08 19:30:00",
+                "location": "竹北市縣政九路146號",
+                "locationName": "新竹縣政府文化局演藝廳",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/16 14:30:00",
+                "location": "高雄市鳳山區三多一路1號",
+                "locationName": "衛武營國家藝術文化中心戲劇院",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/16 19:30:00",
+                "location": "高雄市鳳山區三多一路1號",
+                "locationName": "衛武營國家藝術文化中心戲劇院",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/17 14:30:00",
+                "location": "高雄市鳳山區三多一路1號",
+                "locationName": "衛武營國家藝術文化中心戲劇院",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/23 14:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/23 19:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/24 10:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/24 14:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 14:30:00",
+                "location": "台中市南區興大路145號",
+                "locationName": "國立中興大學惠蓀堂",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/13 14:30:00",
+                "location": "新北市新莊區中平路133號",
+                "locationName": "新莊文化藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/13 19:30:00",
+                "location": "新北市新莊區中平路133號",
+                "locationName": "新莊文化藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/14 14:30:00",
+                "location": "新北市新莊區中平路133號",
+                "locationName": "新莊文化藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊蘋果之友75折。 ＊MusicPeople 親子音樂網站憑代碼8折。 ＊PopBike 普派滑步車憑代碼8折。 ＊天才領袖憑代碼8折。 ＊啟碁科技股份有限公司憑代碼8折。 ＊莊董的生活情報讚BLOG憑代碼8折。 ＊群環科技股份有限公司憑代碼8折。 ＊遛小人樂園憑代碼8折。 ＊即日起至2020/04/16 止早鳥優惠8折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "蘋果劇團 (07)322-5366"
+        ],
+        "subUnit": [
+            "天才領袖感覺統合兒童發展中心"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTwqAbr1bJThw",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "2020/03/17 14:06:25",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/04/25",
+        "endDate": "2020/06/14",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e345dfad083a37cd8cada81",
+        "title": "《神射手！來自森林的考驗》兒童音樂劇",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/10/04 14:30:00",
+                "location": "桃園市桃園區縣府路21號",
+                "locationName": "桃園市政府文化局演藝廳",
+                "onSales": "Y",
+                "price": "300,500,700,900",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊兩廳院之友每筆訂單打9折。 ＊廳院青每筆訂單打9折。 ＊風動室內樂團校園企業優惠代碼購滿總數量30張以上每筆訂單打8折。 ＊團體票購滿總數量10張以上每筆訂單打85折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "花格子藝術有限公司"
+        ],
+        "subUnit": [
+            "桃園市政府文化局"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteRPicSrUedxEg",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/10/04",
+        "endDate": "2020/10/04",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e385243d083a37cd8cadb5c",
+        "title": "如果兒童劇團—角落英雄二師兄 ─ 延期",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/07/18 10:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/18 14:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/18 19:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/19 10:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/19 14:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/25 10:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/25 14:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/25 19:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/26 10:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/26 14:30:00",
+                "location": "台北市八德路三段25號",
+                "locationName": "臺北市藝文推廣處城市舞台",
+                "onSales": "Y",
+                "price": "350,500,650,800,1000,1200,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊如果兒童劇團相挺卡會員 7折。 ＊小村子購票優惠75折，請輸入優惠代碼。 ＊中信員工專屬優惠8折，請輸入優惠代碼。 ＊BabyHome優惠8折，請輸入優惠代碼。 ＊台北醫學大學教職員工8折，請輸入優惠代碼。 ＊台積電優惠8折，請輸入優惠代碼。 ＊爭鮮(股)員工專屬優8折，請輸入優惠代碼。 ＊金格食品 8折，請輸入優惠代碼。 ＊康和證券集團8折優惠，請輸入優惠代碼。 ＊研華(股)8折優惠，請輸入優惠代碼。 ＊群創光電優惠8折，請輸入優惠代碼。 ＊緯創資通(股)公司購票8折優惠，請輸入優惠代碼。 ＊衛生福利部雙和醫院員工8折優惠，請輸入優惠代碼。 ＊臺北大眾捷運(股)公司員工8折優惠，請輸入優惠代碼。 ＊聯電優惠8折，請輸入優惠代碼。 ＊鐵橘兄妹粉絲85折，請輸入優惠代碼。 ＊鰻魚家家酒粉絲85折，請輸入優惠代碼。 ＊噗兒馬迷的育兒點滴粉絲85折，請輸入優惠代碼。 ＊100種理想粉絲優惠85折，請輸入優惠代碼。 ＊閱野文創 85折優惠，請輸入優惠代碼。 ＊親子揪團一起玩社團優惠85折，請輸入優惠代碼。 ＊群環科技優惠85折，請輸入優惠代碼。 ＊師大emba 購票85折優惠，請輸入優惠代碼。 ＊康軒文教專屬優惠85折，請輸入優惠代碼。 ＊陳安儀的窩心團專屬優惠85折，請輸入優惠代碼。 ＊菲力兒童文教機構學員85折，請輸入優惠代碼。 ＊雲門舞蹈教室學員85折優惠，請輸入優惠代碼。 ＊愛德幼兒園專屬優惠85折，請輸入優惠代碼。 ＊柚子醫師粉絲85折，請輸入優惠代碼。 ＊KiKi的親子生活日誌粉絲85折，請輸入優惠代碼。 ＊MusicPeople 親子音樂網站 85折優惠，請輸入優惠代碼。 ＊Zaria Chiou專屬優惠85折，請輸入優惠代碼。 ＊中鋼集團購票85折，請輸入優惠代碼。 ＊台大EMBA優惠85折，請輸入優惠代碼。 ＊台大醫院購票85折，請輸入優惠代碼。 ＊如果兒童劇團校園購票優惠85折，請輸入優惠代碼。 ＊朱宗慶打擊教學系統專屬85折，請輸入優惠代碼。 ＊艾莉媽粉絲85折，請輸入優惠代碼。 ＊西西和Q米粉絲優惠85折，請輸入優惠代碼。 ＊兒童文學學會專屬優惠85折，請輸入優惠代碼。 ＊刷上海商業銀行信用卡9折。 ＊刷中國信託卡9折。 ＊刷台新信用卡9折。 ＊刷永豐銀行信用卡9折。 ＊刷花旗銀行信用卡9折。 ＊刷國泰世華銀行信用卡9折。 ＊刷新光銀行信用卡9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "如果兒童劇團 (02)3343-3622"
+        ],
+        "subUnit": [
+            "台北市政府文化局",
+            "文化部"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteRL04L0eGQPJQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/07/18",
+        "endDate": "2020/07/26",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e418cdbd083a37cd8cadd64",
+        "title": "【古典童話】玎酉擊樂兒童音樂會─ 延期",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/12/23 19:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院小劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "玎酉擊樂"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTTUsDAOvHYbQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/12/23",
+        "endDate": "2020/12/23",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e442fcfd083a37cd8caddff",
+        "title": "【文山劇場】黃浩洸《小明星大夢想 Dare To Dream》─ 取消",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/22 19:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/23 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/24 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺北市藝文推廣處　　02-2933-2199*505"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSwDMWek5LNP",
+        "sourceWebPromote": "http://wenshantheater.pixnet.net/blog",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/22",
+        "endDate": "2020/05/24",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e442fcfd083a37cd8cade00",
+        "title": "【文山劇場】萬花筒劇團《淘氣皮皮歷險記２—我要快快長大》─ 取消",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/29 19:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/31 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺北市藝文推廣處　　02-2933-2199*505"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQyYhXnJveiv",
+        "sourceWebPromote": "http://wenshantheater.pixnet.net/blog",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/29",
+        "endDate": "2020/05/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e678289d083a329401eefc8",
+        "title": "臺灣作曲家專題系列活動《蕭泰然的聖樂創作與信仰探索》講座",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/06/14 14:30:00",
+                "location": "111  臺北市士林區文林路751號",
+                "locationName": "臺灣戲曲中心臺灣音樂館B1視聽室",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/06/14 14:30:00"
+            }
+        ],
+        "showUnit": "國立傳統藝術中心臺灣音樂館",
+        "discountInfo": "",
+        "descriptionFilterHtml": "活動簡介：\r\n\r\n蕭泰然（1938-2015）不僅是作曲家、鋼琴家、指揮家，更是一位虔誠而真情的基督徒。蕭泰然創作出許多宗教歌曲，如：神劇《耶穌基督》、清唱劇《浪子》，這與他從小信仰基督教，感受到教會音樂的真善美有極大關聯。\r\n\r\n本次講座邀請財團法人蕭泰然文教基金會前董事長戴忠毅先生，分享與介紹蕭泰然的聖樂作品，歡迎民眾一同參與，聆聽這位音樂家的成長背景及人生故事。\r\n\r\n \r\n\r\n活動資訊：\r\n\r\n時間：109年6月14日（日）下午2時30分\r\n\r\n地點：臺灣音樂館B1視聽室(臺北市士林區文林路751號)\r\n\r\n主講：戴忠毅\r\n\r\n \r\n\r\n主辦單位：國立傳統藝術中心臺灣音樂館\r\n\r\n \r\n\r\n報名方式：自5月14日上午9時開放實名制預約報名，限額25名。成功報名者，活動當日請於下午2時20分前報到，之後將開放現場觀眾候補進場，候補觀眾亦須完成「實名制」登記始能入場（包含姓名、聯絡方式、出入館時間、觀眾席座位、旅遊史等），謝謝!\r\n\r\n \r\n\r\n*公務人員、教師全程參與者，核發學習時數2小時(需要者請於報到時填寫資料)。\r\n\r\n*入口處設置酒精消毒洗手措施，並於入口處全面量體溫，額溫攝氏37.5度以上者，將無法入場。各場館第一線服務人員及與民眾有近距離接觸者應全程戴口罩，活動參與者也應全程戴口罩。\r\n\r\n*座位安排視防疫需要採梅花座、間隔法或其他保持適當距離之安排。\r\n\r\n*更多相關資訊隨時更新\r\n\r\n*主辦單位保有節目異動的權利\r\n\r\n報名期間：2020/05/14~2020/06/13",
+        "imageUrl": "",
+        "masterUnit": [
+            "國立傳統藝術中心"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://event.culture.tw/NCFTA/portal/Registration/C0103MAction?actId\u003d00025",
+        "sourceWebPromote": "https://event.culture.tw/NCFTA",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "藝文活動報名平台",
+        "startDate": "2020/06/14",
+        "endDate": "2020/06/14",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e67c853d083a329401eefc9",
+        "title": "國立臺南大學戲劇系110級學期製作《到底誰要來》",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/05/06 19:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/07 19:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/08 19:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/09 14:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/10 10:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/10 14:30:00",
+                "location": "台南市東區榮譽街67號",
+                "locationName": "國立臺南大學榮譽校區D203多功能實驗劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊至3/31 止早鳥每筆訂單打8折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "國立臺南大學戲劇創作與應用學系"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSLo%2fSyVukP%2f",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "2020/03/18 16:16:23",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/06",
+        "endDate": "2020/05/10",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e7102ccd083a329401ef25e",
+        "title": "2020葫蘆墩藝術節—如果兒童劇團《流浪狗之歌》",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/07/19 14:30:00",
+                "location": "臺中市豐原區圓環東路782號",
+                "locationName": "臺中市葫蘆墩文化中心演奏廳",
+                "onSales": "Y",
+                "price": "200,300,400,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊如果兒童劇團會員每筆訂單打75折。 ＊藝文夥伴成員，享75折優惠(請輸入代碼)。 ＊歌劇院會員 忘我會員每筆訂單打8折。 ＊歌劇院會員 劇院卡每筆訂單打85折。 ＊歌劇院會員 序曲卡每筆訂單打85折。 ＊凡購買本場4張以上票劵，享6折優惠。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺中市政府文化局04-25260136"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTAq2Wm8u%2f22",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/07/19",
+        "endDate": "2020/07/19",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e78ebd3d083a329401ef41a",
+        "title": "銀河谷音劇團－灰姑娘 ─ 取消",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/06/06 10:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,400,500,600,800,1000,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/06 14:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,400,500,600,800,1000,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/07 10:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,400,500,600,800,1000,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/07 14:30:00",
+                "location": "臺北市信義區市府路1號2樓",
+                "locationName": "臺北市政大樓親子劇場",
+                "onSales": "Y",
+                "price": "300,400,500,600,800,1000,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/26 19:30:00",
+                "location": "桃園市中壢區中美路16號",
+                "locationName": "中壢藝術館音樂廳",
+                "onSales": "Y",
+                "price": "300,400,500,600,800,1000,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "銀河谷音劇團（02-2559-7532）"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTpYP1D2QaAcQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/06",
+        "endDate": "2020/06/26",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ea663f2d083a34f40bcc927",
+        "title": "華山親子表藝節 自然童心《滾地球》",
+        "category": "4",
+        "showInfo": [
+            {
+                "time": "2020/07/10 13:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/10 15:00:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/10 16:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/11 11:00:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/11 13:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/11 15:00:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/11 16:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/12 11:00:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/12 13:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/12 15:00:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/12 16:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊家庭優惠套票購滿4張 85折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "自然而然劇團"
+        ],
+        "subUnit": [],
+        "supportUnit": [
+            "文化部"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTeZx28AwV99w",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/07/10",
+        "endDate": "2020/07/12",
+        "hitRate": 0
+    }
+]

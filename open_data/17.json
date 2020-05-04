@@ -1,0 +1,1078 @@
+[
+    {
+        "version": "1.4",
+        "UID": "5e385567d083a37cd8cadb5d",
+        "title": "Dream Theater - Distance Over Time in Taipei",
+        "category": "17",
+        "showInfo": [
+            {
+                "time": "2020/05/02 19:00:00",
+                "location": "嚴禁攜帶外食、雷射筆、攝/錄影機及危險物品入場",
+                "locationName": "台大綜合體育館",
+                "onSales": "Y",
+                "price": "3600、2500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/15 19:30:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN099PFE5",
+        "sourceWebPromote": "https://ticket.com.tw/Application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN099PFE5",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "年代",
+        "startDate": "2020/05/02",
+        "endDate": "2020/05/15",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e563f99aaa34abd55385446",
+        "title": "莎拉．布萊曼2020台北演唱會",
+        "category": "17",
+        "showInfo": [
+            {
+                "time": "2020/06/30 20:00:00",
+                "location": "台北市松山區南京東路四段2號",
+                "locationName": "臺北小巨蛋",
+                "onSales": "Y",
+                "price": "800、1600、2000、2500、3000、3400、3800、4200、4800、5800、6600",
+                "latitude": "25.0507933",
+                "longitude": "121.5477009",
+                "endTime": "2020/06/30 22:00:00"
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://www.kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08ZEN64",
+        "sourceWebPromote": "https://www.kham.com.tw/application/UTK02/UTK0201_.aspx?PRODUCT_ID\u003dN08ZEN64",
+        "comment": "",
+        "editModifyDate": "2020/03/05 14:33:29",
+        "sourceWebName": "寬宏藝術",
+        "startDate": "2020/06/30",
+        "endDate": "2020/06/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e7aea24d083a329401ef487",
+        "title": "「協助政策規劃之利器: 從認識問題到解決問題」",
+        "category": "17",
+        "showInfo": [
+            {
+                "time": "2020/05/05 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/06 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/07 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/08 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/09 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/10 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/11 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/12 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/13 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/14 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/15 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/16 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/17 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/18 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/19 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/20 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/21 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/22 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/23 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/24 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/25 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/26 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/27 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/28 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/29 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/31 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/01 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/02 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/03 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/04 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/05 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/06 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/07 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/08 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/09 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/10 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/11 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/12 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/13 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/14 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/15 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/16 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/17 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/18 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/19 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/20 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/21 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/22 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/23 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/24 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/25 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/26 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/27 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/28 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/29 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/30 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/01 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/02 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/03 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/04 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/05 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/06 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/07 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/08 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/09 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/10 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/11 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/12 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/13 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/14 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/15 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/16 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/17 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/18 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/19 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/20 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/21 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/22 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/23 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/24 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/25 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/26 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/27 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/28 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/29 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/30 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/07/31 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/01 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/02 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/03 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/04 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/05 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/06 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/07 10:11:00",
+                "location": "臺北市中山南路20號",
+                "locationName": "國家圖書館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "國家圖書館",
+        "discountInfo": "",
+        "descriptionFilterHtml": "公務人員作為政府部門之人力資本，其「資訊素養」之品質，是提供優質服務的關鍵。為了協助公務人員強化提出對策、解決問題的資訊能力，國家圖書館於104年開始規劃「全國公務人員圖書資訊素養系列活動」，系列活動之一「文獻搜尋工作坊」同年開辦，並於108年起改以主題式工作坊進行-「協助政策規劃之利器：從認識問題到解決問題」-，輔以問題解決學習方式(Problem-based learning)教學，舉辦相關課程，協助學員能有效地確認、尋獲、評估與應用資訊。 工作坊各場次舉辦日期與地點如下: 109年5月25日（一）: 國家圖書館 301會議室（臺北市中山南路20號） 109年6月05日（五）: 國立臺灣圖書館 4045教室（新北市中和區中安街85號） 109年6月29日（一）: 國立公共資訊圖書館數位學習教室（臺中市南區五權南路100號） 109年7月24日（五）: 高雄市立圖書館 8樓 華立廳（高雄市前鎮區新光路61號） 109年8月28日（五）: 臺中市政府臺灣大道市政大樓文心樓2樓 電腦教室（臺中市西屯區臺灣大道三段99號） 109年9月07日（一）: 花蓮縣政府電腦教室3樓（970花蓮縣花蓮市府前路17號） 報名網址: https://actio.ncl.edu.tw/activitydetails?uid\u003d2\u0026pid\u003d205 主辦單位: 國家圖書館、國立臺灣圖書館、國立公共資訊圖書館",
+        "imageUrl": "",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://www.ncl.edu.tw/activityhistory_238_775.html",
+        "comment": "",
+        "editModifyDate": "2020/03/24 11:33:38",
+        "sourceWebName": "",
+        "startDate": "2020/04/29",
+        "endDate": "2020/08/07",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e7b05d3d083a329401ef49b",
+        "title": "黃金點唱秀—109年【金鑽苗北】苗北春季藝文系列",
+        "category": "17",
+        "showInfo": [
+            {
+                "time": "2020/08/15 00:00:00",
+                "location": "苗栗縣竹南鎮公園路206號",
+                "locationName": "苗北藝文中心 演藝廳",
+                "onSales": "N",
+                "price": "$1500 $1200 $1000 $800 $600 $400(最低票價不打折)",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/08/15 00:00:00"
+            }
+        ],
+        "showUnit": "主辦/苗栗縣政府 承辦/苗栗縣苗北藝文中心",
+        "discountInfo": "",
+        "descriptionFilterHtml": "苗北首度點歌秀來了！ 3月21日購票來苗北，讓金曲雙歌王 沈文程、許富凱來苗北唱歌給你聽 邀請兩位經驗豐富的唱將親臨苗北，現場將依序演唱自己的經典歌曲，並合體演出同時開放點歌，讓你最愛沈文程以及許富凱唱歌給你聽！3月21日晚上將會結合綜藝、演唱、主持的演出概念，不只是聽好歌，更是在欣賞一場精采的秀！還有超級綜藝的孔鏘老師與兩位台語歌王的互動音樂演出，保證是好聽、好玩又好笑。 金曲歌王 沈文程 《來去台東》、《舊情也綿綿》、《心事誰人知》朗朗上口的經典好歌都是沈文程的代表作品，能唱、能寫、能說、能主持的沈文程要來苗北了！3月21日的晚上，演出經典好歌外，還要和你一起說唱逗趣，整個晚上享受滿滿的音樂能量。 台語小天王 許富凱： 從明日之星節目脫穎而出，以一曲「今夜擱在想你」技驚四座，成為台語歌壇的巨星接班人，之後出版專輯均入圍金曲獎台語男歌手，連續六屆榜上有名，甚至被台語天后江蕙指定作為演唱會的固定嘉賓，欽點合唱。 台灣第一樂隊 孔鏘大樂隊： 孔鏘超級樂隊是巨星開唱的標準配備，因為華麗編曲與豐富臨場反應，可以說是第一把交椅，深獲眾多巨星信任，包括秀場天王豬哥亮、張菲、費玉清、胡瓜等，都指定搭配孔鏘為現場音效，帶來最飽滿的演出。",
+        "imageUrl": "http://cloud.culture.tw/e_new_upload/task/f0932437-e858-4f9b-93a4-6bce7e8e5c5e/fb6b0a66eadf97dd905df1ed24b62c75652b8577427d2bba6db3fd8059584f03c7fcf1fb039e132e2dfee6f2ed483519b598a096d19df1484eb91907095ed3c0/3fefaac2fdbc239054499e7692f4cb718e24a206.jpg",
+        "masterUnit": [],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteRgLl3QDv7SQw",
+        "sourceWebPromote": "http://www.nmac.com.tw/event_detail.php?mt_id\u003dsite2017011718093863\u0026Tb_index\u003devent2020031911082010",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "苗北藝文中心",
+        "startDate": "2020/08/15",
+        "endDate": "2020/08/15",
+        "hitRate": 0
+    }
+]

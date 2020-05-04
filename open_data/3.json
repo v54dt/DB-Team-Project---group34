@@ -1,0 +1,1006 @@
+[
+    {
+        "version": "1.4",
+        "UID": "5c9a1560d083a30290d1b36f",
+        "title": "傳統藝術接班人－傳統工藝推廣計畫",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/01/15 09:00:00",
+                "location": "268  宜蘭縣五結鄉五濱路二段201號",
+                "locationName": "宜蘭傳藝園區-展示館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/12/15 09:00:00"
+            }
+        ],
+        "showUnit": "國立傳統藝術中心",
+        "discountInfo": "",
+        "descriptionFilterHtml": " \r\n\r\n \r\n\r\n【活動暫停公告】\r\n為周延「嚴重特殊傳染性肺炎（COVID-19）」防疫工作，本中心自即日起至5月底暫停對外開放傳藝工坊，\r\n後續將視疫情變化評估傳藝工坊對外開放時間，造成不便，敬祈見諒。\r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n \r\n\r\n接班人傳統工藝示範與推廣計畫\r\n\r\n■期間：1/15-12/15\r\n\r\n■開放時間：09:00-17:30\r\n\r\n■教育推廣活動時間：13:40-14:40\r\n\r\n■地點：展示館一樓【傳藝工坊】\r\n\r\n■DIY報名名額8位，活動開始5分鐘後，開放備選名額。\r\n\r\n◎詳細活動時間及內容，請依現場公告為準。\r\n\r\n \r\n\r\n \r\n\r\n\r\n\r\n \r\n\r\n \r\n\r\n◎詳細活動時間及內容，請依現場公告為準。\r\n\r\n \r\n\r\n為共同守護臺灣傳統藝術，延續並彰顯臺灣文化之美，國立傳統藝術中心於宜蘭傳藝園區展示館打造【傳藝工坊】，做為技藝實踐與發展基地，邀請國家級登錄重要傳統工藝保存者之重要傳統工藝傳習計畫結業藝生，進行駐園創作與教育推廣，一方面持續精進技藝，從中達到傳統工藝實質傳承、培養接班人的目的，同時透過對外互動與民眾交流對話，建立傳統工藝推廣平臺，將文化向下扎根。\r\n\r\n \r\n\r\n■傳習藝師：［漆工藝］保存者－王清霜，駐園結業藝生：王清源、李麗卿\r\n\r\n■傳習藝師：［竹編工藝］保存者－黃塗山，駐園結業藝生：涂素英、黃啟祥、劉興澤\r\n\r\n■傳習藝師：［粧佛］保存者－施至輝，駐園結業藝生：陳宗蔚\r\n\r\n■傳習藝師：［錫工藝］保存者－陳萬能，駐園結業藝生：楊蕙如、李瑋\r\n\r\n■傳習藝師：［傳統木雕］保存者－施鎮洋，駐園結業藝生：施懿紋、吳適為、羅又睿\r\n\r\n報名期間：2020/03/30~2020/03/30",
+        "imageUrl": "",
+        "masterUnit": [
+            "國立傳統藝術中心"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "https://event.culture.tw/NCFTA/portal/Registration/C0103MAction?actId\u003d90042",
+        "sourceWebPromote": "https://event.culture.tw/NCFTA",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "藝文活動報名平台",
+        "startDate": "2020/01/15",
+        "endDate": "2020/12/15",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ddd5ae7d083a340b04c5625",
+        "title": "2020 NTT-TIFA 歌劇院駐館藝術家─王連晟《無光風景》─ 取消",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/16 14:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院中劇院",
+                "onSales": "Y",
+                "price": "400,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/17 14:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院中劇院",
+                "onSales": "Y",
+                "price": "400,600,800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "國家表演藝術中心臺中國家歌劇院"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQMaeRAYK5kcw",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/16",
+        "endDate": "2020/05/17",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5de3f247d083a31bb0c55b6b",
+        "title": "尤法．皮克《巴赫d小調》 ─ 取消",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/30 14:30:00",
+                "location": "高雄市鳳山區三多一路1號",
+                "locationName": "衛武營國家藝術文化中心戲劇院",
+                "onSales": "Y",
+                "price": "300,600,900,1200,1600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "國家表演藝術中心衛武營國家藝術文化中心"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteRxkObe7zfBJg",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/30",
+        "endDate": "2020/05/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5dfbad22d083a31bb0c56338",
+        "title": "2020焦點舞團《辦什麼派對》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "民雄鄉建國路2段265號",
+                "locationName": "嘉義縣表演藝術中心演藝廳",
+                "onSales": "Y",
+                "price": "300,400",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊自2020/01/24 起兩廳院之友每筆訂單打9折。 ＊自2020/01/24 起廳院青每筆訂單打9折。 ＊自2020/01/24 起團體票購滿總數量15張以上每筆訂單打75折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "焦點舞團 0928-277-077"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSTprRizgEcjQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "2020/02/05 17:43:14",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/03/20",
+        "endDate": "2020/05/09",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e160b4fd083a37cd8cad39f",
+        "title": "稻草人舞團《詭跡》臺中歌劇院再現",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/09 14:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院小劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院小劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/10 14:30:00",
+                "location": "臺中市西屯區惠來路二段101號",
+                "locationName": "臺中國家歌劇院小劇場",
+                "onSales": "Y",
+                "price": "500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊「稻草人之友」輸入專案序號享購票享8折優惠。 ＊歌劇院會員 NTT市民卡每筆訂單打9折。 ＊歌劇院會員 序曲卡每筆訂單打9折。 ＊歌劇院會員 忘我會員每筆訂單打9折。 ＊歌劇院會員 劇院卡每筆訂單打9折。 ＊刷國泰世華銀行信用卡每筆訂單打9折。 ＊團體購滿總數量10張以上每筆訂單打85折。 ＊團體購滿總數量20張以上每筆訂單打8折。 ＊團體購滿總數量50張以上每筆訂單打75折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "稻草人現代舞蹈團06-2253218"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSj7TRZ2x1png",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/09",
+        "endDate": "2020/05/10",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e3af52fd083a37cd8cadc3c",
+        "title": "【樹林藝文中心幕起系列】 《家·溫℃ +》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/08/29 19:30:00",
+                "location": "新北市樹林區樹新路40-8號",
+                "locationName": "樹林藝文中心演藝廳",
+                "onSales": "Y",
+                "price": "600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/30 14:30:00",
+                "location": "新北市樹林區樹新路40-8號",
+                "locationName": "樹林藝文中心演藝廳",
+                "onSales": "Y",
+                "price": "600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "新北市政府文化局",
+            "賴翠霜舞創劇場0988-890056"
+        ],
+        "subUnit": [
+            "新北市政府文化局",
+            "樹林藝文中心"
+        ],
+        "supportUnit": [
+            "財團法人菁霖文化藝術基金會"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSwjdwOCt2VFw",
+        "sourceWebPromote": "https://www.facebook.com/laistanztheater/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/08/29",
+        "endDate": "2020/08/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e3d982bd083a37cd8cadcec",
+        "title": "西班牙中庭花園 Patio Andaluz—取消",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/06/27 19:30:00",
+                "location": "臺中市太平區大興路201號",
+                "locationName": "臺中市屯區藝文中心演藝廳",
+                "onSales": "Y",
+                "price": "800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/28 14:30:00",
+                "location": "臺中市太平區大興路201號",
+                "locationName": "臺中市屯區藝文中心演藝廳",
+                "onSales": "Y",
+                "price": "800,1000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "詳細折扣內容，請點選本節目各場次",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "迷火佛拉明哥舞坊04-23166610"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQQ60VmsiaD3Q",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/27",
+        "endDate": "2020/06/28",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e4ac741d083a37cd8cadf5d",
+        "title": "世紀當代舞團2020《荒塚的繁花》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/06/27 14:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "800,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/27 19:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "800,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/27 19:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/28 14:30:00",
+                "location": "臺北市中正區八德路一段1號",
+                "locationName": "華山1914文創園區東3館 烏梅劇院",
+                "onSales": "Y",
+                "price": "800,2000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊自2020/03/01 起兩廳院之友每筆訂單打9折。 ＊自2020/03/01 起康軒文教會員專屬 9折優惠，購票請輸入優惠代碼。 ＊自2020/03/01 起誠品會員每筆訂單打9折。 ＊自2020/03/01 起廳院青每筆訂單打9折。 ＊自2020/03/01 起刷永豐銀行信用卡每筆訂單打9折。 ＊自2020/03/01 起刷國泰世華銀行信用卡每筆訂單打9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "世紀當代舞團 02-2556-6687"
+        ],
+        "subUnit": [
+            "永豐銀行",
+            "國泰世華銀行",
+            "光點華山電影館",
+            "康軒文教"
+        ],
+        "supportUnit": [
+            "國家文化藝術基金會",
+            "臺北市政府文化局"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSzSOe7fn7l4Q",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/27",
+        "endDate": "2020/06/28",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e56c184d083a37cd8cae25e",
+        "title": "舞蹈成果發表",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/09/20 18:30:00",
+                "location": "臺北市中正區中山南路21號",
+                "locationName": "國立中正紀念堂管理處",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/09/20 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)莉莉安舞蹈團",
+        "discountInfo": "",
+        "descriptionFilterHtml": "該舞蹈團多年致力於唐氏症舞者及舞團舞者培訓，希望透過舞蹈學習，培養舞者正確的價值觀與負責任的態度，故以本成果發表會，展現所學成果。\r\n",
+        "imageUrl": "",
+        "masterUnit": [
+            "莉莉安舞蹈團"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/09/20",
+        "endDate": "2020/09/20",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e67c854d083a329401eefcb",
+        "title": "2020安琪舞團年度創作展《馨香花語藝遊四季》延期",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/07/19 14:30:00",
+                "location": "臺南市新營區中正路23號",
+                "locationName": "臺南新營文化中心演藝廳",
+                "onSales": "Y",
+                "price": "400,600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊至5/31 止早鳥每筆訂單打5折。 ＊團體購滿總數量20張以上每筆訂單打7折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "安琪藝術舞蹈團06-2672853"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTKTB65fHTsWg",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/07/19",
+        "endDate": "2020/07/19",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e6936b0d083a329401ef060",
+        "title": "美國神韻藝術團：神韻晚會2020臺灣巡演(本活動因新型冠狀疫情取消)",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/05 19:30:00",
+                "location": "嘉義縣民雄鄉建國路二段265號",
+                "locationName": "嘉義縣表演藝術中心",
+                "onSales": "Y",
+                "price": "全票+1600;全票+2000;全票+2400;全票+2800;全票+3200;全票+3600;全票+4200;全票+5000",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/06 21:50:00"
+            }
+        ],
+        "showUnit": "(美國)神韻藝術團",
+        "discountInfo": "兒童必須要年齡達到5歲才可入場。\r\n購票：https://reurl.cc/R44XGe\r\n洽詢電話：\r\n客服專線:0800-888-358（中文/英文）\r\n平日9:00-21:00\r\n假日9:00-18:00",
+        "descriptionFilterHtml": "茲因武漢肺炎(COVID-19)疫情影響，該主辦單位表示，本活動經徵得「神韻藝術團」的同意，決定取消今(109)年度的台灣巡迴演出。\r\n有關觀眾權益，神韻官網有刊登明確善後辦法http://www.friendsofshenyun.org/SY/taiwan.pdf，亦可諮詢免費電話0800-888-358\r\n或洽台灣法輪大法學會，丁台芬(0922-208455)\r\n\r\n2020神州文明再現輝煌\r\n中國傳統文化是神傳文化，神韻節目中有表現神的內容。\r\n古老的中華大地被稱為神州，承載著輝煌燦爛而博大精深的神傳文化，人們敬天信佛、重德行善。中國五千年文明中仁義、善良、正直等傳統文化的核心道德觀從來不會隨著改朝換代而消失，可是在現代社會，一切都發生了改變。\r\n如何使失落的文明重返人間？神韻將這美好的理想付諸實現。通過純正而歷史悠久的中國古典舞、東西合璧的交響樂、栩栩如生的動態天幕和巧奪天工的傳統服飾，生動地將古代的神話傳說展現在全世界的舞台上。\r\n五千年歷史文化蘊含的神聖之美，是您一生中不容錯過的奇觀。",
+        "imageUrl": "",
+        "masterUnit": [
+            "社團法人臺灣法輪大法學會"
+        ],
+        "subUnit": [
+            "嘉義縣表演藝術中心"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://reurl.cc/R44XGe",
+        "comment": "電子郵件:taiwan@ticketingorder.com",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/05/05",
+        "endDate": "2020/05/06",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e6a6b5ed083a329401ef0b7",
+        "title": "TAI身體劇場《深林》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/08/22 14:30:00",
+                "location": "台北市羅斯福路四段92號10樓",
+                "locationName": "水源劇場",
+                "onSales": "Y",
+                "price": "600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/22 19:30:00",
+                "location": "台北市羅斯福路四段92號10樓",
+                "locationName": "水源劇場",
+                "onSales": "Y",
+                "price": "600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/08/23 14:30:00",
+                "location": "台北市羅斯福路四段92號10樓",
+                "locationName": "水源劇場",
+                "onSales": "Y",
+                "price": "600",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊團體票購滿總數量20張以上每筆訂單打8折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "TAI身體劇場 03-8331157"
+        ],
+        "subUnit": [],
+        "supportUnit": [
+            "國藝會",
+            "台北市文化局"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQx8p0v%2bCg%2fnw",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/08/22",
+        "endDate": "2020/08/23",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e7648d5d083a329401ef381",
+        "title": "2020新營藝術季《自由步-當我盡情搖擺》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/09 19:30:00",
+                "location": "臺南市新營區中正路23號",
+                "locationName": "臺南新營文化中心演藝廳",
+                "onSales": "Y",
+                "price": "250",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊新營藝術季校園推廣享7折優惠(請輸入代碼)。 ＊至3/28 止早鳥每筆訂單打7折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺南市政府文化局"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteSS3RYqmQJO2Q",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "2020/03/24 16:46:30",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/09",
+        "endDate": "2020/05/09",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e7665f8d083a329401ef38f",
+        "title": "2020新化戶外系列音樂會-新化扶桑花舞蹈社",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/10/17 15:30:00",
+                "location": "臺南市新化區和平街53號",
+                "locationName": "臺南市大目降文化園區（武德殿、故事館）",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/10/17 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)新化扶桑花舞蹈社",
+        "discountInfo": "",
+        "descriptionFilterHtml": "2020年5至12月，每月第3個禮拜六將為大家帶來戶外音樂會及藝文演出，邀請六組演藝團體輪番演出，邀請大家一起在悠閒的假日午後，與親朋好友們走進新化老街駐足遊賞，欣賞輕鬆愉悅的美妙演出。\r\n(如遇大雨或其他不可抗力因素將取消演出)",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺南市政府文化局"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/10/17",
+        "endDate": "2020/10/17",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e78ebd3d083a329401ef419",
+        "title": "黃翊倫舞蹈創作展《城市餘光》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/30 14:30:00",
+                "location": "民雄鄉建國路2段265號",
+                "locationName": "嘉義縣表演藝術中心實驗劇場",
+                "onSales": "Y",
+                "price": "300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/05/30 19:30:00",
+                "location": "民雄鄉建國路2段265號",
+                "locationName": "嘉義縣表演藝術中心實驗劇場",
+                "onSales": "Y",
+                "price": "300",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊團體票，全票購滿總數量15張以上每筆訂單打8折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "嘉義縣表演藝術中心",
+            "黃翊倫0952152717"
+        ],
+        "subUnit": [],
+        "supportUnit": [
+            "菁霖文化藝術基金會"
+        ],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteTvReEhFeI7ow",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/05/30",
+        "endDate": "2020/05/30",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e8242ded083a329401ef5d7",
+        "title": "《Epoch》兩校聯合成果發表活動",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/08/29 14:00:00",
+                "location": "桃園市桃園區延平路147號",
+                "locationName": "桃園市婦女館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/08/29 18:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)武陵高中舞蹈社;(中華民國)永豐高中舞蹈社",
+        "discountInfo": "",
+        "descriptionFilterHtml": "旨揭活動係為透過兩校聯合成果發表會，展現武陵高中及永豐高中舞蹈社社員的學習成果，並讓學校師生共同欣賞韓國流行舞蹈的美感。",
+        "imageUrl": "",
+        "masterUnit": [
+            "桃園市立武陵高級中等學校"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市政府青年事務局"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/08/29",
+        "endDate": "2020/08/29",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e973e4ed083a329401ef9b0",
+        "title": "滯留島舞蹈劇場《Factory》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/06/06 19:30:00",
+                "location": "臺北市萬華區大理街181號附近，美廉社超市對面公園內",
+                "locationName": "糖廍曉劇場",
+                "onSales": "Y",
+                "price": "500,1500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/07 14:30:00",
+                "location": "臺北市萬華區大理街181號附近，美廉社超市對面公園內",
+                "locationName": "糖廍曉劇場",
+                "onSales": "Y",
+                "price": "500,1500",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊5/10前購票7折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "滯留島舞蹈劇場　指導：文化部　贊助：國藝會",
+            "足跡藝術Step Out Arts",
+            "十鼓仁糖文創園區"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteS4%2bKMGvGURkQ",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/06",
+        "endDate": "2020/06/07",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e973e4ed083a329401ef9b1",
+        "title": "2020 Поворот • Pronation",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/06/26 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "500,800,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/28 14:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "500,800,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            },
+            {
+                "time": "2020/06/28 19:30:00",
+                "location": "臺北市景文街32號，捷運景美站1號出口",
+                "locationName": "文山劇場",
+                "onSales": "Y",
+                "price": "500,800,1200",
+                "latitude": null,
+                "longitude": null,
+                "endTime": ""
+            }
+        ],
+        "showUnit": "",
+        "discountInfo": "＊團體票，全票購滿總數量10張以上每筆訂單打9折。",
+        "descriptionFilterHtml": "",
+        "imageUrl": "",
+        "masterUnit": [
+            "臺北青少年芭蕾舞團（電話02-25783828）"
+        ],
+        "subUnit": [
+            "臺北青少年芭蕾舞蹈學校Taipei Junior Ballet School"
+        ],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "http://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductID\u003drotyiUrPteQ1P6vx5Ls1vQ",
+        "sourceWebPromote": "https://www.facebook.com/taipeijuniorballet/",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "兩廳院售票網",
+        "startDate": "2020/06/26",
+        "endDate": "2020/06/28",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e975ae8d083a329401ef9ba",
+        "title": "拾舞成果發表",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/07/04 14:00:00",
+                "location": "桃園市平鎮區延平路一段168號",
+                "locationName": "桃園市南區青少年活動中心",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/07/04 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)中壢家商熱舞社;(中華民國)中華民國南崁高中熱舞社;(中華民國)Union21舞團;(中華民國)桃園高中熱舞社;(中華民國)中大壢中熱舞社;(中華民國)MT舞團",
+        "discountInfo": "",
+        "descriptionFilterHtml": "中壢家商、南崁高中、桃園高中及中大壢中熱舞社及相關舞團聯合成果發表展演。",
+        "imageUrl": "",
+        "masterUnit": [
+            "徐惠新"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市政府青年事務局"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/07/04",
+        "endDate": "2020/07/04",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e975ae8d083a329401ef9bb",
+        "title": "平鎮高中熱舞社19屆成果發表-一言不合九跳舞",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/07/31 17:00:00",
+                "location": "桃園市平鎮區環南路三段88號",
+                "locationName": "桃園市立圖書館平鎮分館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/07/31 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)平鎮高中熱舞社",
+        "discountInfo": "",
+        "descriptionFilterHtml": "平鎮高中熱舞社成果發表展演。",
+        "imageUrl": "",
+        "masterUnit": [
+            "陳佩意"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市政府青年事務局"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/07/31",
+        "endDate": "2020/07/31",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e975b00d083a329401ef9c2",
+        "title": "武陵高中舞林社第27屆社慶成果發表會",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/07/19 13:30:00",
+                "location": "桃園市中壢區中北路200號",
+                "locationName": "中原大學",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/07/19 17:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)武陵高中舞林社",
+        "discountInfo": "",
+        "descriptionFilterHtml": "旨揭活動係為透過舞林社第27屆社慶，展現武陵高中社員街舞表演的成果，並讓學校師生共同欣賞舞台表演的美感。",
+        "imageUrl": "",
+        "masterUnit": [
+            "桃園市立武陵高級中等學校"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市政府青年事務局"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/07/19",
+        "endDate": "2020/07/19",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5e975b05d083a329401ef9c5",
+        "title": "五校七社聯合舞展《醉舞狂歌 Drunk Dance》",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/08/16 16:00:00",
+                "location": "桃園市平鎮區環南路三段88號",
+                "locationName": "桃園市立圖書館平鎮分館",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/08/16 21:00:00"
+            }
+        ],
+        "showUnit": "(中華民國)桃園市高中舞蹈社團",
+        "discountInfo": "",
+        "descriptionFilterHtml": "旨揭活動係為透過五校七社聯合舞展〈醉舞狂歌 Drunk Dance〉，展現各校學生社團的學習成果及累積社員舞臺表演的經驗。",
+        "imageUrl": "",
+        "masterUnit": [
+            "桃園市立中壢商業高級中等學校"
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [
+            "(指導)桃園市政府青年事務局"
+        ],
+        "webSales": "",
+        "sourceWebPromote": "",
+        "comment": "",
+        "editModifyDate": "",
+        "sourceWebName": "全國藝文活動資訊系統",
+        "startDate": "2020/08/16",
+        "endDate": "2020/08/16",
+        "hitRate": 0
+    },
+    {
+        "version": "1.4",
+        "UID": "5ea82984aaa3cf3310fee907",
+        "title": "《臺南公園的身體地圖一百日行走》周書毅 x 稻草人現代舞蹈團",
+        "category": "3",
+        "showInfo": [
+            {
+                "time": "2020/05/13 10:00:00",
+                "location": "臺南市北區公園南路89號",
+                "locationName": "台南公園",
+                "onSales": "N",
+                "price": "",
+                "latitude": null,
+                "longitude": null,
+                "endTime": "2020/05/31 18:00:00"
+            }
+        ],
+        "showUnit": "稻草人現代舞蹈團 ",
+        "discountInfo": "",
+        "descriptionFilterHtml": "2020年與你重逢百年公園 行走一段舞蹈與自然的時光之旅\r\n「在有限的人數下相聚，來公園戶外散步看表演，找到一個屬於你與我們之間的美好距離，尋見與自己生命相處最好的選擇，希望這次重逢，能帶來生命力量！」\r\n2019年秋天，周書毅ｘ稻草人現代舞團《臺南公園的身體地圖一百日行走》於百年臺南公園裡創造了人們與現代舞邂逅相遇的緣分，大家共處一個自然的空間，隨興的或坐或走，在某個午後，微風吹拂、落日暖照下，每個人分享著屬於自己的公園故事，和我們的舞者們交會彼此對當下匯集歷史與人文的感動。\r\n今年春末夏初我們將再次重返原地，邀請舊雨新知好朋友們重聚相約在公園散步，「尋」「見」彼此人生故事的共鳴交會，讓觀賞舞蹈演出成為日常的一部分，在樹影、身形、舞蹤的輪廓交疊之間，聆聽心底深處的記憶聲響，從公園的百年歷史探望自身微敘事的生命關聯。\r\n◇尋◇公園散步身影展《臺南公園的身體地圖一百日行走》\r\n●自由觀覽或預約導覽，詳洽Line ID: @scdc2010\r\n5/13-5/31 (Wed.-Sun.) 10：00-18：00\r\n一起散步，帶著手機，尋找十個散落在公園裡的記憶密碼(QRcode)，等待你去發現～\r\n◇尋◇如何觀賞：https://reurl.cc/araGrZ\r\n5/13-5/31 (三~日) 10：00-18：00 \r\n(1) 帶著可上網的手機以上時間來到公園，跟著照片，找到在台南公園中九個地點的九個暫存的影像密碼(QRcode)，用你的手機點開，感受時光流逝與存在的瞬間。\r\n(2) 請至 https://www.accupass.com/go/dancinginthepark 填寫預約申請，每場限制10人，由舞團導覽行走公園尋找所有的舞蹈影像。\r\n◆見◆百日行走的記憶終曲《臺南公園的身體地圖一百日行走》\r\n●找一個屬於你的絕佳觀賞位置，靜靜感受～\r\n5/23-24 (六~日)15：30-18：00",
+        "imageUrl": "",
+        "masterUnit": [
+            "稻草人現代舞蹈團 "
+        ],
+        "subUnit": [],
+        "supportUnit": [],
+        "otherUnit": [],
+        "webSales": "",
+        "sourceWebPromote": "https://www.instagram.com/dancinginthepark/",
+        "comment": "製作人：古羅文君\r\n藝術總監：羅文瑾\r\n編舞／影像演出：周書毅\r\n演出：羅文瑾、李佩珊、楊雅鈞、林修瑜、何佳禹、蘇微淳、孟凱倫\r\n音樂設計／演出：王榆鈞\r\n裝置設計：詹家豪／守宮設計\r\n服裝設計：邱娉勻\r\n影像創作：周延賢\r\n排練助理：孟凱倫\r\n平面設計：陳文德\r\n舞台監督：郭姝伶\r\n攝影：許斌",
+        "editModifyDate": "",
+        "sourceWebName": "稻草人小烏鴉",
+        "startDate": "2020/05/13",
+        "endDate": "2020/05/31",
+        "hitRate": 0
+    }
+]
