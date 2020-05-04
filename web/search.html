@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>文藝表演及活動查詢平台</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Noto+Sans+TC" type='text/css'>
+    <link rel="stylesheet" href="css/main.css" id="maincss">
+</head>
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1 id='main_title'>文藝表演及活動資訊查詢平台</h1>
+        <p>Final Project - Group34 <br> 0511052 李其芳 0510141 何宜真 0516238 黃柏維 0616042 呂明哲</p>
+    </div>
+
+    <!--
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">首頁</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">所有列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">地區搜尋</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">種類搜尋</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">時間搜尋</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">地圖搜尋</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+-->
+
+    <div class="container" style="margin-top:30px">
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="container" style="margin:10px">
+                    <h2 class="query_title">選地區</h2>
+                    <br>
+                    <!--
+                    北部
+                    <a class="text-white" href="#">台北市</a>
+                    <a class="text-white" href="#">新北市</a>
+                    <a class="text-white" href="#">桃園市</a>
+                    <a class="text-white" href="#">新竹市</a>
+                    <a class="text-white" href="#">新竹縣</a>
+                    <a class="text-white" href="#">基隆市</a>
+                    <a class="text-white" href="#">宜蘭縣</a>
+                    <br>
+                    中部
+                    <a class="text-white" href="#">台中市</a>
+                    <a class="text-white" href="#">彰化縣</a>
+                    <a class="text-white" href="#">苗栗縣</a>
+                    <a class="text-white" href="#">雲林縣</a>
+                    <a class="text-white" href="#">南投縣</a>
+                    <br>
+                    南部
+                    <a class="text-white" href="#">高雄市</a>
+                    <a class="text-white" href="#">台南市</a>
+                    <a class="text-white" href="#">嘉義市</a>
+                    <a class="text-white" href="#">屏東縣</a>
+                    <a class="text-white" href="#">嘉義縣</a>
+                    <br>
+                    東部
+                    <a class="text-white" href="#">花蓮縣</a>
+                    <a class="text-white" href="#">台東縣</a>
+                    <a class="text-white" href="#">金門縣</a>
+                    <a class="text-white" href="#">澎湖縣</a>
+                    <a class="text-white" href="#">連江縣</a>
+                    -->
+                    <form action="" method="get">
+
+                        <!--    北部欄位     -->
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN1">
+                                <input type="checkbox" class="form-check-input" id="checkN1" name="district" value="Taipei">台北市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN2">
+                                <input type="checkbox" class="form-check-input" id="checkN2" name="district" value="New_Taipei">新北市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN3">
+                                <input type="checkbox" class="form-check-input" id="checkN3" name="district" value="Taoyuan">桃園市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN4">
+                                <input type="checkbox" class="form-check-input" id="checkN4" name="district" value="Hsinchu">新竹市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN5">
+                                <input type="checkbox" class="form-check-input" id="checkN5" name="district" value="Hsinchu_">新竹縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN6">
+                                <input type="checkbox" class="form-check-input" id="checkN6" name="district" value="Keelung">基隆市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkN7">
+                                <input type="checkbox" class="form-check-input" id="checkN7" name="district" value="Yilan">宜蘭縣
+                            </label>
+                        </div>
+                        <br>
+
+                        <!--    中部欄位     -->
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkW1">
+                                <input type="checkbox" class="form-check-input" id="checkW1" name="district" value="Taichung">台中市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkW2">
+                                <input type="checkbox" class="form-check-input" id="checkW2" name="district" value="Changhua">彰化縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkW3">
+                                <input type="checkbox" class="form-check-input" id="checkW3" name="district" value="Miaoli">苗栗縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkW4">
+                                <input type="checkbox" class="form-check-input" id="checkW4" name="district" value="Yunlin">雲林縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkW5">
+                                <input type="checkbox" class="form-check-input" id="checkW5" name="district" value="Nantou">南投縣
+                            </label>
+                        </div>
+                        <br>
+
+                        <!--    南部欄位     -->
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkS1">
+                                <input type="checkbox" class="form-check-input" id="checkS1" name="district" value="Kaohsiung">高雄市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkS2">
+                                <input type="checkbox" class="form-check-input" id="checkS2" name="district" value="Changhua">台南市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkS3">
+                                <input type="checkbox" class="form-check-input" id="checkS3" name="district" value="Chiayi">嘉義市
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkS4">
+                                <input type="checkbox" class="form-check-input" id="checkS4" name="district" value="Chiayi_">嘉義縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkS5">
+                                <input type="checkbox" class="form-check-input" id="checkS5" name="district" value="Pingtung">屏東縣
+                            </label>
+                        </div>
+                        <br>
+
+                        <!--    東部欄位     -->
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkE1">
+                                <input type="checkbox" class="form-check-input" id="checkE1" name="district" value="Hualien">花蓮縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkE2">
+                                <input type="checkbox" class="form-check-input" id="checkE2" name="district" value="Changhua">台東縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkE3">
+                                <input type="checkbox" class="form-check-input" id="checkE3" name="district" value="Kinmen">金門縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkE4">
+                                <input type="checkbox" class="form-check-input" id="checkE4" name="district" value="Penghu">澎湖縣
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="checkE5">
+                                <input type="checkbox" class="form-check-input" id="checkE5" name="district" value="Lienchiang">連江縣
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-primary">搜尋</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="container" style="margin:10px">
+                    <h2 class="query_title">選種類</h2>
+                    <br>
+                    <!--
+                    <a class="text-white" href="#">音樂表演</a>
+<a class="text-white" href="#">戲劇表演</a>
+<a class="text-white" href="#">舞蹈表演</a>
+<a class="text-white" href="#">親子活動</a>
+<a class="text-white" href="#">獨立音樂</a>
+<a class="text-white" href="#">展覽資訊</a>
+<a class="text-white" href="#">講座資訊</a>
+<a class="text-white" href="#">電影</a>
+<a class="text-white" href="#">綜藝活動</a>
+<a class="text-white" href="#">競賽活動</a>
+<a class="text-white" href="#">徵選活動</a>
+<a class="text-white" href="#">其他藝文資訊</a>
+<a class="text-white" href="#">演唱會</a>
+<a class="text-white" href="#">文化部研習課程</a>
+-->
+                    <form action="" method="get">
+
+                        <!--    東部欄位     -->
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat1">
+                                <input type="checkbox" class="form-check-input" id="check_cat1" name="title" value="音樂表演資訊">音樂表演
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat2">
+                                <input type="checkbox" class="form-check-input" id="check_cat2" name="title" value="戲劇表演資訊">戲劇表演
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat3">
+                                <input type="checkbox" class="form-check-input" id="check_cat3" name="title" value="舞蹈表演資訊">舞蹈表演
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat4">
+                                <input type="checkbox" class="form-check-input" id="check_cat4" name="title" value="親子活動">親子活動
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat5">
+                                <input type="checkbox" class="form-check-input" id="check_cat5" name="title" value="獨立音樂">獨立音樂
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat6">
+                                <input type="checkbox" class="form-check-input" id="check_cat6" name="title" value="展覽資訊">展覽資訊
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat7">
+                                <input type="checkbox" class="form-check-input" id="check_cat7" name="title" value="講座資訊">講座資訊
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat8">
+                                <input type="checkbox" class="form-check-input" id="check_cat8" name="title" value="電影">電影
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat11">
+                                <input type="checkbox" class="form-check-input" id="check_cat11" name="title" value="綜藝活動">綜藝活動
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat13">
+                                <input type="checkbox" class="form-check-input" id="check_cat13" name="title" value="競賽活動">競賽活動
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat14">
+                                <input type="checkbox" class="form-check-input" id="check_cat14" name="title" value="徵選活動">徵選活動
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat15">
+                                <input type="checkbox" class="form-check-input" id="check_cat15" name="title" value="其他藝文資訊">其他藝文資訊
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat17">
+                                <input type="checkbox" class="form-check-input" id="check_cat17" name="title" value="演唱會">演唱會
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" for="check_cat19">
+                                <input type="checkbox" class="form-check-input" id="check_cat19" name="title" value="文化部研習課程">文化部研習課程
+                            </label>
+                        </div>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-primary">搜尋</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="card bg-info text-white">
+            <div class="card-body">
+                <div class="container" style="margin:10px">
+                    <h2 class="query_title">選時間</h2>
+                    <br>
+                    <form action="" method="get">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="select_start_month">開始月份</label>
+                                <select class="form-control" id="select_start_month" name="start_month">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label for="select_start_day">開始日期</label>
+                                <select class="form-control" id="select_start_day" name="start_day">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                            <div class="col-md-1">
+                                <p  style="text-align: center">至</p>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-2">
+                                <label for="select_end_month">結束月份</label>
+                                <select class="form-control" id="select_end_month" name="end_month">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="form-group col-md-2">
+                                <label for="select_end_day">結束日期</label>
+                                <select class="form-control" id="select_end_day" name="end_day">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-primary">搜尋</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+
+        </div>
+    </div>
+
+
+</body></html>
