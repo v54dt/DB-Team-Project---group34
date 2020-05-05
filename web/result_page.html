@@ -24,7 +24,7 @@
 
 
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <a class="navbar-brand" href="#" style='margin-left:30px'>首頁</a>
+        <a class="navbar-brand" href="main.html" style='margin-left:30px'>首頁</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -256,7 +256,7 @@
                 <h4>時間</h4>
                 <div class="form-row">
                     <div class="form-group" style="margin-right:10px">
-                        <label for="select_start_month" >開始月份</label>
+                        <label for="select_start_month">開始月份</label>
                         <select class="form-control" id="select_start_month" name="start_month">
                             <option>1</option>
                             <option>2</option>
@@ -373,13 +373,36 @@
             </form>
         </div>
         <div class="col-sm-8" style="margin:30px">
-            <div class="card">
-                <div class="card-header">表演名稱</div>
-                <div class="card-body">表演資訊</div>
-                <div class="card-footer">表演網站連結</div>
+            <!-- 新增一個query結果從這裡開始 -->
+            <div class="card bg-light">
+                <div class="row card-header bg-transparent">
+                    <div class="col-sm-8">
+                        {title}羅曼‧羅蘭百萬小說賞
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <a href="#" class="badge badge-success"> {onSales}</a>
+                        <a href="#" class="badge badge-danger">{hitRate}</a>
+                    </div>
+                </div>
+                <div class="row card-body">
+                    <div class="col-sm-10 card-text">
+                        <p>{time}2019/06/01 00:00:00 ~ {time}2019/06/01 00:00:00 在{location/locationName}地點</p>
+                        <p>{descriptionFilterHtml}待改，希望改成可以縮短內容變成...</p>
+                    </div>
+                    <div class="col-sm-2  card-text text-right">
+                        <p>{price}$200</p>
+                        <p>{discountInfo}</p>
+                    </div>
+
+                </div>
+                <div class="card-footer text-right">
+                    <a href="info_page.html" class="card-link">查看更多...</a>
+                </div>
             </div>
+            <!-- 新增一個query結果從這裡結束-->
             <br>
-            <ul class="pagination">
+             <!-- active的部分待改 -->
+            <ul class="pagination"> 
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item active"><a class="page-link" href="#">2</a></li>
@@ -387,7 +410,10 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </div>
+        <br>
+
     </div>
+
 
 
 </body></html>
