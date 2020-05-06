@@ -72,10 +72,11 @@ router.get('/search', function (req, res) {
         })
     }
 
-    var sql_final = "select * from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 10;";
-    connection.query(sql_final,function(err,result,fields){
-        if(err)throw err;
+    var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 10;";
+    connection.query(sql_final, function (err, result, fields) {
+        if (err) throw err;
         res.status(200).json(result);
+
     })
 
 
@@ -115,6 +116,13 @@ router.get('/search', function (req, res) {
 })
 
 
+router.get('/users/:name', function (req, res) {
+    res.send(render('result_page.html', {
+        name: req.params.name
+    }));
+})
+
+
 /*rows.forEach( (row) => {
   console.log(`${row.name} lives in ${row.city}`);
 });*/
@@ -125,4 +133,16 @@ module.exports = router;
 select *
     from artshow, showInfo
 where locat
+*/
+
+/*
+title
+category
+折扣
+price
+Starttime 
+endtime
+descriptionHTML
+location
+locationName
 */
