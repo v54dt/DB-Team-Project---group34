@@ -75,12 +75,11 @@ router.get('/search', function (req, res) {
     var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 10;";
     connection.query(sql_final, function (err, result, fields) {
         if (err) throw err;
-        res.status(200).json(result);
-
+        //res.status(200).json(result);
+        res.render('search.ejs',{
+            result : result
+        })
     })
-
-
-
 
     /*
     var sql_final = "select * from temp_showInfo limit 10;";
