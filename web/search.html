@@ -14,13 +14,11 @@
 </head>
 
 <body>
-    <!--
-    <div class="jumbotron text-left" style="margin-bottom:0">
-        <h1 class='main_title'>文藝表演及活動資訊查詢平台</h1>
-        <p>Final Project - Group34 <br> 0511052 李其芳 0510141 何宜真 0516238 黃柏維 0616042 呂明哲</p>
 
+    <div class="jumbotron jumbotron_small text-left" style="margin:0">
+        <h1 class='result_title'>文藝表演及活動資訊查詢平台</h1>
     </div>
--->
+
 
 
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -30,6 +28,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" href="#">所有列表</a>
                 </li>
@@ -45,6 +44,47 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">地圖搜尋</a>
                 </li>
+-->
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hackmd.io/@db-group34/H11syOiu8/edit">資料來源</a>
+                </li>
+-->
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hackmd.io/@db-group34/H11syOiu8/edit">Hackmd</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/v54dt/DB-Term-Project---group34">Github</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        資料來源
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6010">電影</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6013">演唱會</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6006">獨立音樂</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6007">徵選活動</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6008">競賽活動</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6009">綜藝活動</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6014">親子活動</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6012">展覽資訊</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6011">講座資訊</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6015">舞蹈表演資訊</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6016">戲劇表演資訊</a>
+                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6017">音樂表演資訊</a>
+                        <!--                        <a class="dropdown-item" href="https://data.gov.tw/dataset/6018">其他藝文資訊</a>-->
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item justify-content-end justify-content-sm-end">
+                    <a class="nav-link" href="">Group34 - 0511052 李其芳 0510141 何宜真 0516238 黃柏維 0616042 呂明哲</a>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -107,11 +147,6 @@
                 <div class="form-check-inline">
                     <label class="form-check-label" for="check_cat14">
                         <input type="checkbox" class="form-check-input" id="check_cat14" name="title" value="徵選活動">徵選活動
-                    </label>
-                </div>
-                <div class="form-check-inline">
-                    <label class="form-check-label" for="check_cat15">
-                        <input type="checkbox" class="form-check-input" id="check_cat15" name="title" value="其他藝文資訊">其他藝文資訊
                     </label>
                 </div>
                 <div class="form-check-inline">
@@ -373,26 +408,35 @@
             </form>
         </div>
         <div class="col-sm-8" style="margin:30px">
-            <div class="card">
+            <!-- 新增一個query結果從這裡開始 -->
+            <div class="card bg-light">
                 <div class="row card-header bg-transparent">
-                    <div class="col-sm-10">
+                    <div class="col-sm-8">
                         {title}羅曼‧羅蘭百萬小說賞
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-4 text-right">
+                        <a href="#" class="badge badge-success"> {onSales}</a>
+                        <a href="#" class="badge badge-danger">{hitRate}</a>
                     </div>
-                    
                 </div>
                 <div class="row card-body">
-                    <p class="col-sm-10 card-text">{location/locationName}地點</p>
-                    <p class="col-sm-10 card-text">{descriptionFilterHtml}本徵文活動，緣起於畫家、美術史家兼小說家謝里法先生發起，捐出榮獲第三十七屆行政院文化獎之稅後全額獎金，特以其心儀之法國文豪、一九一五年諾貝爾文學獎得主羅曼．羅蘭（Romain Rolland，一八六六~一九四四）稱名設置，目的在於振興台灣藝術，拓廣本國文學。\r\n\r\n詳細徵文辦法及報名表下載請至舒讀網https://reurl.cc/Qg2ZO\r\n</p>
-                    <p class="col-sm-2  card-text text-right">{price}$200</div>
+                    <div class="col-sm-10 card-text">
+                        <p>{time}2019/06/01 00:00:00 ~ {time}2019/06/01 00:00:00 在{location/locationName}地點</p>
+                        <p>{descriptionFilterHtml}待改，希望改成可以縮短內容變成...</p>
+                    </div>
+                    <div class="col-sm-2  card-text text-right">
+                        <p>{price}$200</p>
+                        <p>{discountInfo}</p>
+                    </div>
+
                 </div>
                 <div class="card-footer text-right">
-                    <a href="#" class="card-link">查看更多...</a>
+                    <a href="info_page.html" class="card-link">查看更多...</a>
                 </div>
-                <!--                <div class="card-footer">表演網站連結</div>-->
             </div>
+            <!-- 新增一個query結果從這裡結束-->
             <br>
+            <!-- active的部分待改 -->
             <ul class="pagination">
                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -401,10 +445,10 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
         </div>
+        <br>
 
     </div>
 
 
-</body>
 
-</html>
+</body></html>
