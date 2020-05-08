@@ -72,11 +72,11 @@ router.get('/search', function (req, res) {
         })
     }
 
-    var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 10;";
+    var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
     connection.query(sql_final, function (err, result, fields) {
         if (err) throw err;
         //res.status(200).json(result);
-        res.render('search.ejs',{
+        res.render('../../views/search.ejs',{
             result : result
         })
     })
@@ -144,4 +144,34 @@ endtime
 descriptionHTML
 location
 locationName
+*/
+
+
+
+
+/*
+info page
+
+title 
+location
+locationName
+category
+showunit
+descriptionFilter
+discountinfo
+price
+onSales
+imageUrl
+masterUnit :[]
+webSales
+comment
+sourceWebName
+startDate
+endDate
+starttime : ["2020/09/26 19:30:00","2020/09/26 19:30:00","2020/05/17 09:30:00"]
+endtime : ["2020/09/26 21:30:00","2020/09/26 21:30:00","2020/09/26 21:30:00"]
+
+*/
+/* 
+start_time ~ end_time => Range
 */
