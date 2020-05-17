@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'GenJyuu';
+    src:
+        url(../fonts/GenJyuuGothicL-Monospace-Regular.ttf)  format('truetype') ,
+        url(../fonts/TaipeiSansTCBeta-Regular.ttf)  format('truetype'),
+        local("Arial");
+}
+
+@font-face {
+    font-family: 'SentyTang';
+    src:
+        url(../fonts/SentyTang.ttf)  format('truetype'),
+        url(../fonts/TaipeiSansTCBeta-Regular.ttf)  format('truetype'),
+        url(../fonts/GenJyuuGothicL-Monospace-Regular.ttf)  format('truetype') ,
+        local("Arial");
+}
+
+
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+
+.main_title{
+    font-family: 'SentyTang', 'Noto Sans TC', '微軟正黑體',  sans-serif;
+    font-size: 400%;
+}
+
+
+.query_title {
+    font-family: 'SentyTang';
+}
+
+.navbar {
+    font-family: 'SentyTang';
+    font-size: 120%;
+}
+
+.navbar-brand {
+    font-family: 'SentyTang';
+    font-size: 120%;
+}
+
+.group_info{
+    font-family: 'GenJyuu';
+    font-size: 100%;
+}
+
+.group_info_sm{
+    font-family: 'GenJyuu';
+    font-size: 150%;
+    margin-left: 10px;
+}
+
+.result_title{
+    font-family: 'SentyTang', 'Noto Sans TC', '微軟正黑體',  sans-serif;
+    font-size: 300%;
+    margin-left: 10px;
+}
+/*
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+*/
+
+.jumbotron_small {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
