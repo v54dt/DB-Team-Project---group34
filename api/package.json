@@ -18,7 +18,9 @@
   "homepage": "https://github.com/v54dt/DB-Term-Project---group34#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
     "express": "^4.17.1",
+    "forever": "^2.0.0",
     "mysql": "^2.18.1"
   }
 }
