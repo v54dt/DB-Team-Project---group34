@@ -29,6 +29,9 @@ router.get('/search', function (req, res) {
 
     connection.query(temp_artshow + temp_showInfo, function (err, res, fields) {
         if (err) throw err;
+
+
+
     })
 
     const title = req.query.title;
@@ -155,104 +158,12 @@ router.get('/info/:uid', function (req, res) {
         if (errs) throw errs;
 
         //res.status(200).json(return_json);
-        res.render('../../views/info.ejc',{
+        res.render('../../views/info.ejs', {
             result: return_json
         })
     })
 
 })
 
-/*
-info page
-
-title 
-location
-locationName
-category
-showUnit
-descriptionFilter
-discountinfo
-price
-onSales
-imageUrl
-masterUnit :[]
-webSales
-comment
-sourceWebName
-startDate
-endDate
-starttime : ["2020/09/26 19:30:00","2020/09/26 19:30:00","2020/05/17 09:30:00"]
-endtime : ["2020/09/26 21:30:00","2020/09/26 21:30:00","2020/09/26 21:30:00"]
-
-*/
-
-
-
-
-/*rows.forEach( (row) => {
-  console.log(`${row.name} lives in ${row.city}`);
-});*/
-
 
 module.exports = router;
-
-/*
-select *
-    from artshow, showInfo
-where locat
-*/
-
-/*
-大綱
-title
-category
-折扣
-price
-Starttime
-endtime
-descriptionHTML
-location
-locationName
-*/
-
-
-
-/*
-
-///統整: 
-    url : /summary
-
-    result = {
-        sum : 1000,
-        location:
-        {       
-        taipei : 20,
-        shinchu : 10,
-        ...
-
-        },
-        category : {
-            "音樂表演" : 2000,
-            "戲劇表演" : 123,
-            ...
-        },
-       "OnSale_Y" : 500,
-       "OnSale_N" : 600,
-
-       "postpone": 1000,
-       "cancelled" : 2000,
-
-    }
-    
-
-
-///隨機:
-        (次月推薦)
-url :   /recommend.html
-
-    跟 info 一樣
-    result = {
-
-    }
-*/
-
