@@ -22,19 +22,35 @@
 
 
 
-   <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <a class="navbar-brand" href="main.html" style='margin-left:30px'>首頁</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
+                <!--
                 <li class="nav-item">
-                    <a class="nav-link" href="summary.html">當月統計</a>
+                    <a class="nav-link" href="#">所有列表</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="recommend.html">次月推薦</a>
+                    <a class="nav-link" href="#">地區搜尋</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">種類搜尋</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">時間搜尋</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">地圖搜尋</a>
+                </li>
+-->
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hackmd.io/@db-group34/H11syOiu8/edit">資料來源</a>
+                </li>
+-->
                 <li class="nav-item">
                     <a class="nav-link" href="https://hackmd.io/@db-group34/H11syOiu8/edit">Hackmd</a>
                 </li>
@@ -64,7 +80,7 @@
 
             </ul>
         </div>
-        <div class="navbar-collapse collapse  order-3 dual-collapse2">
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item justify-content-end justify-content-sm-end">
                     <a class="nav-link" href="">Group34 - 0511052 李其芳 0510141 何宜真 0516238 黃柏維 0616042 呂明哲</a>
@@ -399,35 +415,35 @@
         </div>
         <div class="col-sm-8" style="margin:30px">
             <div class="card">
-                <div class=" card-header">
-                    <div class="row">
-                        <div class="col-sm-10">
-                            <%= result.title%> - <%= result.category%>
-                        </div>
-                        <div class="col-sm-2">
-                        </div>
+                <div class="row card-header bg-transparent">
+                    <div class="col-sm-10">
+                        {title}羅曼‧羅蘭百萬小說賞
+                    </div>
+                    <div class="col-sm-2">
+                    </div>
 
-                    </div>
                 </div>
-                <div class="card-body">
-                    <div class="row media">
-                        <img src="https://i.ytimg.com/vi/haQT24B1NyI/maxresdefault.jpg" class="align-self-center mr-3" style="max-width:100%;">
-                    </div>
-                    <div class="row">
-                        <p class="col-sm-10 card-text">地點: <%= result.location%><%= result.locationName%></p>
-                        <p class="col-sm-10 card-text">票價: <%= result.price%></p>
-                        <p class="col-sm-10 card-text">折扣: <%= result.onSales%></p>
-                        <p class="col-sm-10 card-text">場次: </p>
-                        <p class="col-sm-10 card-text">主辦單位: <%= result.masterUnit%></p>
-                        <p class="col-sm-10 card-text">活動簡介: <%= result.discriptionFilter%></p>
-                        <p class="col-sm-10 card-text">活動官網: <%= result.sourceWebName%></p>
-                        <p class="col-sm-10 card-text">附註: <%= result.comment%></p>
-                    </div>
+                <div class="row card-body">
+                    <p class="col-sm-10 card-text">{location/locationName}地點</p>
+                    <p class="col-sm-10 card-text">{descriptionFilterHtml}本徵文活動，緣起於畫家、美術史家兼小說家謝里法先生發起，捐出榮獲第三十七屆行政院文化獎之稅後全額獎金，特以其心儀之法國文豪、一九一五年諾貝爾文學獎得主羅曼．羅蘭（Romain Rolland，一八六六~一九四四）稱名設置，目的在於振興台灣藝術，拓廣本國文學。\r\n\r\n詳細徵文辦法及報名表下載請至舒讀網https://reurl.cc/Qg2ZO\r\n</p>
+                    <p class="col-sm-2  card-text text-right">{price}$200
                 </div>
+            </div>
+            <div class="card-footer text-right">
+                <a href="#" class="card-link">查看更多...</a>
             </div>
             <!--                <div class="card-footer">表演網站連結</div>-->
         </div>
+        <br>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
     </div>
+
 
 </body>
 
