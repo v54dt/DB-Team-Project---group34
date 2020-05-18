@@ -4,6 +4,8 @@ const config = require('./config');
 const bodyParser = require('body-parser');
 const async = require('async');
 
+const domain = require('domain');
+
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -17,9 +19,34 @@ const connection = mysql.createConnection({
 connection.connect();
 
 
+//router.use(bodyParser.json());
+router.use(bodyParser.json(), function (err, res, next) {
+    var reqDomain = domain.create();
+    reqDomain.on('error', function () {
+        try {
+            var killTimer = setTimeout(function () {
+                process.exit(1);
+            }, 30000);
+            killTimer.unref();
+            res.send(500);
+        } catch (e) {
+            console.log('error when exit', e.stack);
+        }
+    });
+    reqDomain.run(next);
+});
 
-router.use(bodyParser.json());
-
+process.on('uncaughtException', function (err) {
+    console.log(err);
+    try {
+        var killTimer = setTimeout(function () {
+            process.exit(1);
+        }, 30000);
+        killTimer.unref();
+    } catch (e) {
+        console.log('error when exit', e.stack);
+    }
+});
 
 
 router.get('/search', function (req, res) {
