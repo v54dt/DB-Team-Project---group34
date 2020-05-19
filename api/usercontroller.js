@@ -117,7 +117,7 @@ router.get('/search', function (req, res) {
 
 router.get('/info/:uid', function (req, res) {
 
-    var return_json = {
+    var result = {
         title: "",
         location: "",
         locationName: "",
@@ -141,20 +141,20 @@ router.get('/info/:uid', function (req, res) {
         function (finish) {
 
             var sql = "select * from artshow where `UID` like ?;";
-            connection.query(sql, req.params.uid, function (error, result) {
-                //console.log(result);
-                return_json.title = result[0].title;
-                return_json.category = result[0].category;
-                return_json.showUnit = result[0].showUnit;
-                return_json.descriptionFilterHtml = result[0].descriptionFilterHtml;
-                return_json.onSales = result[0].onSales;
-                return_json.masterUnit = result[0].masterUnit;
-                return_json.imageUrl = result[0].imageUrl;
-                return_json.webSales = result[0].webSales;
-                return_json.comment = result[0].comment;
-                return_json.sourceWebName = result[0].sourceWebName;
-                return_json.startDate = result[0].startDate;
-                return_json.endDate = result[0].endDate;
+            connection.query(sql, req.params.uid, function (error, res_p1) {
+                //console.log(res_p1);
+                result.title = res_p1[0].title;
+                result.category = res_p1[0].category;
+                result.showUnit = res_p1[0].showUnit;
+                result.descriptionFilterHtml = res_p1[0].descriptionFilterHtml;
+                result.onSales = res_p1[0].onSales;
+                result.masterUnit = res_p1[0].masterUnit;
+                result.imageUrl = res_p1[0].imageUrl;
+                result.webSales = res_p1[0].webSales;
+                result.comment = res_p1[0].comment;
+                result.sourceWebName = res_p1[0].sourceWebName;
+                result.startDate = res_p1[0].startDate;
+                result.endDate = res_p1[0].endDate;
 
                 finish(error);
 
@@ -163,32 +163,34 @@ router.get('/info/:uid', function (req, res) {
         function (finish) {
 
             var sql_showInfo = "select * from showInfo where `artshowUID` like ?;";
-            connection.query(sql_showInfo, req.params.uid, function (error, result) {
+            connection.query(sql_showInfo, req.params.uid, function (error, res_p2) {
 
 
-                for (var i = 0; i < result.length; i++) {
-                    return_json.showInfo.push({
-                        time: result[i].time,
-                        location: result[i].location,
-                        locationName: result[i].locationName,
-                        onSales: result[i].onSales,
-                        latitude: result[i].latitude,
-                        longtitude: result[i].longtitude,
-                        endTime: result[i].endTime
+                for (var i = 0; i < res_p2.length; i++) {
+                    result.showInfo.push({
+                        time: res_p2[i].time,
+                        location: res_p2[i].location,
+                        locationName: res_p2[i].locationName,
+                        onSales: res_p2[i].onSales,
+                        latitude: res_p2[i].latitude,
+                        longtitude: res_p2[i].longtitude,
+                        endTime: res_p2[i].endTime
                     })
                 }
                 finish(error);
             })
 
         },
-    ], function (errs, results) {
+    ], function (errs, res_ps) {
         if (errs) throw errs;
 
-        //res.status(200).json(return_json);
+        //res.status(200).json(result);
         res.render('../../views/info.ejs', {
-            result: return_json
+            result: result
         })
     })
+
+    
 
 })
 
