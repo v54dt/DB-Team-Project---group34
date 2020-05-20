@@ -1,13 +1,14 @@
 drop procedure if exists main;
 
 set @query = "
-select artshow.UID, showInfo.location 
+select artshow.UID, artshow.category
 from artshow, showInfo
 where artshow.UID = showInfo.artshowUID
 ";
 set @inputStartDate = NULL;
 set @inputEndDate = NULL;
-set @inputLocation = "新竹市";
+set @inputLocation = NULL;
+set @inputCategoryID = 1;
 
 delimiter //
 create procedure main()
@@ -22,6 +23,9 @@ begin
 	if not isnull(@inputLocation) then
 		set @query = concat(@query, " and instr(showInfo.location, @inputLocation collate utf8mb4_unicode_ci)");
 	end if;	
+	if not isnull(@inputCategoryID) then
+		set @query = concat(@query, " and artshow.category = @inputCategoryID");
+	end if;
 end//
 delimiter ;
 
