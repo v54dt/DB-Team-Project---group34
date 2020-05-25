@@ -1,12 +1,14 @@
 drop procedure if exists main;
 
 set @query = "
-select * 
+select artshow.UID, artshow.category
 from artshow, showInfo
 where artshow.UID = showInfo.artshowUID
 ";
-set @inputStartDate = '2020-01-01';
-set @inputEndDate = '2020-12-31';
+set @inputStartDate = NULL;
+set @inputEndDate = NULL;
+set @inputLocation = NULL;
+set @inputCategoryID = 1;
 
 delimiter //
 create procedure main()
@@ -18,13 +20,17 @@ begin
 	if not isnull(@inputEndDate) then
 		set @query = concat(@query, " and showInfo.time <= @inputEndDate");
 	end if;
-	
+	if not isnull(@inputLocation) then
+		set @query = concat(@query, " and instr(showInfo.location, @inputLocation collate utf8mb4_unicode_ci)");
+	end if;	
+	if not isnull(@inputCategoryID) then
+		set @query = concat(@query, " and artshow.category = @inputCategoryID");
+	end if;
 end//
 delimiter ;
 
 call main();
 prepare stmt from @query;
 execute stmt;
-
 
 
