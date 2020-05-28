@@ -21,6 +21,7 @@ connection.connect();
 
 //router.use(bodyParser.json());
 router.use(bodyParser.json(), function (err, res, next) {
+    
     var reqDomain = domain.create();
     reqDomain.on('error', function () {
         try {
@@ -28,7 +29,7 @@ router.use(bodyParser.json(), function (err, res, next) {
                 process.exit(1);
             }, 30000);
             killTimer.unref();
-            res.send(500);
+            res.sendStatus(500);
         } catch (e) {
             console.log('error when exit', e.stack);
         }
@@ -190,9 +191,66 @@ router.get('/info/:uid', function (req, res) {
         })
     })
 
-    
-
 })
 
+
+router.get('/recommend', function (req, res) {
+
+    var result = {
+        title: "",
+        category: "",
+        imageUrl: "",
+        location: "",
+        locationName: "",
+        price: "",
+        onSales: "",
+        masterUnit: "",
+        discriptionFilter: "",
+        sourceWebName: "",
+        comment: ""
+    };
+
+    var total_uids, random_number;
+
+    async.waterfall([
+        function (next) {
+            var sql = "select count(*) as cnt from showInfo";
+            connection.query(sql, function (error, res1) {
+                total_uids = parseInt(res1[0].cnt, 10);
+                random_number = Math.floor(Math.random() * total_uids);
+
+                next(error, random_number);
+            })
+        },
+        function (random_number, next) {
+            var sql2 = "select a.UID,a.title,a.imageUrl,tmp.location,tmp.locationName,tmp.price,tmp.onSales,a.masterUnit,a.descriptionFilterHtml,a.sourceWebName,a.comment from artshow a, (select artshowUID,location,locationName,price,onSales from showInfo limit 1 offset " + random_number.toString(10) + ") as tmp  where tmp.artshowUID = a.UID;"
+            connection.query(sql2, function (error, res2) {
+
+                result.title = res2[0].title;
+                result.category = res2[0].category;
+                result.imageUrl = res2[0].imageUrl;
+                result.location = res2[0].location;
+                result.locationName = res2[0].locationName;
+                result.price = res2[0].price;
+                result.onSales = res2[0].onSales;
+                result.masterUnit = res2[0].masterUnit;
+                result.discriptionFilter = res2[0].discriptionFilter;
+                result.sourceWebName = res2[0].sourceWebName;
+                result.comment = res2[0].comment;
+                next(error, res2);
+
+            })
+
+        },
+    ], function (errs, res_ps) {
+        if (errs) throw errs;
+
+        //res.status(200).json(result);
+        res.render('../../views/recommend.ejs', {
+            result: result
+        })
+    })
+
+})
 
 module.exports = router;
