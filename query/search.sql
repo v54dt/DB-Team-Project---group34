@@ -13,7 +13,14 @@ set @inputCategoryID = 1;
 delimiter //
 create procedure main()
 begin 
-
+	declare cnt int default 0;
+	declare i int default 0;
+	declare UID text;
+	declare location_cur cursor for
+		select location_name
+		from locations
+		where city_id = @inputCityID
+	;
 	if not isnull(@inputStartDate) then
 		set @query = concat(@query, " and showInfo.time >= @inputStartDate");
 	end if;
@@ -21,14 +28,7 @@ begin
 		set @query = concat(@query, " and showInfo.time <= @inputEndDate");
 	end if;
 	if not isnull(@inputCityID) then
-		declare cnt int default 0;
-		declare i int default 0;
-		declare UID text;
-		declare location_cur cursor for
-			select location_name
-			from locations
-			where city_id = @inputCityID
-		;
+		
 		open location_cur;
 		select count(UID) into cnt from locations where city_id = @inputCityID;
 		set @query = concat(@query, " and ( false ");
