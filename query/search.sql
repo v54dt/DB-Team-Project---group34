@@ -35,8 +35,9 @@ begin
 			set @query = concat(@query, " or ");
 			fetch location_cur into UID, city_id, location_name;
 			set @query = concat(@query, " instr(showInfo.location,", location_name, "collate utf8mb4_unicode_ci) ");
-		end while
-		set @query = concat(@query, ")")
+			set i=i+1;
+		end while;
+		set @query = concat(@query, ")");
 		
 		
 	end if;	
