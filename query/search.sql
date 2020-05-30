@@ -23,8 +23,9 @@ begin
 	if not isnull(@inputCityID) then
 		declare cnt int default 0;
 		declare i int default 0;
+		declare UID text;
 		declare location_cur cursor for
-			select UID, city_id, location_name
+			select location_name
 			from locations
 			where city_id = @inputCityID
 		;
@@ -33,10 +34,11 @@ begin
 		set @query = concat(@query, " and ( false ");
 		while i<cnt do
 			set @query = concat(@query, " or ");
-			fetch location_cur into UID, city_id, location_name;
+			fetch location_cur into location_name;
 			set @query = concat(@query, " instr(showInfo.location,", location_name, "collate utf8mb4_unicode_ci) ");
 			set i=i+1;
 		end while;
+		close location_cur;
 		set @query = concat(@query, ")");
 		
 		
