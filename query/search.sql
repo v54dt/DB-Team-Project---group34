@@ -14,8 +14,8 @@ delimiter //
 create procedure main()
 begin 
 	declare cnt int default 0;
-	declare i int default 0;
-	declare UID text;
+	declare i int default 1;
+	declare v_location_name text;
 	declare location_cur cursor for
 		select location_name
 		from locations
@@ -35,7 +35,7 @@ begin
 		while i<cnt do
 			set @query = concat(@query, " or ");
 			fetch location_cur into location_name;
-			set @query = concat(@query, " instr(showInfo.location,", location_name, "collate utf8mb4_unicode_ci) ");
+			set @query = concat(@query, " instr(showInfo.location,", location_name, " collate utf8mb4_unicode_ci) ");
 			set i=i+1;
 		end while;
 		close location_cur;
