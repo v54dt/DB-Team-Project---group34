@@ -1,12 +1,13 @@
 drop procedure if exists main;
 
 set @query = "
-select artshow.UID, artshow.category
+select artshow.UID, showInfo.time, showInfo.location, artshow.category
 from artshow, showInfo
 where artshow.UID = showInfo.artshowUID
 ";
-set @inputStartDate = NULL;
-set @inputEndDate = NULL;
+
+set @inputStartDate = "2019-09-01";
+set @inputEndDate = "2020-03-20";
 set @inputCityID = 0;
 set @inputCategoryID = 1;
 
@@ -34,8 +35,8 @@ begin
 		set @query = concat(@query, " and ( false ");
 		while i<cnt do
 			set @query = concat(@query, " or ");
-			fetch location_cur into location_name;
-			set @query = concat(@query, " instr(showInfo.location,", location_name, " collate utf8mb4_unicode_ci) ");
+			fetch location_cur into v_location_name;
+			set @query = concat(@query, " instr(showInfo.location, \"", v_location_name, "\" collate utf8mb4_unicode_ci) ");
 			set i=i+1;
 		end while;
 		close location_cur;
@@ -51,6 +52,6 @@ delimiter ;
 
 call main();
 prepare stmt from @query;
+#select @query;
 execute stmt;
-
 
