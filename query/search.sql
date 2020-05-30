@@ -10,6 +10,7 @@ set @inputStartDate = "2019-09-01";
 set @inputEndDate = "2020-03-20";
 set @inputCityID = 0;
 set @inputCategoryID = 1;
+set @inputIsFree = NULL
 
 delimiter //
 create procedure main()
@@ -46,6 +47,9 @@ begin
 	end if;	
 	if not isnull(@inputCategoryID) then
 		set @query = concat(@query, " and artshow.category = @inputCategoryID");
+	end if;
+	if not isnull(@inputIsFree) then
+		set @query = concat(@query, " and showInfo.onsales = @inputIsFree");
 	end if;
 end//
 delimiter ;
