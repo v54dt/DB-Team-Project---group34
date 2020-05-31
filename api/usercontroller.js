@@ -21,7 +21,7 @@ connection.connect();
 
 //router.use(bodyParser.json());
 router.use(bodyParser.json(), function (err, res, next) {
-    
+
     var reqDomain = domain.create();
     reqDomain.on('error', function () {
         try {
@@ -57,8 +57,6 @@ router.get('/search', function (req, res) {
 
     connection.query(temp_artshow + temp_showInfo, function (err, res, fields) {
         if (err) throw err;
-
-
 
     })
 
@@ -115,7 +113,6 @@ router.get('/search', function (req, res) {
     })
     */
 })
-
 router.get('/info/:uid', function (req, res) {
 
     var result = {
@@ -192,8 +189,6 @@ router.get('/info/:uid', function (req, res) {
     })
 
 })
-
-
 router.get('/recommend', function (req, res) {
 
     var result = {
@@ -252,5 +247,122 @@ router.get('/recommend', function (req, res) {
     })
 
 })
+router.get('/summary', function (req, res) {
+
+    var result = {
+        sum: 0,
+        location:
+        {
+            taipei: 0,
+            new_Taipei: 0,
+            taoyuan: 0,
+            hsinchu: 0,
+            keelung: 0,
+            yilan: 0,
+            taichung: 0,
+            changhua: 0,
+            miaoli: 0,
+            yunlin: 0,
+            nantou: 0,
+            kaohsiung: 0,
+            tainan: 0,
+            chiayi: 0,
+            pingtung: 0,
+            hualien: 0,
+            taitung: 0,
+            kinmen: 0,
+            penghu: 0,
+            liechiang: 0
+        },
+        category: {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0
+        },
+        "OnSale_Y": 0,
+        "OnSale_N": 0,
+        "postpone": 0,
+        "cancelled": 0,
+    }
+    /*
+        1 : 音樂表演資訊
+        2 : 戲劇表演資訊
+        3 : 舞導表演資訊
+        4 : 親子活動
+        5 : 獨立音樂
+        6 : 展覽資訊
+        7 : 講座資訊
+        8 : 電影
+        11 : 綜藝活動
+        13 : 競賽活動
+        14 : 徵選活動
+        15 : 其他藝文資訊
+        17 : 演唱或
+    */
+
+    async.parallel([
+        function (finish) {
+            var sql = "select count(*) from showInfo";
+            connection.query(sql, function (err1, res1) {
+
+                result.location.sum = parseInt(res1[0].cnt, 10);
+
+                finish(err1, res1);
+            })
+        },
+        function (finish) {
+            var sql2 = "";
+            connection.query(sql2, function (err2, res2) {
+
+                finish(err2, res2);
+            })
+        },
+        function (finish) {
+            var sql3 = "";
+            connection.query(sql3, function (err3, res3) {
+
+                finish(err3, res3);
+            })
+        },
+        function (finish) {
+            var sql4 = "";
+            connection.query(sql4, function (err4, res4) {
+
+                finish(err4, res4);
+            })
+        },
+        function (finish) {
+            var sql5 = "";
+            connection.query(sql5, function (err5, res5) {
+
+                finish(err5, res5);
+            })
+        }
+
+
+
+
+    ], function (errs, results) {
+
+    });
+
+    res.render('../../views/summary.ejs', {
+        result: result
+    })
+
+
+})
+
+
 
 module.exports = router;
