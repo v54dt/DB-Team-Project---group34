@@ -87,7 +87,7 @@ begin
 		
 		#cleanup
 		set @curr_cityid = NULL;
-		set tmp_id = NULL;
+		set @tmp_id = NULL;
 end//
 delimiter ;
 
