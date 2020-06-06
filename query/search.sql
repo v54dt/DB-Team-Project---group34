@@ -71,8 +71,8 @@ begin
 			select length(@inputCategoryID)-length(replace(@inputCategoryID,',',''))+1 into cnt;
 			set @query = concat(@query, " and ( false ");
 			while i <= cnt do
-				select cast(substring_index(substring_index(@inputCategoryID,',',i),',',-1) as unsigned) into @tmp_id;
-				set @query = concat(@query, " or artshow.category = @tmp_id");
+				select substring_index(substring_index(@inputCategoryID,',',i),',',-1) into @tmp_id;
+				set @query = concat(@query, " or artshow.category = ", @tmp_id);
 				set i=i+1;
 			end while;
 			set @query = concat(@query, ")");
