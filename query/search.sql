@@ -4,7 +4,7 @@ set @inputStartDate = "2019-09-01";
 set @inputEndDate = "2020-03-20";
 set @inputCityID = 0;
 set @inputCategoryID = 1;
-set @inputIsFree = 'Y'
+set @inputIsFree = 'Y';
 
 delimiter //
 create procedure main()
@@ -48,7 +48,7 @@ begin
 		set @query = concat(@query, " and artshow.category = @inputCategoryID");
 	end if;
 	if not isnull(@inputIsFree) then
-		set @query = concat(@query, " and showInfo.onsales = @inputIsFree");
+		set @query = concat(@query, " and showInfo.onsales = @inputIsFree collate utf8mb4_unicode_ci");
 	end if;
 	prepare stmt from @query;
 	execute stmt;
