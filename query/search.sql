@@ -1,16 +1,10 @@
 drop procedure if exists main;
 
-set @query = "
-select artshow.UID, showInfo.time, showInfo.location, artshow.category
-from artshow, showInfo
-where artshow.UID = showInfo.artshowUID
-";
-
 set @inputStartDate = "2019-09-01";
 set @inputEndDate = "2020-03-20";
 set @inputCityID = 0;
 set @inputCategoryID = 1;
-set @inputIsFree = NULL
+set @inputIsFree = 'Y'
 
 delimiter //
 create procedure main()
@@ -23,6 +17,11 @@ begin
 		from locations
 		where city_id = @inputCityID
 	;
+	set @query = "
+	select artshow.UID, showInfo.time, showInfo.location, artshow.category
+	from artshow, showInfo
+	where artshow.UID = showInfo.artshowUID
+	";
 	if not isnull(@inputStartDate) then
 		set @query = concat(@query, " and showInfo.time >= @inputStartDate");
 	end if;
@@ -51,11 +50,12 @@ begin
 	if not isnull(@inputIsFree) then
 		set @query = concat(@query, " and showInfo.onsales = @inputIsFree");
 	end if;
+	prepare stmt from @query;
+	execute stmt;
 end//
 delimiter ;
 
-call main();
-prepare stmt from @query;
+#call main();
 #select @query;
-execute stmt;
+
 
