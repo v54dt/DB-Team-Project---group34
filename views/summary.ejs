@@ -10,7 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Noto+Sans+TC" type='text/css'>
-    <link rel="stylesheet" href="css/main.css" id="maincss">
+    <link rel="stylesheet" href="/css/main.css" id="maincss">
+
 </head>
 
 <body>
@@ -19,38 +20,208 @@
     <!-- navbar end -->
     <div class='row'>
         <%- include('sidemenu') %>
-        <div class="col-sm-8" style="margin:30px">
-            <div class="card">
-                <div class=" card-header">
-                    <div class="row">
-                        <div class="col-sm-10">
-                            <%= result.title%> - <%= result.category%>
-                        </div>
-                        <div class="col-sm-2">
-                        </div>
 
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="row media">
-                        <img src="https://i.ytimg.com/vi/haQT24B1NyI/maxresdefault.jpg" class="align-self-center mr-3" style="max-width:100%;">
-                    </div>
-                    <div class="row">
-                        <p class="col-sm-10 card-text">地點: <%= result.location%><%= result.locationName%></p>
-                        <p class="col-sm-10 card-text">票價: <%= result.price%></p>
-                        <p class="col-sm-10 card-text">折扣: <%= result.onSales%></p>
-                        <p class="col-sm-10 card-text">場次: </p>
-                        <p class="col-sm-10 card-text">主辦單位: <%= result.masterUnit%></p>
-                        <p class="col-sm-10 card-text">活動簡介: <%= result.discriptionFilter%></p>
-                        <p class="col-sm-10 card-text">活動官網: <%= result.sourceWebName%></p>
-                        <p class="col-sm-10 card-text">附註: <%= result.comment%></p>
-                    </div>
-                </div>
-            </div>
-            <!--                <div class="card-footer">表演網站連結</div>-->
+
+        <div class="col-sm-8 table-responsive" style="margin:30px">
+            <h3>各地活動總數統計</h3>
+            <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>北部</th>
+                        <th>活動總數</th>
+                        <th>中部</th>
+                        <th>活動總數</th>
+                        <th>南部</th>
+                        <th>活動總數</th>
+                        <th>東部</th>
+                        <th>活動總數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>台北</td>
+                        <td><%= result.location.taipei%></td>
+                        <td>台中</td>
+                        <td><%= result.location.taichung%></td>
+                        <td>高雄</td>
+                        <td><%= result.location.kaoshiung%></td>
+                        <td>花蓮</td>
+                        <td><%= result.location.hualien%></td>
+                    </tr>
+                    <tr>
+                        <td>新北</td>
+                        <td><%= result.location.new_Taipei%></td>
+                        <td>彰化</td>
+                        <td><%= result.location.changhua%></td>
+                        <td>台南</td>
+                        <td><%= result.location.tainan%></td>
+                        <td>台東</td>
+                        <td><%= result.location.taichung%></td>
+                    </tr>
+                    <tr>
+                        <td>桃園</td>
+                        <td><%= result.location.taoyuan%></td>
+                        <td>苗栗</td>
+                        <td><%= result.location.miaoli%></td>
+                        <td>嘉義</td>
+                        <td><%= result.location.chiayi%></td>
+                        <td>金門</td>
+                        <td><%= result.location.kinmen%></td>
+                    </tr>
+                    <tr>
+                        <td>新竹</td>
+                        <td><%= result.location.hsinchu%></td>
+                        <td>雲林</td>
+                        <td><%= result.location.yunlin%></td>
+                        <td>屏東</td>
+                        <td><%= result.location.pingtung%></td>
+                        <td>澎湖</td>
+                        <td><%= result.location.penghu%></td>
+                    </tr>
+                    <tr>
+                        <td>基隆</td>
+                        <td><%= result.location.keelung%></td>
+                        <td>南投</td>
+                        <td><%= result.location.nantou%></td>
+                        <td></td>
+                        <td></td>
+                        <td>連江</td>
+                        <td><%= result.location.lienchiang%></td>
+                    </tr>
+                    <tr>
+                        <td>宜蘭</td>
+                        <td><%= result.location.yilan%></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <br>
+            <h3>各類活動項目統計</h3>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>種類</th>
+                        <th>數量</th>
+                        <th>種類</th>
+                        <th>數量</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>音樂表演</td>
+                        <td><%= result.category['1']%></td>
+                        <td>電影</td>
+                        <td><%= result.category['8']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>戲劇表演</td>
+                        <td><%= result.category['2']%></td>
+                        <td>綜藝活動</td>
+                        <td><%= result.category['11']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>舞蹈表演</td>
+                        <td><%= result.category['3']%></td>
+                        <td>競賽活動</td>
+                        <td><%= result.category['13']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>親子活動</td>
+                        <td><%= result.category['4']%></td>
+                        <td>徵選活動</td>
+                        <td><%= result.category['14']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>獨立音樂</td>
+                        <td><%= result.category['5']%></td>
+                        <td>其他藝文資訊</td>
+                        <td><%= result.category['15']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>展覽資訊</td>
+                        <td><%= result.category['6']%></td>
+                        <td>演唱會</td>
+                        <td><%= result.category['17']%></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>講座資訊</td>
+                        <td><%= result.category['7']%></td>
+<!--
+                        <td>文化部研習課程</td>
+                        <td><%= result.category['19']%></td>
+-->
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <br>
+            <h3>當月免費/非免費活動總數</h3>
+            <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>總數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>免費</td>
+                        <td><%= result.OnSale_Y %></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>付費</td>
+                        <td><%= result.OnSale_N %></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h3>當月延後/取消活動總數</h3>
+            <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>總數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>延後</td>
+                        <td><%= result.postpone %></td>
+                    </tr>
+                    <tr>
+                        <td>取消</td>
+                        <td><%= result.cancelled %></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
 </body>
 
 </html>

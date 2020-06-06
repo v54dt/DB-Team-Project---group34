@@ -10,7 +10,7 @@ const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'as7g8x7cerfgm',
     database: 'db_project',
     charset: 'utf8mb4',
     multipleStatements: true
@@ -96,7 +96,7 @@ router.get('/search', function (req, res) {
             if (err) throw err;
         })
     }
-
+    var sql = ""
     var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
     connection.query(sql_final, function (err, result, fields) {
         if (err) throw err;
@@ -264,7 +264,7 @@ router.get('/summary', function (req, res) {
             miaoli: 0,
             yunlin: 0,
             nantou: 0,
-            kaohsiung: 0,
+            kaoshiung: 0,
             tainan: 0,
             chiayi: 0,
             pingtung: 0,
@@ -272,7 +272,7 @@ router.get('/summary', function (req, res) {
             taitung: 0,
             kinmen: 0,
             penghu: 0,
-            liechiang: 0
+            lienchiang: 0
         },
         category: {
             "1": 0,
@@ -294,6 +294,7 @@ router.get('/summary', function (req, res) {
         "postpone": 0,
         "cancelled": 0,
     }
+
     /*
         1 : 音樂表演資訊
         2 : 戲劇表演資訊
@@ -355,13 +356,14 @@ router.get('/summary', function (req, res) {
     ], function (errs, results) {
 
     });
-
+    //res.status(200).json(result);
     res.render('../../views/summary.ejs', {
         result: result
     })
 
 
 })
+
 
 
 
