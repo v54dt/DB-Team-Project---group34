@@ -8,7 +8,7 @@ const domain = require('domain');
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: '54.92.231.36',
     user: 'root',
     password: '',
     database: 'db_project',
@@ -48,7 +48,6 @@ process.on('uncaughtException', function (err) {
         console.log('error when exit', e.stack);
     }
 });
-
 
 router.get('/search', function (req, res) {
 
@@ -96,7 +95,7 @@ router.get('/search', function (req, res) {
             if (err) throw err;
         })
     }
-
+    var sql = ""
     var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
     connection.query(sql_final, function (err, result, fields) {
         if (err) throw err;
@@ -254,7 +253,7 @@ router.get('/summary', function (req, res) {
         location:
         {
             taipei: 0,
-            new_Taipei: 0,
+            new_taipei: 0,
             taoyuan: 0,
             hsinchu: 0,
             keelung: 0,
@@ -272,7 +271,7 @@ router.get('/summary', function (req, res) {
             taitung: 0,
             kinmen: 0,
             penghu: 0,
-            liechiang: 0
+            lienchiang: 0
         },
         category: {
             "1": 0,
@@ -289,10 +288,10 @@ router.get('/summary', function (req, res) {
             "15": 0,
             "17": 0
         },
-        "OnSale_Y": 0,
-        "OnSale_N": 0,
-        "postpone": 0,
-        "cancelled": 0,
+        "OnSale_Y": 0,   //1987
+        "OnSale_N": 0,   //6089  // OnSales : UNKOWN does not included !!
+        "postponed": 0,    //44
+        "cancelled": 0,   //59
     }
     /*
         1 : 音樂表演資訊
@@ -307,61 +306,73 @@ router.get('/summary', function (req, res) {
         13 : 競賽活動
         14 : 徵選活動
         15 : 其他藝文資訊
-        17 : 演唱或
+        17 : 演唱會
     */
-
     async.parallel([
         function (finish) {
-            var sql = "select count(*) from showInfo";
+            var sql = "select count(*) as cnt from showInfo";
             connection.query(sql, function (err1, res1) {
-
-                result.location.sum = parseInt(res1[0].cnt, 10);
+                result.sum = parseInt(res1[0].cnt, 10);
 
                 finish(err1, res1);
             })
         },
         function (finish) {
-            var sql2 = "";
+            var sql2 = "select * from summary";
             connection.query(sql2, function (err2, res2) {
-
+                result.location = res2[0];
                 finish(err2, res2);
             })
         },
         function (finish) {
-            var sql3 = "";
+            var sql3 = "select * from category_count";
             connection.query(sql3, function (err3, res3) {
-
+                result.category["1"] = res3[0]['音樂表演'];
+                result.category["2"] = res3[0]["戲劇表演"];
+                result.category["3"] = res3[0]["舞導表演"];
+                result.category["4"] = res3[0]["親子活動"];
+                result.category["5"] = res3[0]["獨立音樂"];
+                result.category["6"] = res3[0]["展覽資訊"];
+                result.category["7"] = res3[0]["講座資訊"];
+                result.category["8"] = res3[0]["電影"];
+                result.category["11"] = res3[0]["綜藝活動"];
+                result.category["13"] = res3[0]["競賽活動"];
+                result.category["14"] = res3[0]["徵選活動"];
+                result.category["15"] = res3[0]["其他藝文資訊"];
+                result.category["17"] = res3[0]["演唱會"];
                 finish(err3, res3);
             })
         },
         function (finish) {
-            var sql4 = "";
+            var sql4 = "select * from OnSale_info";
             connection.query(sql4, function (err4, res4) {
+                //console.log(res4);
+                result.OnSale_Y = res4[0].OnSale_Y;
+                result.OnSale_N = res4[0].OnSale_N;
 
                 finish(err4, res4);
             })
         },
         function (finish) {
-            var sql5 = "";
+            var sql5 = "select * from postponed_cancelled_info";
             connection.query(sql5, function (err5, res5) {
-
+               
+                result.postponed = res5[0].postponed;
+                result.cancelled = res5[0].cancelled;
                 finish(err5, res5);
             })
         }
 
-
-
-
     ], function (errs, results) {
-
+        //res.status(200).json(result);
+        res.render('../../views/summary.ejs', {
+            result: result
+        })
     });
 
-    res.render('../../views/summary.ejs', {
-        result: result
-    })
-
-
+    /**/
 })
+
 
 
 
