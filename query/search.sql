@@ -1,11 +1,12 @@
 drop procedure if exists main;
 drop procedure if exists cat_city_locations;
 
-set @inputStartDate = "2019-09-01";
-set @inputEndDate = "2020-03-20";
-set @inputCityID = "1,2,3,4";
-set @inputCategoryID = 1;
-set @inputIsFree = 'Y';
+#set inputs before calling main!
+#set @inputStartDate = "2019-03-20";
+#set @inputEndDate = "2020-12-31";
+#set @inputCityID = "0,1,2,3,4";
+#set @inputCategoryID = "4,5,6";
+#set @inputIsFree = 'Y';
 
 
 delimiter //
@@ -28,8 +29,6 @@ begin
                 set i=i+1;
         end while;
         close location_cur;
-
-
 end //
 delimiter ;
 
@@ -38,41 +37,57 @@ create procedure main()
 begin
         declare i int default 1;
         declare cnt int default 0;
+
         set @query = "
         select artshow.UID, showInfo.time, showInfo.location, artshow.category, showInfo.onsales
         from artshow, showInfo
         where artshow.UID = showInfo.artshowUID
         ";
-        set @curr_cityid = NULL;
-
+        
         if not isnull(@inputStartDate) then
-                set @query = concat(@query, " and showInfo.time >= @inputStartDate");
+			set @query = concat(@query, " and showInfo.time >= @inputStartDate");
         end if;
+		
         if not isnull(@inputEndDate) then
-                set @query = concat(@query, " and showInfo.time <= @inputEndDate");
+			set @query = concat(@query, " and showInfo.time <= @inputEndDate");
         end if;
+		
         if not isnull(@inputCityID) then
 
-                select length(@inputCityID)-length(replace(@inputCityID,',',''))+1 into cnt;
-                select cnt;
-                set @query = concat(@query, " and ( false ");
-                while i <= cnt do
-                        select cast(substring_index(substring_index("1,2,3,4",',',i),',',-1) as unsigned) into @curr_cityid;
-                        call cat_city_locations();
-                        set i=i+1;
-                end while;
+			select length(@inputCityID)-length(replace(@inputCityID,',',''))+1 into cnt;
+			set @query = concat(@query, " and ( false ");
+			while i <= cnt do
+					select cast(substring_index(substring_index(@inputCityID,',',i),',',-1) as unsigned) into @curr_cityid;
+					call cat_city_locations();
+					set i=i+1;
+			end while;
 
-                set @query = concat(@query, ")");
+			set @query = concat(@query, ")");
 
         end if;
+		
         if not isnull(@inputCategoryID) then
-                set @query = concat(@query, " and artshow.category = @inputCategoryID");
+			set i = 1;
+			select length(@inputCategoryID)-length(replace(@inputCategoryID,',',''))+1 into cnt;
+			set @query = concat(@query, " and ( false ");
+			while i <= cnt do
+				select cast(substring_index(substring_index(@inputCategoryID,',',i),',',-1) as unsigned) into @tmp_id;
+				set @query = concat(@query, " or artshow.category = @tmp_id");
+				set i=i+1;
+			end while;
+			set @query = concat(@query, ")");
         end if;
+		
         if not isnull(@inputIsFree) then
-                set @query = concat(@query, " and showInfo.onsales = @inputIsFree collate utf8mb4_unicode_ci");
+			set @query = concat(@query, " and showInfo.onsales = @inputIsFree collate utf8mb4_unicode_ci");
         end if;
+		
         prepare stmt from @query;
         execute stmt;
+		
+		#cleanup
+		set @curr_cityid = NULL;
+		set tmp_id = NULL;
 end//
 delimiter ;
 
