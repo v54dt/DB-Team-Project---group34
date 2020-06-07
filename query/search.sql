@@ -39,7 +39,7 @@ begin
         declare cnt int default 0;
 
         set @query = "
-        select artshow.UID, showInfo.time, showInfo.location, artshow.category, showInfo.onsales
+        select *
         from artshow, showInfo
         where artshow.UID = showInfo.artshowUID
         ";
