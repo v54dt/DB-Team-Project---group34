@@ -27,7 +27,7 @@ begin
 		);
 		prepare stmt1 from @s1;
 		execute stmt1;
-		set @o = concat('"', curr_city_id, '",', '"', @cnt, '"\n');
+		set @o = concat(@o, '"', curr_city_id, '",', '"', @cnt, '"\n');
 		set curr_city_id = curr_city_id + 1;
 		
 	end while;
