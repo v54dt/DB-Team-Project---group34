@@ -13,7 +13,7 @@ from (
 	) as t
 ;
 
-set @o = concat('"', "取消" collate utf8mb4_unicode_ci, '"', '"', @cnt, '"\n');
+set @o = concat('"', "取消" collate utf8mb4_unicode_ci, '",', '"', @cnt, '"\n');
 
 select count(*) into @cnt
 from (
@@ -27,6 +27,6 @@ from (
 	) as t
 ;
 
-set @o = concat(@o,'"', "延期" collate utf8mb4_unicode_ci, '"', '"', @cnt, '"\n');
+set @o = concat(@o,'"', "延期" collate utf8mb4_unicode_ci, '",', '"', @cnt, '"\n');
 
 select @o into dumpfile '/var/lib/mysql-files/currMonthCancelDelayCount.csv';
