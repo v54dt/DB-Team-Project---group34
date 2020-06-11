@@ -1,0 +1,2 @@
+set @currMonth = month(curdate());
+
