@@ -30,6 +30,6 @@ begin
 		set @o = concat('"', curr_city_id, '",', '"', @cnt, '"\n')
 		
 	end while;
-	select @o into outfile '/var/lib/mysql-files/currMonthCountByLocation.csv';
+	select @o into dumpfile '/var/lib/mysql-files/currMonthCountByLocation.csv';
 end //
 delimiter ;
