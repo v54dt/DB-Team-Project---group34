@@ -27,7 +27,8 @@ begin
 		);
 		prepare stmt1 from @s1;
 		execute stmt1;
-		set @o = concat('"', curr_city_id, '",', '"', @cnt, '"\n')
+		set @o = concat('"', curr_city_id, '",', '"', @cnt, '"\n');
+		set curr_city_id = curr_city_id + 1;
 		
 	end while;
 	select @o into dumpfile '/var/lib/mysql-files/currMonthCountByLocation.csv';
