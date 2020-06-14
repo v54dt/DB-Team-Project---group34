@@ -147,3 +147,21 @@ begin
 		set @tmp_id = NULL;
 end//
 delimiter ;
+
+drop procedure if exists getNextMonth;
+delimiter //
+
+create procedure getNextMonth()
+begin
+
+	set @nextMonth = month(curdate());
+	set @nextMonthYear = year(curdate());
+	if @nextMonth = 12 then
+		set @nextMonth = 1;
+		set @nextMonthYear = @nextMonthYear + 1;
+	else
+		set @nextMonth = @nextMonth + 1;
+	end if;
+
+end//
+delimiter ;
