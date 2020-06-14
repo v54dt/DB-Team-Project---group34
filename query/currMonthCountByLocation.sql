@@ -8,7 +8,7 @@ begin
 	declare curr_city_id int default 0;
 	declare max_city_id int default 0;
 	
-	set @o = "";
+	set @val = "";
 	set @inputStartDate = concat(substring_index(curdate(),'-',2),"-01");
 	set @inputEndDate = last_day(curdate());
 	set @inputCategoryID = NULL;
@@ -25,10 +25,12 @@ begin
 		);
 		prepare stmt1 from @s1;
 		execute stmt1;
-		set @o = concat(@o, '"', curr_city_id, '",', '"', @cnt, '"\n');
+		set @val = concat(@val,@cnt,',');
 		set curr_city_id = curr_city_id + 1;
 		
 	end while;
-	select @o into dumpfile '/var/lib/mysql-files/currMonthCountByLocation.csv';
+	
+	set @val = substring_index(@val,',',max_city_id);
+	
 end //
 delimiter ;
