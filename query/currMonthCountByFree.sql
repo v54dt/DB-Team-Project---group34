@@ -1,23 +1,28 @@
 set @currMonth = month(curdate());
 set @currYear = year(curdate());
-create table temp(
-	onSales text not null,
-	eventCount int
-);
 
-insert into temp
-select showInfo.onSales as onSales,count(*) as eventCount
-from artshow, showInfo
-where artshow.UID = showInfo.artshowUID
-and month(showInfo.time) = @currMonth
-and year(showInfo.time) = @currYear
-group by showInfo.onSales
+truncate table OnSale_info;
+
+select count(*) into @notFreeCount
+from(
+	select showInfo.onSales
+	from artshow, showInfo
+	where artshow.UID = showInfo.artshowUID
+	and month(showInfo.time) = @currMonth
+	and year(showInfo.time) = @currYear
+	and showInfo.onSales = "Y"
+	) as t
 ;
 
-select * from temp
-into outfile '/var/lib/mysql-files/currMonthCountByFree.csv'
-fields terminated by ','
-enclosed by '"'
-lines terminated by '\n';
+select count(*) into @freeCount
+from(
+	select showInfo.onSales
+	from artshow, showInfo
+	where artshow.UID = showInfo.artshowUID
+	and month(showInfo.time) = @currMonth
+	and year(showInfo.time) = @currYear
+	and showInfo.onSales = "N"
+	) as t
+;
 
-drop table temp;
+insert into OnSale_info(OnSale_Y, OnSale_N) values(@notFreeCount, @freeCount);

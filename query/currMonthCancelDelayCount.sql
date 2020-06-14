@@ -1,8 +1,9 @@
 set @currMonth = month(curdate());
 set @currYear = year(curdate());
 
+truncate table postponed_cancelled_info;
 
-select count(*) into @cnt
+select count(*) into @cancel_cnt
 from (
 	select title
 	from artshow, showInfo
@@ -13,9 +14,7 @@ from (
 	) as t
 ;
 
-set @o = concat('"', "取消" collate utf8mb4_unicode_ci, '",', '"', @cnt, '"\n');
-
-select count(*) into @cnt
+select count(*) into @delay_cnt
 from (
 	select title
 	from artshow, showInfo
@@ -27,6 +26,4 @@ from (
 	) as t
 ;
 
-set @o = concat(@o,'"', "延期" collate utf8mb4_unicode_ci, '",', '"', @cnt, '"\n');
-
-select @o into dumpfile '/var/lib/mysql-files/currMonthCancelDelayCount.csv';
+insert into postponed_cancelled_info(postponed, cancelled) values (@cancel_cnt,@delay_cnt)
