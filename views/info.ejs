@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>文藝表演及活動查詢平台</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css?family=Noto+Sans+TC" type='text/css'>
+    <link rel="stylesheet" href="/css/main.css" id="maincss">
+</head>
+
+<body>
+    <%- include('jumbotron') %>
+    <%- include('navbar') %>
+    <!-- navbar end -->
+    <div class='row'>
+        <%- include('sidemenu') %>
+        <div class="col-sm-8" style="margin:30px">
+            <div class="card">
+                <div class=" card-header">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <%= result.title%>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row media">
+                        <% if(result.imageUrl!="") {%>
+                        <img src="<%= result.imageUrl %>" class="align-self-center mr-3" style="max-width:100%;">
+                        <% } %>
+
+                    </div>
+                    <div class="row">
+                        <p class="col-sm-10 card-text">類別:
+                            <% 
+                                if (result.category === '1') { %> 音樂表演 <% } 
+                                else if (result.category === '2') { %> 戲劇表演 <% } 
+                                else if (result.category === '3') { %> 舞蹈表演 <% } 
+                                else if (result.category === '4') { %> 親子活動 <% } 
+                                else if (result.category === '5') { %> 獨立音樂 <% } 
+                                else if (result.category === '6') { %> 展覽資訊 <% } 
+                                else if (result.category === '7') { %> 講座資訊 <% } 
+                                else if (result.category === '8') { %> 電影 <% } 
+                                else if (result.category === '11') { %> 綜藝活動 <% }  
+                                else if (result.category === '13') { %> 競賽活動 <% } 
+                                else if (result.category === '14') { %> 徵選活動 <% } 
+                                else if (result.category === '15') { %> 其他藝文資訊 <% } 
+                                else if (result.category === '17') { %> 演唱會 <% } 
+                                else if (result.category === '19') { %> 文化部研習課程 <% } 
+                                else { %> - <% } 
+                            %>
+                        </p>
+                        <p class="col-sm-10 card-text">地點: <%= result.location%><%= result.locationName%></p>
+                        <p class="col-sm-10 card-text">票價: <%= result.price%></p>
+                        <p class="col-sm-10 card-text">折扣: <%= result.onSales%></p>
+                        <p class="col-sm-10 card-text">場次: </p>
+                        <p class="col-sm-10 card-text">主辦單位: <%= result.masterUnit%></p>
+                        <p class="col-sm-10 card-text">活動簡介: <%= result.discriptionFilter%></p>
+                        <p class="col-sm-10 card-text">活動官網: <%= result.sourceWebName%></p>
+                        <p class="col-sm-10 card-text">附註: <%= result.comment%></p>
+                    </div>
+                </div>
+            </div>
+            <!--                <div class="card-footer">表演網站連結</div>-->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
