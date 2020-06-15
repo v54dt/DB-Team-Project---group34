@@ -1,4 +1,3 @@
-set @currMonth = month(curdate());
 
 drop procedure if exists currMonthCountByLocation;
 delimiter //
