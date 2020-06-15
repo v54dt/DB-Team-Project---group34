@@ -8,14 +8,14 @@ begin
 	declare curr_city_id int default 0;
 	declare max_city_id int default 0;
 	
-	turncate table summary;
+	truncate table summary;
 	set @val = "";
 	set @inputStartDate = concat(substring_index(curdate(),'-',2),"-01");
 	set @inputEndDate = last_day(curdate());
 	set @inputCategoryID = NULL;
 	set @inputIsFree = NULL;
 	
-	select max(city_id) into max_city_id from locations;
+	select max(city_id)+1 into max_city_id from locations;
 	while curr_city_id<=max_city_id do
 	
 		set @inputCityID = cast(curr_city_id as char);
