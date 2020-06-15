@@ -5,7 +5,7 @@ create procedure currMonthCountByCategory()
 begin
 
 	declare curr_category_id int default 0;
-	declare category_id_cun int default 13;
+	declare category_id_cnt int default 13;
 
 	truncate table category_count;
 	set @val = "";
@@ -25,7 +25,6 @@ begin
 		"select count(*) into @cnt from (",
 		@query,") as t"
 		);
-		select @s1;
 		prepare stmt1 from @s1;
 		execute stmt1;
 		set @val = concat(@val,@cnt,',');
