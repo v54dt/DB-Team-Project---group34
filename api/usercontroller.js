@@ -96,7 +96,7 @@ router.get('/search', function (req, res) {
         })
     }
     var sql = ""
-    var sql_final = "select aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
+    var sql_final = "select aa.UID,aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
     connection.query(sql_final, function (err, result, fields) {
         if (err) throw err;
         //res.status(200).json(result);
@@ -356,7 +356,7 @@ router.get('/summary', function (req, res) {
         function (finish) {
             var sql5 = "select * from postponed_cancelled_info";
             connection.query(sql5, function (err5, res5) {
-               
+
                 result.postponed = res5[0].postponed;
                 result.cancelled = res5[0].cancelled;
                 finish(err5, res5);
