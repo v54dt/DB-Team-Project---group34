@@ -8,6 +8,7 @@ begin
 	declare curr_city_id int default 0;
 	declare max_city_id int default 0;
 	
+	turncate table summary;
 	set @val = "";
 	set @inputStartDate = concat(substring_index(curdate(),'-',2),"-01");
 	set @inputEndDate = last_day(curdate());
@@ -31,6 +32,9 @@ begin
 	end while;
 	
 	set @val = substring_index(@val,',',max_city_id);
+	set @s1 = concat("insert into summary values (", @val ,")");
+	prepare stmt from @s1;
+	execute stmt;
 	
 end //
 delimiter ;
