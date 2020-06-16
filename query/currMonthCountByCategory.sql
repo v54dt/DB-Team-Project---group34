@@ -1,23 +1,41 @@
-set @currMonth = month(curdate());
-set @currYear = year(curdate());
-create table temp(
-	category int not null,
-	categoryCount int
-);
+drop procedure if exists currMonthCountByCategory;
 
-insert into temp
-select artshow.category as category,count(*) as categoryCount
-from artshow, showInfo
-where artshow.UID = showInfo.artshowUID
-and month(showInfo.time) = @currMonth
-and year(showInfo.time) = @currYear
-group by artshow.category
-;
+delimiter //
+create procedure currMonthCountByCategory()
+begin
 
-select * from temp
-into outfile '/var/lib/mysql-files/currMonthCountByCategory.csv'
-fields terminated by ','
-enclosed by '"'
-lines terminated by '\n';
+	declare curr_category_id int default 0;
+	declare category_id_cnt int default 13;
 
-drop table temp;
+	truncate table category_count;
+	set @val = "";
+	set @categoryIDs = "1,2,3,4,5,6,7,8,11,13,14,15,17";
+	set @c = 1;
+
+	set @inputStartDate = concat(substring_index(curdate(),'-',2),"-01");
+	set @inputEndDate = last_day(curdate());
+	set @inputCityID = NULL;
+	set @inputIsFree = NULL;
+
+	while @c <= category_id_cnt do
+
+		set @inputCategoryID = substring_index(substring_index(@categoryIDs,',',@c),',',-1);
+		call main_noexec();
+		set @s1 = concat(
+		"select count(*) into @cnt from (",
+		@query,") as t"
+		);
+		prepare stmt1 from @s1;
+		execute stmt1;
+		set @val = concat(@val,@cnt,',');
+		set @c = @c + 1;
+
+	end while;
+
+	set @val = substring_index(@val,',',13);
+	set @s1 = concat("insert into category_count values (", @val ,")");
+	prepare stmt from @s1;
+	execute stmt;
+
+end //
+delimiter ;
