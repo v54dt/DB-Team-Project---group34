@@ -1,4 +1,3 @@
-call getNextMonth();
 select *
 from artshow, showInfo
 where artshow.UID = showInfo.artshowUID
