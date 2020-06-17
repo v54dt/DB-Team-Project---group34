@@ -1,4 +1,8 @@
 module.exports = {
-    //db_path: 'mongodb://localhost:27017/Test0727',
-    PORT: 9000
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'db_project',
+    PORT:9000
 }
+

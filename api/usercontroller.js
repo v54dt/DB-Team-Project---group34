@@ -8,10 +8,10 @@ const domain = require('domain');
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: '54.92.231.36',
-    user: 'root',
-    password: '',
-    database: 'db_project',
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.database,
     charset: 'utf8mb4',
     multipleStatements: true
 });
@@ -51,66 +51,26 @@ process.on('uncaughtException', function (err) {
 
 router.get('/search', function (req, res) {
 
-    var temp_artshow = "create temporary table temp_artshow( t_UID char(24));";
-    var temp_showInfo = "create temporary table temp_showInfo(t_UID char(24));";
+    var inputStartDate;
+    var inputEndDate;
+    var inputCityID = "";
+    var inputCategoryID = "";
+    var district = req.query.district;
+    var title = req.query.title;
 
-    connection.query(temp_artshow + temp_showInfo, function (err, res, fields) {
-        if (err) throw err;
+    inputCityID = cat_cityid(district);
+    inputCategoryID = cat_categoryid(title);
+    inputStartDate = cat_start(req.query.start_month, req.query.start_day);
+    inputEndDate = cat_end(req.query.end_month, req.query.end_day)
 
-    })
+    connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
 
-    const title = req.query.title;
-    const district = req.query.district;
-
-
-
-    if (title !== undefined) {
-        var sql = "insert into temp_artshow(`t_UID`) select `UID` from artshow where category like?";
-
-        for (var i = 1; i < title.length; i++) {
-            sql = sql + " or category like?";
-        }
-
-        var sql = mysql.format(sql, title);
-        connection.query(sql, function (err, res, fields) {
-            if (err) throw err;
-        })
-    }
-
-    //district
-    if (district !== undefined) {
-        var sql2 = "insert into temp_showInfo(`t_UID`) select `artshowUID` from showInfo where location like?";
-
-        for (var i = 1; i < district.length; i++) {
-            sql2 = sql2 + " or location like?";
-        }
-
-        var district_copy = [];
-        for (var i = 0; i < district.length; i++) {
-            district_copy.push(district[i] + "%");
-        }
-
-        var sql2 = mysql.format(sql2, district_copy);
-        connection.query(sql2, function (err, res, fields) {
-            if (err) throw err;
-        })
-    }
-    var sql = ""
-    var sql_final = "select aa.UID,aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
-    connection.query(sql_final, function (err, result, fields) {
-        if (err) throw err;
-        //res.status(200).json(result);
+        //res.status(200).json(result[5]);
         res.render('../../views/search.ejs', {
-            result: result
+            result: result[5]
         })
     })
-    connection.query("drop table temp_artshow;drop table temp_showInfo", function (err, res, fields) {
-        if (err) throw err;
-    })
-    /*
-    connection.query(`${sql} limit 2;`, function (err, result, fields) {
-    })
-    */
+
 })
 router.get('/info/:uid', function (req, res) {
 
@@ -373,7 +333,91 @@ router.get('/summary', function (req, res) {
     /**/
 })
 
+function cat_cityid(district) {
+    var inputCityID = "";
+    if (district.includes("台北")) {
+        inputCityID += "0,";
+    }
+    if (district.includes("新北")) {
+        inputCityID += "1,";
+    }
+    if (district.includes("桃園")) {
+        inputCityID += "2,";
+    }
+    if (district.includes("新竹")) {
+        inputCityID += "3,";
+    }
+    if (district.includes("基隆")) {
+        inputCityID += "4,";
+    }
+    if (district.includes("宜蘭")) {
+        inputCityID += "5,";
+    }
+    if (district.includes("台中")) {
+        inputCityID += "6,";
+    }
+    if (district.includes("彰化")) {
+        inputCityID += "7,";
+    }
+    if (district.includes("苗栗")) {
+        inputCityID += "8,";
+    }
+    if (district.includes("雲林")) {
+        inputCityID += "9,";
+    }
+    if (district.includes("南投")) {
+        inputCityID += "10,";
+    }
+    if (district.includes("嘉義")) {
+        inputCityID += "11,";
+    }
+    if (district.includes("台南")) {
+        inputCityID += "12,";
+    }
+    if (district.includes("高雄")) {
+        inputCityID += "13,";
+    }
+    if (district.includes("屏東")) {
+        inputCityID += "14,";
+    }
+    if (district.includes("花蓮")) {
+        inputCityID += "15,";
+    }
+    if (district.includes("台東")) {
+        inputCityID += "16,";
+    }
+    if (district.includes("澎湖")) {
+        inputCityID += "17,";
+    }
+    if (district.includes("金門")) {
+        inputCityID += "18,";
+    }
+    if (district.includes("馬祖")) {
+        inputCityID += "19,";
+    }
+    if (district.includes("連江")) {
+        inputCityID += "20,";
+    }
+    inputCityID = inputCityID.substr(0, inputCityID.length - 1);
+    return inputCityID;
+}
 
+function cat_categoryid(title) {
+    var inputCategoryID = "";
+    for (var i = 0; i < title.length; i++) {
+        inputCategoryID += parseInt(title[i], 10) + ",";
+    }
+    inputCategoryID = inputCategoryID.substr(0, inputCategoryID.length - 1);
+    return inputCategoryID;
+}
 
+function cat_start(start_month, start_day) {
+    var start_time = "2020-" + start_month.toString() + "-" + start_day.toString();
+    return start_time;
+}
+function cat_end(end_month, end_day) {
+    var end_time = "2020-" + end_month.toString() + "-" + end_day.toString();
+    return end_time;
+}
 
 module.exports = router;
