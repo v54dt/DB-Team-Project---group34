@@ -8,10 +8,10 @@ const domain = require('domain');
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: '54.92.231.36',
-    user: 'root',
-    password: '',
-    database: 'db_project',
+    host: config.host,
+    user: config.user,
+    password: config.password,
+    database: config.database,
     charset: 'utf8mb4',
     multipleStatements: true
 });
