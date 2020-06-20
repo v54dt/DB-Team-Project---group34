@@ -60,10 +60,10 @@ router.get('/search', function (req, res) {
 
     inputCityID = cat_cityid(district);
     inputCategoryID = cat_categoryid(title);
-    inputStartDate = cat_start(req.query.start_month, req.query.start_day);
-    inputEndDate = cat_end(req.query.end_month, req.query.end_day)
+    inputStartDate = cat_date(req.query.start_month, req.query.start_day);
+    inputEndDate = cat_date(req.query.end_month, req.query.end_day)
 
-    connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
+    connection.query("set @inputStartDate = " + inputStartDate + "\073set @inputEndDate = " + inputEndDate + "\073set @inputCityID = " + inputCityID + "\073set @inputCategoryID = " + inputCategoryID + "\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
 
         //res.status(200).json(result[5]);
         res.render('../../views/search.ejs', {
@@ -334,90 +334,101 @@ router.get('/summary', function (req, res) {
 })
 
 function cat_cityid(district) {
-    var inputCityID = "";
-    if (district.includes("台北")) {
-        inputCityID += "0,";
-    }
-    if (district.includes("新北")) {
-        inputCityID += "1,";
-    }
-    if (district.includes("桃園")) {
-        inputCityID += "2,";
-    }
-    if (district.includes("新竹")) {
-        inputCityID += "3,";
-    }
-    if (district.includes("基隆")) {
-        inputCityID += "4,";
-    }
-    if (district.includes("宜蘭")) {
-        inputCityID += "5,";
-    }
-    if (district.includes("台中")) {
-        inputCityID += "6,";
-    }
-    if (district.includes("彰化")) {
-        inputCityID += "7,";
-    }
-    if (district.includes("苗栗")) {
-        inputCityID += "8,";
-    }
-    if (district.includes("雲林")) {
-        inputCityID += "9,";
-    }
-    if (district.includes("南投")) {
-        inputCityID += "10,";
-    }
-    if (district.includes("嘉義")) {
-        inputCityID += "11,";
-    }
-    if (district.includes("台南")) {
-        inputCityID += "12,";
-    }
-    if (district.includes("高雄")) {
-        inputCityID += "13,";
-    }
-    if (district.includes("屏東")) {
-        inputCityID += "14,";
-    }
-    if (district.includes("花蓮")) {
-        inputCityID += "15,";
-    }
-    if (district.includes("台東")) {
-        inputCityID += "16,";
-    }
-    if (district.includes("澎湖")) {
-        inputCityID += "17,";
-    }
-    if (district.includes("金門")) {
-        inputCityID += "18,";
-    }
-    if (district.includes("馬祖")) {
-        inputCityID += "19,";
-    }
-    if (district.includes("連江")) {
-        inputCityID += "20,";
-    }
-    inputCityID = inputCityID.substr(0, inputCityID.length - 1);
+
+        if(typeof(district) !== "undefined" && district !== null){
+                var inputCityID = "\042";
+                if (district.includes("台北")) {
+                        inputCityID += "0,";
+                }
+                if (district.includes("新北")) {
+                        inputCityID += "1,";
+                }
+                if (district.includes("桃園")) {
+                        inputCityID += "2,";
+                }
+                if (district.includes("新竹")) {
+                        inputCityID += "3,";
+                }
+                if (district.includes("基隆")) {
+                        inputCityID += "4,";
+                }
+                if (district.includes("宜蘭")) {
+                        inputCityID += "5,";
+                }
+                if (district.includes("台中")) {
+                        inputCityID += "6,";
+                }
+                if (district.includes("彰化")) {
+                        inputCityID += "7,";
+                }
+                if (district.includes("苗栗")) {
+                        inputCityID += "8,";
+                }
+                if (district.includes("雲林")) {
+                        inputCityID += "9,";
+                }
+                if (district.includes("南投")) {
+                        inputCityID += "10,";
+                }
+                if (district.includes("嘉義")) {
+                        inputCityID += "11,";
+                }
+                if (district.includes("台南")) {
+                        inputCityID += "12,";
+                }
+                if (district.includes("高雄")) {
+                        inputCityID += "13,";
+                }
+                if (district.includes("屏東")) {
+                        inputCityID += "14,";
+                }
+                if (district.includes("花蓮")) {
+                        inputCityID += "15,";
+                }
+                if (district.includes("台東")) {
+                        inputCityID += "16,";
+                }
+                if (district.includes("澎湖")) {
+                        inputCityID += "17,";
+                }
+                if (district.includes("金門")) {
+                        inputCityID += "18,";
+                }
+                if (district.includes("馬祖")) {
+                        inputCityID += "19,";
+                }
+                if (district.includes("連江")) {
+                        inputCityID += "20,";
+                }
+                inputCityID = inputCityID.substr(0, inputCityID.length - 1) + "\042";
+        }
+    else{
+                var inputCityID = null;
+        }
+
     return inputCityID;
 }
 
 function cat_categoryid(title) {
-    var inputCategoryID = "";
-    for (var i = 0; i < title.length; i++) {
-        inputCategoryID += parseInt(title[i], 10) + ",";
-    }
-    inputCategoryID = inputCategoryID.substr(0, inputCategoryID.length - 1);
+    if(typeof(title) !== "undefined" && title !== null){
+                var inputCategoryID = "\042";
+                for (var i = 0; i < title.length; i++) {
+                        inputCategoryID += parseInt(title[i], 10) + ",";
+                }
+                inputCategoryID = inputCategoryID.substr(0, inputCategoryID.length - 1) + "\042";
+        }
+        else{
+                var inputCategoryID = null;
+        }
     return inputCategoryID;
 }
 
-function cat_start(start_month, start_day) {
-    var start_time = "2020-" + start_month.toString() + "-" + start_day.toString();
-    return start_time;
-}
-function cat_end(end_month, end_day) {
-    var end_time = "2020-" + end_month.toString() + "-" + end_day.toString();
-    return end_time;
+function cat_date(month, day) {
+        var date = null;
+        if ( typeof(month) !== "undefined" && month !== null && typeof(day) !== "undefined" && day !== null) {
+                var date = "\0422020-" + month.toString() + "-" + day.toString() + "\042";
+        }
+    return date;
 }
 
 module.exports = router;
