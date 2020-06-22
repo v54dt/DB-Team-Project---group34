@@ -3,8 +3,8 @@ const router = express.Router();
 const config = require('./config');
 const bodyParser = require('body-parser');
 const async = require('async');
-
 const domain = require('domain');
+const reqDomain = domain.create();
 
 const mysql = require('mysql');
 const connection = mysql.createConnection({
@@ -20,7 +20,7 @@ connection.connect();
 
 
 //router.use(bodyParser.json());
-/*router.use(bodyParser.json(), function (err, res, next) {
+router.use(bodyParser.json(), function (err, res, next) {
 
     var reqDomain = domain.create();
     reqDomain.on('error', function () {
@@ -47,12 +47,11 @@ process.on('uncaughtException', function (err) {
     } catch (e) {
         console.log('error when exit', e.stack);
     }
-});*/
+});
 
-router.get('/main',function(req,res){
+router.get('/main', function (req, res) {
     res.render('../../views/main.ejs')
 })
-
 
 router.get('/search', function (req, res) {
 
@@ -63,32 +62,34 @@ router.get('/search', function (req, res) {
     var district = req.query.district;
     var title = req.query.title;
 
-    inputCityID = cat_cityid(district);
-    inputCategoryID = cat_categoryid(title);
-
-    if (req.query.start_month !== undefined || req.query.start_day !== undefined || req.query.end_month !== undefined || req.query.end_day) {
-        
-        inputStartDate = cat_start(req.query.start_month, req.query.start_day);
-        inputEndDate = cat_end(req.query.end_month, req.query.end_day)
-
-    
-        connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
-            //console.log(result);
-            //res.status(200).json(result[5]);
-            res.render('../../views/search.ejs', {
-                result: result[5]
-            })
-        })
-
+    if (district === undefined || title === undefined) {
+        res.sendStatus(400);
     } else {
+        inputCityID = cat_cityid(district);
+        inputCategoryID = cat_categoryid(title);
 
-        connection.query("set @inputStartDate = NULL\073set @inputEndDate = NULL\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
-            //console.log(result);
-            //res.status(200).json(result[5]);
-            res.render('../../views/search.ejs', {
-                result: result[5]
+        if (req.query.start_month !== undefined || req.query.start_day !== undefined || req.query.end_month !== undefined || req.query.end_day) {
+
+            inputStartDate = cat_start(req.query.start_month, req.query.start_day);
+            inputEndDate = cat_end(req.query.end_month, req.query.end_day)
+
+            connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
+                //console.log(result);
+                //res.status(200).json(result[5]);
+                res.render('../../views/search.ejs', {
+                    result: result[5]
+                })
             })
-        })
+
+        } else {
+            connection.query("set @inputStartDate = NULL\073set @inputEndDate = NULL\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
+                //console.log(result);
+                //res.status(200).json(result[5]);
+                res.render('../../views/search.ejs', {
+                    result: result[5]
+                })
+            })
+        }
     }
 
 
