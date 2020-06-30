@@ -1,1 +1,1 @@
-forever start -l forever -a --uid webapi --minUptime 1000 --spinSleepTime 1000 app.js
+sudo forever start -l forever80 -a --uid webapi80 --minUptime 1000 --spinSleepTime 1000 app.js
