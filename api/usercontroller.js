@@ -49,11 +49,10 @@ process.on('uncaughtException', function (err) {
         console.log('error when exit', e.stack);
     }
 });
+
 router.get('', function (req, res) {
     res.render('../../views/main.ejs')
 })
-
-
 router.get('/main', function (req, res) {
     res.render('../../views/main.ejs')
 })
@@ -71,6 +70,7 @@ router.get('/search', function (req, res) {
         //res.sendStatus(400);
 
         if (district === undefined && title !== undefined) {   // district search
+
             inputCityID = "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20";
             inputCategoryID = cat_categoryid(title);
 
@@ -83,6 +83,7 @@ router.get('/search', function (req, res) {
             })
         }
         else if (title === undefined && district !== undefined) {
+            
             inputCityID = cat_cityid(district);
             inputCategoryID = "1,2,3,4,5,6,7,8,11,13,14,15,17";
             connection.query("set @inputStartDate = NULL\073set @inputEndDate = NULL\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
@@ -94,6 +95,7 @@ router.get('/search', function (req, res) {
             })
         }
         else if (req.query.start_month !== undefined && req.query.start_day !== undefined && req.query.end_month !== undefined && req.query.end_day != undefined) {
+            
             inputCityID = "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20";
             inputCategoryID = "1,2,3,4,5,6,7,8,11,13,14,15,17";
 
@@ -109,6 +111,7 @@ router.get('/search', function (req, res) {
         }
         else {
             res.sendStatus(400);
+            console.log("tetet")
         }
     } else {
 
@@ -316,10 +319,10 @@ router.get('/summary', function (req, res) {
             "15": 0,
             "17": 0
         },
-        "OnSale_Y": 0,   //1987
-        "OnSale_N": 0,   //6089  // OnSales : UNKOWN does not included !!
-        "postponed": 0,    //44
-        "cancelled": 0,   //59
+        "OnSale_Y": 0,  
+        "OnSale_N": 0,   
+        "postponed": 0,    
+        "cancelled": 0,   
     }
     /*
         1 : 音樂表演資訊
@@ -374,7 +377,6 @@ router.get('/summary', function (req, res) {
         function (finish) {
             var sql4 = "select * from OnSale_info";
             connection.query(sql4, function (err4, res4) {
-                //console.log(res4);
                 result.OnSale_Y = res4[0].OnSale_Y;
                 result.OnSale_N = res4[0].OnSale_N;
 
@@ -422,7 +424,6 @@ router.get('/info/search', function (req, res) {
 
 
         connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
-            //console.log(result[5]);
             //res.status(200).json(result[5]);
             res.render('../../views/search.ejs', {
                 result: result[5]
@@ -432,7 +433,6 @@ router.get('/info/search', function (req, res) {
     } else {
 
         connection.query("set @inputStartDate = NULL\073set @inputEndDate = NULLs\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
-            //console.log(result[5]);
             //res.status(200).json(result[5]);
             res.render('../../views/search.ejs', {
                 result: result[5]
