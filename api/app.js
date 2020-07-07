@@ -9,6 +9,6 @@ app.use(express.static(__dirname + '/public'));
 app.use('/', UserController);
 
 app.listen(config.PORT, function () {
-    console.log('listening on port 9000!');
+    console.log(`listening on port ${config.PORT}!`);
 })
 
