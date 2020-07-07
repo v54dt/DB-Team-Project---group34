@@ -7,7 +7,6 @@ const domain = require('domain');
 const reqDomain = domain.create();
 
 const mysql = require('mysql');
-const { query } = require('express');
 
 const connection = mysql.createConnection({
     host: config.host,
@@ -51,6 +50,13 @@ process.on('uncaughtException', function (err) {
     }
 });
 */
+router.get('', function (req, res) {
+    res.render('../../views/main.ejs')
+})
+router.get('/main', function (req, res) {
+    res.render('../../views/main.ejs')
+})
+
 router.get('', function (req, res) {
     res.render('../../views/main.ejs')
 })
