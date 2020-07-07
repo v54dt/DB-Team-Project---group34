@@ -3,10 +3,12 @@ const router = express.Router();
 const config = require('./config');
 const bodyParser = require('body-parser');
 const async = require('async');
-
 const domain = require('domain');
+const reqDomain = domain.create();
 
 const mysql = require('mysql');
+const { query } = require('express');
+
 const connection = mysql.createConnection({
     host: config.host,
     user: config.user,
@@ -20,7 +22,7 @@ connection.connect();
 
 
 //router.use(bodyParser.json());
-router.use(bodyParser.json(), function (err, res, next) {
+/*router.use(bodyParser.json(), function (err, res, next) {
 
     var reqDomain = domain.create();
     reqDomain.on('error', function () {
@@ -48,69 +50,91 @@ process.on('uncaughtException', function (err) {
         console.log('error when exit', e.stack);
     }
 });
+*/
+router.get('', function (req, res) {
+    res.render('../../views/main.ejs')
+})
+router.get('/main', function (req, res) {
+    res.render('../../views/main.ejs')
+})
 
 router.get('/search', function (req, res) {
 
-    var temp_artshow = "create temporary table temp_artshow( t_UID char(24));";
-    var temp_showInfo = "create temporary table temp_showInfo(t_UID char(24));";
+    if (!check_search_request(req.query)) {
+        console.log("bad request");
+        res.sendStatus(400);
+    }
+    else {
 
-    connection.query(temp_artshow + temp_showInfo, function (err, res, fields) {
-        if (err) throw err;
+        
+        var sub_sql_filter = "";
+        var filter_array = [];
 
-    })
+        var sub_sql_artshow = "select * from artshow";
 
-    const title = req.query.title;
-    const district = req.query.district;
+        if (req.query.category !== undefined) {
+        
+            sub_sql_artshow = sub_sql_artshow + " where category like ? ";
+            filter_array.push(req.query.category[0]);
 
-
-
-    if (title !== undefined) {
-        var sql = "insert into temp_artshow(`t_UID`) select `UID` from artshow where category like?";
-
-        for (var i = 1; i < title.length; i++) {
-            sql = sql + " or category like?";
+            for (var i = 1; i < req.query.category.length; i++) {
+                sub_sql_artshow = sub_sql_artshow + " or category like ? ";
+                filter_array.push(req.query.category[i])
+            }
         }
 
-        var sql = mysql.format(sql, title);
-        connection.query(sql, function (err, res, fields) {
+        if (req.query.start_day !== undefined) {
+
+            var startDate = cat_start(req.query.start_month, req.query.start_day);
+            var endDate = cat_end(req.query.end_month, req.query.end_day);
+
+            if (req.query.category !== undefined)
+                sub_sql_artshow = sub_sql_artshow + " and ";
+            else
+                sub_sql_artshow = sub_sql_artshow + " where ";
+            
+                sub_sql_artshow = sub_sql_artshow + " startDate between '" + startDate + "' and '" + endDate +"'";
+        }
+
+        sub_sql_artshow = sub_sql_artshow + " order by startDate";
+
+
+    
+        var sub_sql_showInfo = "select * from showInfo";
+
+        if(req.query.district!==undefined){
+
+            sub_sql_showInfo = sub_sql_showInfo + " where location like ? ";
+            filter_array.push("%" + req.query.district[0] + "%");
+
+            for(var i=1;i<req.query.district.length;i++){
+                sub_sql_showInfo = sub_sql_showInfo + " or location like ? ";
+                filter_array.push("%" + req.query.district[i] + "%");
+            }
+        }
+
+        var sql = "select * from (" + sub_sql_artshow + ") as a,(" + sub_sql_showInfo + ") as s where a.UID = s.artshowUID";
+
+        
+        if (req.query.district !== undefined) {
+            for (var i = 0; i < req.query.district.length; i++) {
+                sub_sql_filter = sub_sql_filter + " or  district like ? "
+                filter_array.push("%" + req.query.district[i] + "%");
+            }
+        }
+
+        
+        connection.query(mysql.format(sql, filter_array), function (err, result, fields) {
             if (err) throw err;
+            //res.status(200).json(result)
+            res.render('../../views/search.ejs', {
+                result: result
+            })
         })
     }
 
-    //district
-    if (district !== undefined) {
-        var sql2 = "insert into temp_showInfo(`t_UID`) select `artshowUID` from showInfo where location like?";
+    /////////////////
 
-        for (var i = 1; i < district.length; i++) {
-            sql2 = sql2 + " or location like?";
-        }
-
-        var district_copy = [];
-        for (var i = 0; i < district.length; i++) {
-            district_copy.push(district[i] + "%");
-        }
-
-        var sql2 = mysql.format(sql2, district_copy);
-        connection.query(sql2, function (err, res, fields) {
-            if (err) throw err;
-        })
-    }
-    var sql = ""
-    var sql_final = "select aa.UID,aa.title,aa.startDate,aa.endDate,aa.descriptionFilterHtml from(select a.t_UID from temp_artshow a,temp_showInfo t where a.t_UID = t.t_UID) as tmp,artshow aa where aa.UID = tmp.t_UID limit 50;";
-    connection.query(sql_final, function (err, result, fields) {
-        if (err) throw err;
-        //res.status(200).json(result);
-        res.render('../../views/search.ejs', {
-            result: result
-        })
-    })
-    connection.query("drop table temp_artshow;drop table temp_showInfo", function (err, res, fields) {
-        if (err) throw err;
-    })
-    /*
-    connection.query(`${sql} limit 2;`, function (err, result, fields) {
-    })
-    */
 })
 router.get('/info/:uid', function (req, res) {
 
@@ -139,7 +163,6 @@ router.get('/info/:uid', function (req, res) {
 
             var sql = "select * from artshow where `UID` like ?;";
             connection.query(sql, req.params.uid, function (error, res_p1) {
-                //console.log(res_p1);
                 result.title = res_p1[0].title;
                 result.category = res_p1[0].category;
                 result.showUnit = res_p1[0].showUnit;
@@ -288,10 +311,10 @@ router.get('/summary', function (req, res) {
             "15": 0,
             "17": 0
         },
-        "OnSale_Y": 0,   //1987
-        "OnSale_N": 0,   //6089  // OnSales : UNKOWN does not included !!
-        "postponed": 0,    //44
-        "cancelled": 0,   //59
+        "OnSale_Y": 0,
+        "OnSale_N": 0,
+        "postponed": 0,
+        "cancelled": 0,
     }
     /*
         1 : 音樂表演資訊
@@ -346,7 +369,6 @@ router.get('/summary', function (req, res) {
         function (finish) {
             var sql4 = "select * from OnSale_info";
             connection.query(sql4, function (err4, res4) {
-                //console.log(res4);
                 result.OnSale_Y = res4[0].OnSale_Y;
                 result.OnSale_N = res4[0].OnSale_N;
 
@@ -374,6 +396,148 @@ router.get('/summary', function (req, res) {
 })
 
 
+
+
+router.get('/info/search', function (req, res) {
+
+    var inputStartDate;
+    var inputEndDate;
+    var inputCityID = "";
+    var inputCategoryID = "";
+    var district = req.query.district;
+    var title = req.query.title;
+
+    inputCityID = cat_cityid(district);
+    inputCategoryID = cat_categoryid(title);
+
+    if (req.query.start_month !== undefined || req.query.start_day !== undefined || req.query.end_month !== undefined || req.query.end_day) {
+        inputStartDate = cat_start(req.query.start_month, req.query.start_day);
+        inputEndDate = cat_end(req.query.end_month, req.query.end_day)
+
+
+        connection.query("set @inputStartDate = \042" + inputStartDate + "\042\073set @inputEndDate = \042" + inputEndDate + "\042\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
+            //res.status(200).json(result[5]);
+            res.render('../../views/search.ejs', {
+                result: result[5]
+            })
+        })
+
+    } else {
+
+        connection.query("set @inputStartDate = NULL\073set @inputEndDate = NULLs\073set @inputCityID = \042" + inputCityID + "\042;set @inputCategoryID = \042" + inputCategoryID + "\042\073set @inputIsFree = \042Y\042\073call main()\073selet @query\073", function (err, result) {
+            //res.status(200).json(result[5]);
+            res.render('../../views/search.ejs', {
+                result: result[5]
+            })
+        })
+    }
+
+
+})
+
+
+
+
+
+
+
+
+function cat_cityid(district) {
+    var inputCityID = "";
+    if (district.includes("台北")) {
+        inputCityID += "0,";
+    }
+    if (district.includes("新北")) {
+        inputCityID += "1,";
+    }
+    if (district.includes("桃園")) {
+        inputCityID += "2,";
+    }
+    if (district.includes("新竹")) {
+        inputCityID += "3,";
+    }
+    if (district.includes("基隆")) {
+        inputCityID += "4,";
+    }
+    if (district.includes("宜蘭")) {
+        inputCityID += "5,";
+    }
+    if (district.includes("台中")) {
+        inputCityID += "6,";
+    }
+    if (district.includes("彰化")) {
+        inputCityID += "7,";
+    }
+    if (district.includes("苗栗")) {
+        inputCityID += "8,";
+    }
+    if (district.includes("雲林")) {
+        inputCityID += "9,";
+    }
+    if (district.includes("南投")) {
+        inputCityID += "10,";
+    }
+    if (district.includes("嘉義")) {
+        inputCityID += "11,";
+    }
+    if (district.includes("台南")) {
+        inputCityID += "12,";
+    }
+    if (district.includes("高雄")) {
+        inputCityID += "13,";
+    }
+    if (district.includes("屏東")) {
+        inputCityID += "14,";
+    }
+    if (district.includes("花蓮")) {
+        inputCityID += "15,";
+    }
+    if (district.includes("台東")) {
+        inputCityID += "16,";
+    }
+    if (district.includes("澎湖")) {
+        inputCityID += "17,";
+    }
+    if (district.includes("金門")) {
+        inputCityID += "18,";
+    }
+    if (district.includes("馬祖")) {
+        inputCityID += "19,";
+    }
+    if (district.includes("連江")) {
+        inputCityID += "20,";
+    }
+    inputCityID = inputCityID.substr(0, inputCityID.length - 1);
+    return inputCityID;
+}
+
+function cat_categoryid(title) {
+    var inputCategoryID = "";
+    for (var i = 0; i < title.length; i++) {
+        inputCategoryID += parseInt(title[i], 10) + ",";
+    }
+    inputCategoryID = inputCategoryID.substr(0, inputCategoryID.length - 1);
+    return inputCategoryID;
+}
+
+function cat_start(start_month, start_day) {
+    var start_time = "2020-" + start_month.toString() + "-" + start_day.toString();
+    return start_time;
+}
+function cat_end(end_month, end_day) {
+    var end_time = "2020-" + end_month.toString() + "-" + end_day.toString();
+    return end_time;
+}
+
+function check_search_request(query) {
+
+    if (query.start_month !== undefined && query.start_day !== undefined && query.end_month !== undefined && query.end_day !== undefined)
+        return true;
+    else if (query.start_month === undefined && query.start_day === undefined && query.end_month === undefined && query.end_day === undefined)
+        return true;
+    else
+        return false;
+}
 
 
 module.exports = router;
