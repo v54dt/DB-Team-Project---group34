@@ -58,20 +58,87 @@
                                 else { %> - <% } 
                             %>
                         </p>
+                        <p class="col-sm-10 card-text">活動簡介: <% if(result.descriptionFilterHtml==""){ %>
+                            <無>
+                                <% }else { %>
+                                <%= result.descriptionFilterHtml%>
+                                <% } %>
+                        </p>
+                        <p class="col-sm-10 card-text"> 主辦單位: <%= result.masterUnit%></p>
+                        <p class="col-sm-10 card-text"> 購票網址:
+                            <a href="<%= result.webSales %>" class="card-link"> <%= result.sourceWebName%></a>
+                        </p>
+                        <p class="col-sm-10 card-text"> 場次:</p>
+                        <div class="accordion" id="accordionExample">
+
+                            <% for(var i=0;i<result.showInfo.length;i++){ %>
+                            <div class="card">
+                                <div class="card-header" id="heading.item-<%= i%>">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapse-<%= i%>" aria-expanded="false"
+                                            aria-controls="collapse-<%= i%>">
+                                            <p class="col-sm-10 card-text">
+                                                <%= result.showInfo[i].time.getFullYear()%>
+                                                <%= result.showInfo[i].time.getMonth()+1%>/<%=result.showInfo[i].time.getDate()%>(<% if (result.showInfo[i].time.getDay() == '0') { %>
+                                                日 <% } else if (result.showInfo[i].time.getDay() == '1') { %> 一
+                                                <% } else if (result.showInfo[i].time.getDay() == '2') { %> 二
+                                                <% } else if (result.showInfo[i].time.getDay() == '3') { %> 三
+                                                <% } else if (result.showInfo[i].time.getDay() == '4') { %> 四
+                                                <% } else if (result.showInfo[i].time.getDay() == '5') { %> 五
+                                                <% }else if (result.showInfo[i].time.getDay() == '6') { %> 六
+                                                <% } else { %> - <% } %>)
+                                                <%= result.showInfo[i].time.getHours()%> :
+                                                <%= ('0' + result.showInfo[i].time.getMinutes()).slice(-2)%>
+
+                                            </p>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapse-<%= i%>" class="collapse" aria-labelledby="heading.item-<%= i%>"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="col-sm-10 card-text">地點: <%= result.showInfo[i].locationName%></p>
+                                        <p class="col-sm-10 card-text">地址: <%= result.showInfo[i].location%></p>
+                                        <p class="col-sm-10 card-text">票價: <%= result.showInfo[i].price%></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+
+
+                        </div>
+
+
+                        <!--
+                        <p class="col-sm-10 card-text">時間: </p>
                         <p class="col-sm-10 card-text">地點: <%= result.location%><%= result.locationName%></p>
                         <p class="col-sm-10 card-text">票價: <%= result.price%></p>
+                       
+
                         <p class="col-sm-10 card-text">折扣: <%= result.onSales%></p>
-                        <p class="col-sm-10 card-text">場次: </p>
                         <p class="col-sm-10 card-text">主辦單位: <%= result.masterUnit%></p>
-                        <p class="col-sm-10 card-text">活動簡介: <%= result.discriptionFilter%></p>
                         <p class="col-sm-10 card-text">活動官網: <%= result.sourceWebName%></p>
-                        <p class="col-sm-10 card-text">附註: <%= result.comment%></p>
+                        <p class="col-sm-10 card-text">附註: <% if(result.comment==""){ %>
+                            <無>
+                                <% }else { %>
+                                <%= result.comment%>
+                                <% } %> </p>
+                        -->
                     </div>
                 </div>
             </div>
-            <!--                <div class="card-footer">表演網站連結</div>-->
+            <!--                <div class="card-footer">表演網站連結</div >-->
+
         </div>
+
+
+
+
+
     </div>
+
 
 
 </body>
