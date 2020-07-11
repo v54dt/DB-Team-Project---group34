@@ -65,21 +65,25 @@ router.get('/search', function (req, res) {
         res.sendStatus(400);
     }
     else {
-
-
-        var sub_sql_filter = "";
+        console.log(req.query);
         var filter_array = [];
 
         var sub_sql_artshow = "select * from artshow";
 
-        if (req.query.category !== undefined) {
+        if (req.query.title !== undefined) {
 
-            sub_sql_artshow = sub_sql_artshow + " where category like ? ";
-            filter_array.push(req.query.category[0]);
+            if (Array.isArray(req.query.title) == false) {
+                sub_sql_artshow = sub_sql_artshow + " where category like ? ";
+                filter_array.push(req.query.title);
+            }
+            else {
+                sub_sql_artshow = sub_sql_artshow + " where category like ? ";
+                filter_array.push(req.query.title[0]);
 
-            for (var i = 1; i < req.query.category.length; i++) {
-                sub_sql_artshow = sub_sql_artshow + " or category like ? ";
-                filter_array.push(req.query.category[i])
+                for (var i = 1; i < req.query.title.length; i++) {
+                    sub_sql_artshow = sub_sql_artshow + " or category like ? ";
+                    filter_array.push(req.query.title[i])
+                }
             }
         }
 
@@ -88,7 +92,7 @@ router.get('/search', function (req, res) {
             var startDate = cat_start(req.query.start_month, req.query.start_day);
             var endDate = cat_end(req.query.end_month, req.query.end_day);
 
-            if (req.query.category !== undefined)
+            if (req.query.title !== undefined)
                 sub_sql_artshow = sub_sql_artshow + " and ";
             else
                 sub_sql_artshow = sub_sql_artshow + " where ";
@@ -98,32 +102,29 @@ router.get('/search', function (req, res) {
 
         sub_sql_artshow = sub_sql_artshow + " order by startDate";
 
-
-
         var sub_sql_showInfo = "select * from showInfo";
 
         if (req.query.district !== undefined) {
 
-            sub_sql_showInfo = sub_sql_showInfo + " where location like ? ";
-            filter_array.push("%" + req.query.district[0] + "%");
+            if (Array.isArray(req.query.district) == false) {
+                sub_sql_showInfo = sub_sql_showInfo + " where location like ? ";
+                filter_array.push("%" + req.query.district + "%");
+            }
+            else {
+                sub_sql_showInfo = sub_sql_showInfo + " where location like ? ";
+                filter_array.push("%" + req.query.district[0] + "%");
 
-            for (var i = 1; i < req.query.district.length; i++) {
-                sub_sql_showInfo = sub_sql_showInfo + " or location like ? ";
-                filter_array.push("%" + req.query.district[i] + "%");
+                for (var t = 1; t < req.query.district.length; t++) {
+                    sub_sql_showInfo = sub_sql_showInfo + " or location like ? ";
+                    filter_array.push("%" + req.query.district[t] + "%");
+                }
             }
         }
+
 
         var sql = "select * from (" + sub_sql_artshow + ") as a,(" + sub_sql_showInfo + ") as s where a.UID = s.artshowUID";
 
-
-        if (req.query.district !== undefined) {
-            for (var i = 0; i < req.query.district.length; i++) {
-                sub_sql_filter = sub_sql_filter + " or  district like ? "
-                filter_array.push("%" + req.query.district[i] + "%");
-            }
-        }
-
-
+        console.log(mysql.format(sql, filter_array));
         connection.query(mysql.format(sql, filter_array), function (err, result, fields) {
             if (err) throw err;
             //res.status(200).json(result)
@@ -132,8 +133,6 @@ router.get('/search', function (req, res) {
             })
         })
     }
-
-    /////////////////
 
 })
 router.get('/info/:uid', function (req, res) {
@@ -272,10 +271,10 @@ router.get('/info/:uid', function (req, res) {
     ], function (errs, res_ps) {
         if (errs) throw errs;
 
-        res.status(200).json(result);
-        /*res.render('../../views/info.ejs', {
+        //res.status(200).json(result);
+        res.render('../../views/info.ejs', {
             result: result
-        })*/
+        })
     })
 
 
@@ -304,14 +303,14 @@ router.get('/recommend', function (req, res) {
 
     async.waterfall([
         function (next) {
-            var sql = "select count(*) as cnt from artshow";
+            var sql = "select count(*) as cnt from artshow where startDate between CURDATE() and INTERVAL 1 MONTH + CURDATE();";
             connection.query(sql, function (error, res1) {
+
                 total_uids = parseInt(res1[0].cnt, 10);
                 random_number = Math.floor(Math.random() * total_uids);
 
                 next(error, random_number);
 
-                console.log(random_number);
             })
         },
         function (random_number, next) {
@@ -333,10 +332,10 @@ router.get('/recommend', function (req, res) {
 
             })
             */
-            var sql2 = "select * from artshow limit 1 offset " + random_number.toString(10) + ";";
+            var sql2 = "select * from artshow where startDate between CURDATE() and INTERVAL 1 MONTH + CURDATE() limit 1 offset " + random_number.toString(10) + ";";
             //console.log(sql2);
             connection.query(sql2, function (error, res_p1) {
-                console.log(res_p1);
+
                 result.title = res_p1[0].title;
                 result.category = res_p1[0].category;
                 result.showUnit = res_p1[0].showUnit;
@@ -354,7 +353,7 @@ router.get('/recommend', function (req, res) {
             /////////////////////////////////////////
         },
         function (artshowUID, next) {
-            console.log(artshowUID);
+
             var sql3 = "select * from showInfo where artshowUID like '" + artshowUID + "';";
             connection.query(sql3, function (error, res_p2) {
 
