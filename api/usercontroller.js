@@ -65,9 +65,10 @@ router.get('/search', function (req, res) {
         res.sendStatus(400);
     }
     else {
-        console.log(req.query);
+       
+        var page = req.query.page || 1;
+        var page_size = 20;
         var filter_array = [];
-
         var sub_sql_artshow = "select * from artshow";
 
         if (req.query.title !== undefined) {
@@ -123,14 +124,18 @@ router.get('/search', function (req, res) {
 
 
         var sql = "select * from (" + sub_sql_artshow + ") as a,(" + sub_sql_showInfo + ") as s where a.UID = s.artshowUID";
+        // Pagination
+        sql = sql + " limit " + page_size + " offset " + (page-1)*page_size ;
+        
+        
 
         console.log(mysql.format(sql, filter_array));
         connection.query(mysql.format(sql, filter_array), function (err, result, fields) {
             if (err) throw err;
-            //res.status(200).json(result)
-            res.render('../../views/search.ejs', {
+            res.status(200).json(result)
+            /*res.render('../../views/search.ejs', {
                 result: result
-            })
+            })*/
         })
     }
 
