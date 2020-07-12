@@ -34,11 +34,24 @@
                         <div class="col-sm-4 text-right">
                             <% if(result[i].onSales=='Y') {%>
                             <a href="#" class="badge badge-success">
-                                <svg class="bi bi-tag-fill" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M2 1a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l4.586-4.586a1 1 0 000-1.414l-7-7A1 1 0 006.586 1H2zm4 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" clip-rule="evenodd" />
-                                </svg>On Sale
+                                <svg class="bi bi-tag-fill" width="1em" height="1em" viewBox="0 0 20 20"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M2 1a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l4.586-4.586a1 1 0 000-1.414l-7-7A1 1 0 006.586 1H2zm4 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                                        clip-rule="evenodd" />
+                                </svg>售票
                             </a>
+                            <% } else {%>
+                                <a href="#" class="badge badge-success">
+                                    <svg class="bi bi-tag-fill" width="1em" height="1em" viewBox="0 0 20 20"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M2 1a1 1 0 00-1 1v4.586a1 1 0 00.293.707l7 7a1 1 0 001.414 0l4.586-4.586a1 1 0 000-1.414l-7-7A1 1 0 006.586 1H2zm4 3.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                                            clip-rule="evenodd" />
+                                    </svg>免票
+                                </a>
                             <% } %>
+
                         </div>
                     </div>
 
@@ -46,16 +59,27 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-9 card-text">
-                            <p>時間: <%= result[i].startDate.getFullYear()%>年<%= result[i].startDate.getMonth() + 1%>月<%= result[i].startDate.getDate() %>日 ~ <%= result[i].endDate.getFullYear()%>年<%= result[i].endDate.getMonth() + 1%>月<%= result[i].endDate.getDate() %>日</p>
-                            <p><%= result[i].descriptionFilterHtml%></p>
-                            <p>票價: <%= result[i].price%></p>
+                            <p>檔期:
+                                <%= result[i].startDate.getFullYear()%>年<%= result[i].startDate.getMonth() + 1%>月<%= result[i].startDate.getDate() %>日
+                                ~
+                                <%= result[i].endDate.getFullYear()%>年<%= result[i].endDate.getMonth() + 1%>月<%= result[i].endDate.getDate() %>日
+                            </p>
+                            
+                            <p> <% if(result[i].descriptionFilterHtml == "") { %> 
+                                <無活動簡介>
+                            <% } else {%>
+                                <%= result[i].descriptionFilterHtml %>
+                            <% } %>
+                            </p>
+
+                            
                         </div>
                         <!--
                     <div class="col-sm-3  card-text text-right">
                         <p><%= result[i].price%></p>
                         <p><%= result[i].onSales%></p>
                     </div>
--->
+                    -->
                     </div>
 
 
@@ -81,6 +105,36 @@
                 <li class="page-item"><a class="page-link" href="#">Next</a></li>
             </ul>
             -->
+            <!--pargination start-->
+            <% if (pages > 0) { %>
+            <ul class="pagination text-center">
+                <% if (current == 1) { %>
+                <li class="disabled"><a>第一頁</a></li>
+                <% } else { %>
+                <li><a href="<%= query%>&page=1">第一頁</a></li>
+                <% } %>
+                <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                <% if (i !== 1) { %>
+                <li class="disabled"><a>...</a></li>
+                <% } %>
+                <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                <% if (i == current) { %>
+                <li class="active"><a><%= i %></a></li>
+                <% } else { %>
+                <li><a href="<%= query%>&page=<%=i%>"><%= i %></a></li>
+                <% } %>
+                <% if (i == Number(current) + 4 && i < pages) { %>
+                <li class="disabled"><a>...</a></li>
+                <% } %>
+                <% } %>
+                <% if (current == pages) { %>
+                <li class="disabled"><a>最後一頁</a></li>
+                <% } else { %>
+                <li><a href="<%= query%>&page=<%=pages%>">最後一頁</a></li>
+                <% } %>
+            </ul>
+            <% } %>
+            <!--pargination end-->
         </div>
         <br>
 
