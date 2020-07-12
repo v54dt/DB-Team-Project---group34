@@ -6,6 +6,8 @@ const async = require('async');
 const domain = require('domain');
 const reqDomain = domain.create();
 
+const url = require('url');
+
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
@@ -60,13 +62,17 @@ router.get('/main', function (req, res) {
 
 router.get('/search', function (req, res) {
 
+    var url_parts = url.parse(req.url, true)
+    var search_query = url_parts.path.split('&page=');
+    
+
     if (!check_search_request(req.query)) {
         console.log("bad request");
         res.sendStatus(400);
     }
     else {
-       
-        var page = req.query.page || 1;
+
+        var page = parseInt(req.query.page || 1);
         var page_size = 20;
         var filter_array = [];
         var sub_sql_artshow = "select * from artshow";
@@ -74,17 +80,18 @@ router.get('/search', function (req, res) {
         if (req.query.title !== undefined) {
 
             if (Array.isArray(req.query.title) == false) {
-                sub_sql_artshow = sub_sql_artshow + " where category like ? ";
+                sub_sql_artshow = sub_sql_artshow + " where (category like ? )";
                 filter_array.push(req.query.title);
             }
             else {
-                sub_sql_artshow = sub_sql_artshow + " where category like ? ";
+                sub_sql_artshow = sub_sql_artshow + " where (category like ? ";
                 filter_array.push(req.query.title[0]);
 
                 for (var i = 1; i < req.query.title.length; i++) {
                     sub_sql_artshow = sub_sql_artshow + " or category like ? ";
                     filter_array.push(req.query.title[i])
                 }
+                sub_sql_artshow = sub_sql_artshow + ") "
             }
         }
 
@@ -123,96 +130,25 @@ router.get('/search', function (req, res) {
         }
 
 
-        var sql = "select * from (" + sub_sql_artshow + ") as a,(" + sub_sql_showInfo + ") as s where a.UID = s.artshowUID";
+        var sql = "select a.UID,a.title,a.category,a.descriptionFilterHtml,a.startDate, a.endDate ,s.OnSales from (" + sub_sql_artshow + ") as a,(" + sub_sql_showInfo + ") as s where a.UID = s.artshowUID group by a.UID,s.OnSales order by a.startDate";
         // Pagination
-        sql = sql + " limit " + page_size + " offset " + (page-1)*page_size ;
-        
-        
+        //sql = sql + " limit " + page_size + " offset " + (page - 1) * page_size;
 
-        console.log(mysql.format(sql, filter_array));
+        console.log(mysql.format(sql,filter_array));
         connection.query(mysql.format(sql, filter_array), function (err, result, fields) {
             if (err) throw err;
-            res.status(200).json(result)
-            /*res.render('../../views/search.ejs', {
-                result: result
-            })*/
+        
+            res.render('../../views/search.ejs', {
+                result: result.slice((page - 1) * page_size, page*page_size),
+                current: page,
+                query: search_query[0],
+                pages: Math.ceil(result.length / page_size)  // 最大頁數
+            })
         })
     }
 
 })
 router.get('/info/:uid', function (req, res) {
-
-    /*var result = {
-        title: "",
-        location: "",
-        locationName: "",
-        category: "",
-        showInfo: [],
-        showUnit: "",
-        descriptionFilterHtml: "",
-        discountInfo: "",
-        price: "",
-        onSales: "",
-        masterUnit: [],
-        imageUrl: "",
-        webSales: "",
-        comment: "",
-        sourceWebName: "",
-        startDate: "",
-        endDate: "",
-    };
-
-    async.parallel([
-        function (finish) {
-
-            var sql = "select * from artshow where `UID` like ?;";
-            connection.query(sql, req.params.uid, function (error, res_p1) {
-                result.title = res_p1[0].title;
-                result.category = res_p1[0].category;
-                result.showUnit = res_p1[0].showUnit;
-                result.descriptionFilterHtml = res_p1[0].descriptionFilterHtml;
-                result.onSales = res_p1[0].onSales;
-                result.masterUnit = res_p1[0].masterUnit;
-                result.imageUrl = res_p1[0].imageUrl;
-                result.webSales = res_p1[0].webSales;
-                result.comment = res_p1[0].comment;
-                result.sourceWebName = res_p1[0].sourceWebName;
-                result.startDate = res_p1[0].startDate;
-                result.endDate = res_p1[0].endDate;
-
-                finish(error);
-
-            })
-        },
-        function (finish) {
-
-            var sql_showInfo = "select * from showInfo where `artshowUID` like ?;";
-            connection.query(sql_showInfo, req.params.uid, function (error, res_p2) {
-
-
-                for (var i = 0; i < res_p2.length; i++) {
-                    result.showInfo.push({
-                        time: res_p2[i].time,
-                        location: res_p2[i].location,
-                        locationName: res_p2[i].locationName,
-                        onSales: res_p2[i].onSales,
-                        latitude: res_p2[i].latitude,
-                        longtitude: res_p2[i].longtitude,
-                        endTime: res_p2[i].endTime
-                    })
-                }
-                finish(error);
-            })
-
-        },
-    ], function (errs, res_ps) {
-        if (errs) throw errs;
-
-        //res.status(200).json(result);
-        res.render('../../views/info.ejs', {
-            result: result
-        })
-    })*/
 
     var result = {
         title: "",
@@ -319,24 +255,7 @@ router.get('/recommend', function (req, res) {
             })
         },
         function (random_number, next) {
-            /*var sql2 = "select a.UID,a.title,a.imageUrl,tmp.location,tmp.locationName,tmp.price,tmp.onSales,a.masterUnit,a.descriptionFilterHtml,a.sourceWebName,a.comment from artshow a, (select artshowUID,location,locationName,price,onSales from showInfo limit 1 offset " + random_number.toString(10) + ") as tmp  where tmp.artshowUID = a.UID;"
-            connection.query(sql2, function (error, res2) {
-
-                result.title = res2[0].title;
-                result.category = res2[0].category;
-                result.imageUrl = res2[0].imageUrl;
-                result.location = res2[0].location;
-                result.locationName = res2[0].locationName;
-                result.price = res2[0].price;
-                result.onSales = res2[0].onSales;
-                result.masterUnit = res2[0].masterUnit;
-                result.discriptionFilter = res2[0].discriptionFilter;
-                result.sourceWebName = res2[0].sourceWebName;
-                result.comment = res2[0].comment;
-                next(error, res2);
-
-            })
-            */
+        
             var sql2 = "select * from artshow where startDate between CURDATE() and INTERVAL 1 MONTH + CURDATE() limit 1 offset " + random_number.toString(10) + ";";
             //console.log(sql2);
             connection.query(sql2, function (error, res_p1) {
@@ -355,7 +274,6 @@ router.get('/recommend', function (req, res) {
 
                 next(error, res_p1[0].UID);
             })
-            /////////////////////////////////////////
         },
         function (artshowUID, next) {
 
@@ -656,6 +574,7 @@ function check_search_request(query) {
     else
         return false;
 }
+
 
 
 module.exports = router;
