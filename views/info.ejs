@@ -78,7 +78,7 @@
                                         <button class="btn btn-link" type="button" data-toggle="collapse"
                                             data-target="#collapse-<%= i%>" aria-expanded="false"
                                             aria-controls="collapse-<%= i%>">
-                                            <p class="col-sm-10 card-text">
+                                            <p class="col-lg-10 card-text">
                                                 <%= result.showInfo[i].time.getFullYear()%>
                                                 <%= result.showInfo[i].time.getMonth()+1%>/<%=result.showInfo[i].time.getDate()%>(<% if (result.showInfo[i].time.getDay() == '0') { %>
                                                 日 <% } else if (result.showInfo[i].time.getDay() == '1') { %> 一
@@ -99,9 +99,9 @@
                                 <div id="collapse-<%= i%>" class="collapse" aria-labelledby="heading.item-<%= i%>"
                                     data-parent="#accordionExample">
                                     <div class="card-body">
-                                        <p class="col-sm-10 card-text">地點: <%= result.showInfo[i].locationName%></p>
-                                        <p class="col-sm-10 card-text">地址: <%= result.showInfo[i].location%></p>
-                                        <p class="col-sm-10 card-text">票價: <%= result.showInfo[i].price%></p>
+                                        <p class="col-sm-12 card-text">地點: <%= result.showInfo[i].locationName%></p>
+                                        <p class="col-sm-12 card-text">地址: <%= result.showInfo[i].location%></p>
+                                        <p class="col-sm-12 card-text">票價: <%= result.showInfo[i].price%></p>
                                     </div>
                                 </div>
                             </div>
