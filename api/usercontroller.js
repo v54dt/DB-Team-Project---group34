@@ -67,7 +67,6 @@ router.get('/search', function (req, res) {
     
 
     if (!check_search_request(req.query)) {
-        console.log("bad request");
         res.sendStatus(400);
     }
     else {
@@ -134,7 +133,6 @@ router.get('/search', function (req, res) {
         // Pagination
         //sql = sql + " limit " + page_size + " offset " + (page - 1) * page_size;
 
-        console.log(mysql.format(sql,filter_array));
         connection.query(mysql.format(sql, filter_array), function (err, result, fields) {
             if (err) throw err;
         
@@ -158,7 +156,6 @@ router.get('/info/:uid', function (req, res) {
         descriptionFilterHtml: "",
         discountInfo: "",
 
-        onSales: "",
         masterUnit: [],
         imageUrl: "",
         webSales: "",
@@ -180,6 +177,7 @@ router.get('/info/:uid', function (req, res) {
                 result.masterUnit = res_p1[0].masterUnit;
                 result.imageUrl = res_p1[0].imageUrl;
                 result.webSales = res_p1[0].webSales;
+                result.sourceWebPromote = res_p1[0].sourceWebPromote;
                 result.comment = res_p1[0].comment;
                 result.sourceWebName = res_p1[0].sourceWebName;
                 result.startDate = res_p1[0].startDate;
@@ -231,7 +229,7 @@ router.get('/recommend', function (req, res) {
         descriptionFilterHtml: "",
         discountInfo: "",
 
-        onSales: "",
+        
         masterUnit: [],
         imageUrl: "",
         webSales: "",
