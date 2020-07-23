@@ -17,6 +17,7 @@ import MySQLdb
 import datetime
 import time
 
+import queue
 #from MySQLdb import IntegrityError
 
 mydb = mysql.connector.connect(
@@ -28,9 +29,8 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 
-hostname ="https://www.artsticket.com.tw"
-
-route = "/CKSCC2005/Product/Product00/ProductsCategoriesPage.aspx"
+#hostname ="https://www.artsticket.com.tw"
+#route = "/CKSCC2005/Product/Product00/ProductsCategoriesPage.aspx"
 
 title_categoryid = {
     "音樂":"8JNfZ4VZd5R%2b6AG8ujzh6g",
@@ -62,14 +62,6 @@ categoryid = {
     }
 
 
-
-"""
-音樂
-"""
-category = categoryid['戲劇']
-print(category)
-# retrieve "PRODUCTLIST_GRAPHIC"
-
 def showinfo_time_regex(time_string):
     ts_re = re.compile('(\d{4})[/](\d{2})[/](\d{2})[(].[)](\d{2})[:](\d{2})')
     ts = ts_re.search(time_string)
@@ -94,7 +86,6 @@ def check_schedule_time(soup):
     endDate = re.search(r"(\d{4}\/\d{2}\/\d{2})",showInfoRow[len(showInfoRow)-1].td.text.split('\n',1)[0])
 
     return {"startDate":startDate.group(1),"endDate":endDate.group(1)}
-    
 def craw_info(sub_url):
     
     '''artshow'''
@@ -213,34 +204,60 @@ def craw_info(sub_url):
                          "values (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                          (UID,showInfodate,location_dict['location'],location_dict['locationName'],onSales,price,latitude,longitude,endTime))
         
-        #print(td[1].text.strip())  
-          #price
-        
-        #for td_list in td:
-            #print(td_list.text.strip())  #[時間,剩餘數量,地址,票價]
 
-   
-    
+def get_categoryID(homepage,categoryID_queue):
 
+    #url = "https://www.artsticket.com.tw/CKSCC2005/home/home00/index.aspx"
+    resp = requests.get(homepage)
+    resp.encoding = 'utf-8' # encoded with format utf-8 for chinese character
+    soup = BeautifulSoup(resp.text, 'lxml')
+    category = soup.find('div',class_="mainInnerRight")
+    category_list = category.find_all('div',class_="block01Inner")
 
-    
+    for i in category_list:
+        l = i.find_all(class_="listUl")
+        for a in l:
+            link = a.find_all('a')
+            for href in link:
+
+                link_re = re.compile('ProductsCategoryId=([^&]+)')
+                categoryid = link_re.search(href['href'])
+
+                if(categoryid != None):
+                    #print(categoryid.group(1))
+                    categoryID_queue.put(categoryid.group(1))
+
     
 #craw_info("https://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductId=rotyiUrPteTEAyabcdefa4EZabcdefabcdef")
 
+def craw_info_url(category_url):
+    resp = requests.get(url)
+    resp.encoding = 'utf-8' # encoded with format utf-8 for chinese character
+    soup = BeautifulSoup(resp.text, 'lxml')
 
-'''
-"親子":"m40sIX3ugy4M%2fCZzGNHZ3Q",
-    "電影":"m40sIX3ugy7qmsA9Hbstiw",
-    "音樂劇":"m40sIX3ugy4F01Ea9HZaAw",
-    "講座":"m40sIX3ugy6p%2bhcnSd3dCw",
-    "活動":"m40sIX3ugy6GK1l%2fBnla9g",
-    "商品":"m40sIX3ugy4XI0ifhLT54g",
-    "其他":"8JNfZ4VZd5SyAa0ZIKNEB",
-    '''
+    productlist = soup.find_all('div',class_="programContainer")
 
 
 
+    for i in productlist:
+   
+        sub_productlist = i.find_all('div',class_="program programAll")
+    
+    
+        for sub_list in sub_productlist:
+            print("=============")
+            title = sub_list.find('a',class_="programTitle").text
+            link = hostname + sub_list.find('a',class_="programPic")['href']
+        
+            craw_info(link)
 
+            print("=============")
+            time.sleep(2)
+    
+    
+#
+
+'''       
 url = hostname + route + "?ProductsCategoryId=" + title_categoryid['其他']
 resp = requests.get(url)
 resp.encoding = 'utf-8' # encoded with format utf-8 for chinese character
@@ -261,18 +278,29 @@ for i in productlist:
         link = hostname + sub_list.find('a',class_="programPic")['href']
         
         craw_info(link)
-        
-        #print(title)
-        #print(link)
-        #print(time)
-        #print(startDate)
-        #print(endDate)
-        #detail_queue.append({"title":title,"link":link,"time":time})
-        
+
         print("=============")
         time.sleep(2)
         
+'''
 
+
+
+#####
+        
+homepage = "https://www.artsticket.com.tw/CKSCC2005/Home/Home00/index.aspx"
+hostname = "https://www.artsticket.com.tw"
+route = "/CKSCC2005/Product/Product00/ProductsCategoriesPage.aspx"
+
+categoryID_queue = queue.Queue()
+get_categoryID(homepage,categoryID_queue)
+
+while not categoryID_queue.empty():
+    print("Start One Category")
+    url = hostname + route + "?ProductsCategoryId=" + categoryID_queue.get()
+    craw_info_url(url)
+    print("A Categrory has Finished")
+    
 
 
 mydb.commit()
@@ -283,7 +311,6 @@ mydb.close()
 
 
 #sub_url = "https://www.artsticket.com.tw/CKSCC2005/Product/Product00/ProductsDetailsPage.aspx?ProductId=rotyiUrPteQw%2fabcdefKeIhxqG"
-
 
 
 
